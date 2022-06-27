@@ -1,0 +1,48 @@
+.ButtonPrimary {
+
+    background-color: #81D742;
+    transition:  .6s all;
+    border-radius: 5px;
+    height: 55px;
+    color: #FFF;
+    padding: 15px 40px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.ButtonPrimary:hover {
+
+    background-color: black;
+    border: solid #81D742 1px;
+}
+
+@media screen and (max-width : 428px) {
+    
+    .ButtonPrimary {
+
+        background-color: #81D742;
+        transition:  .6s all;
+        border-radius: 5px;
+        height: 55px;
+        color: #FFF;
+        padding: 12px 30px;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+}
+
+
+/*
+
+<div className='slide-single bg-white w-[400px] h-[345px] flex flex-col items-center relative'>
+            <img className='absolute -top-9' src={EcologicaAP} />
+            <div className='text-center h-full flex flex-col'>
+            <h3>ECOLÓGICA AP</h3>
+            <p>Injetora/Dosadora de alta pressão</p>
+            <a href=''>Explorar</a>
+            </div>
+        </div>
+
+
+*/

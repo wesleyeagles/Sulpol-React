@@ -1,0 +1,28 @@
+input {
+    display: none;
+  }
+  
+  
+ .squareBox {
+
+  border: solid 1px #81D742;
+  width: 14px;
+  height: 14px;
+  display: block;
+  position: relative;
+
+ }
+
+
+ .chk input:checked + div .squareBox::before {
+
+  position: absolute;
+  content: '';
+  background-color: #81D742;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  left: 2px;
+  top: 2px;
+
+ }

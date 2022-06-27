@@ -1,0 +1,71 @@
+.nav-link {
+
+   
+    cursor: pointer;
+}
+
+
+.Toggler {
+
+    cursor: pointer;
+
+}
+
+.machine-name {
+
+    font-weight: 500;
+}
+
+.productsMenu {
+
+    scrollbar-width: 0.1px;
+}
+
+.productsMenu::-webkit-scrollbar {
+
+    display: none;
+}
+
+.overheight {
+
+    height: 6000px;
+    scrollbar-width: none;
+}
+
+.overheight::-webkit-scrollbar {
+
+    width: 0.1px;
+    appearance: none;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+
+
+    .machine-name {
+
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .machine-name {
+
+        font-weight: 500;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    
+    .machine-name {
+
+        font-weight: 500;
+    }
+}
+
+
+

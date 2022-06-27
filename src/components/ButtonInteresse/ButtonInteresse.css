@@ -1,0 +1,10 @@
+.ButtonInteresse {
+
+    padding: 18px 40px;
+    background: rgb(129,215,66);
+    background: linear-gradient(220deg, rgba(129,215,66,1) 30%, rgba(65,108,33,1) 90%);
+    color: #FFF;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 5px;
+}
