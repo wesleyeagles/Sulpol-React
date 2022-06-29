@@ -74,10 +74,10 @@ function Navbar() {
         <ul className='hidden lg:flex gap-7 nav-HashLinks items-center'>
           <HashLink className="nav-HashLink text-base" to={'/#header'}>Inicio</HashLink>   
           <HashLink className="nav-HashLink text-base" to={'/A-Sulpol#header'}>A Sulpol</HashLink>
-          <li onClick={openProdutos} className="nav-HashLink text-base flex items-center">Produtos <IoMdArrowDropdown className='mt-1' /></li>
-          <li className="nav-HashLink text-base">Serviços</li>
-          <li className="nav-HashLink text-base">Aplicação</li>
-          <li className="nav-HashLink text-base">FAQ</li>
+          <li onClick={openProdutos} className="nav-HashLink text-base flex items-center cursor-pointer">Produtos <IoMdArrowDropdown className='mt-1' /></li>
+          <HashLink to={'/#services'}><li className="nav-HashLink text-base cursor-pointer">Serviços</li></HashLink>
+          <HashLink to={'/#aplicacao'}><li className="nav-HashLink text-base cursor-pointer">Aplicação</li></HashLink>
+          <HashLink to={'/#faq'}><li className="nav-HashLink text-base cursor-pointer">FAQ</li></HashLink>
 
           <div  className="ml-10 flex items-center lg:flex-row lg:gap-1 xl:gap-4">
           <HashLink className='text-white rounded-full bg-[#81D742] py-3 px-6 lg:hidden xl:block text-tiny font-bold' to='/Contato#header'>ENTRAR EM CONTATO</HashLink> 
