@@ -76,7 +76,7 @@ function Navbar() {
           <HashLink className="nav-HashLink text-base" to={'/A-Sulpol#header'}>A Sulpol</HashLink>
           <li onClick={openProdutos} className="nav-HashLink text-base flex items-center cursor-pointer">Produtos <IoMdArrowDropdown className='mt-1' /></li>
           <HashLink to={'/#services'}><li className="nav-HashLink text-base cursor-pointer">Serviços</li></HashLink>
-          <HashLink to={'/#aplicacao'}><li className="nav-HashLink text-base cursor-pointer">Aplicação</li></HashLink>
+          <HashLink to={'/#aplicacoes'}><li className="nav-HashLink text-base cursor-pointer">Aplicação</li></HashLink>
           <HashLink to={'/#faq'}><li className="nav-HashLink text-base cursor-pointer">FAQ</li></HashLink>
 
           <div  className="ml-10 flex items-center lg:flex-row lg:gap-1 xl:gap-4">
@@ -92,14 +92,14 @@ function Navbar() {
       </div>
     </nav>
 
-    <div className={`w-full absolute h-550 pt-36 lg:hidden bg-gray-800 transitio duration-700 transition-all ${menuMobile ? "top-[0]" : '-top-[550px]'}`}>
+    <div className={`w-full fixed z-40 h-550 pt-36 lg:hidden bg-gray-800 transitio duration-700 transition-all ${menuMobile ? "top-[0]" : '-top-[550px]'}`}>
         <ul className='flex flex-col items-center gap-5'>
         <HashLink className="nav-HashLink text-xl text-white" to={'/#header'}>Inicio</HashLink>   
         <HashLink className="nav-HashLink text-xl text-white" to={'/A-Sulpol#header'}>A Sulpol</HashLink>
         <li onClick={openProdutosMobile} className="nav-HashLink text-xl flex items-center text-white">Produtos <IoMdArrowDropdown className='mt-1' /></li>
-        <li className="nav-HashLink text-xl text-white">Serviços</li>
-        <li className="nav-HashLink text-xl text-white">Aplicação</li>
-        <li className="nav-HashLink text-xl text-white">FAQ</li>
+        <HashLink to={'/#services'}><li className="nav-HashLink text-xl text-white">Serviços</li></HashLink>
+        <HashLink to={'/#aplicacoes'}><li className="nav-HashLink text-xl text-white">Aplicação</li></HashLink>
+        <HashLink to={'/#faq'}><li className="nav-HashLink text-xl text-white">FAQ</li></HashLink>
         <HashLink className='text-white rounded-full bg-[#81D742] py-3 px-6 lg:hidden xl:block text-tiny font-bold' to='/Contato#header'>ENTRAR EM CONTATO</HashLink> 
         </ul>
 
