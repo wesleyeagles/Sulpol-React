@@ -10,12 +10,24 @@ import { BsFillCheckCircleFill } from 'react-icons/bs'
 import { GoArrowSmallDown } from 'react-icons/go'
 import FormularioMaquinas from '../components/FormularioMaquinas/FormularioMaquinas'
 import ContextProdutos from '../contexts/ContextProdutos'
+import ButtonPrimary from '../components/ButtonPrimary/ButtonPrimary'
 
 function Star300S()  {
 
   const [precision, setPrecision] = useState(0); 
 
-  const { menuProdutos } = useContext(ContextProdutos)
+  const { menuProdutos, forms } = useContext(ContextProdutos)
+  
+
+  const handleForm = () => {
+
+    forms.current.focus()
+    console.log("Debug")
+    
+    window.location.href = '#forms'
+  }
+
+
 
   const openPrecision = () => {
     setPrecision(!precision)
@@ -84,87 +96,92 @@ function Star300S()  {
         <div>
         <div className='container mx-auto'>
             <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
-            <div className='w-[100%] md:w-[40%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                <img className='w-[75%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/725/full/star_300S_2.png?1656005199' />
-                <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
+            <div className='w-[100%] md:w-[40%] lg:mt-[40px] flex flex-col justify-between md:items-center'>
+                <img className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/725/full/star_300S_2.png?1656005199' />
+                <div className='flex w-[100%] md:w-auto flex-row gap-5 mt-10 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
                 <img className='w-[100%] md:w-[25%]' src={star300sThumb3} />
                 <img className='w-[100%] md:w-[25%]' src={star300sThumb1} />
                 <img className='w-[100%] md:w-[25%]' src={star300sThumb2} />
+                <img className='w-[100%] md:w-[25%]' src="https://uploaddeimagens.com.br/images/003/924/515/full/Interse%C3%A7%C3%A3o_48.png?1656671465" alt="" />
                 </div>
             </div>
 
             <div className='md:w-[50%] mt-16'>
                <h1 className='text-gray-800 text-4xl  2xl:text-5xl mb-5 font-normal'>STAR <span className='text-sulpol-green font-black'>300S</span></h1>
                <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>Dosadora de poliuretano estática, tipo banana, com sistema modular de porta-moldes, sendo cada módulo de 6 estações, podendo somar 36 estações. A Star 300 é um equipamento que oferece precisão na dosagem e flexibilidade no processo. Equipamento com um alto nível de tecnologia e durabilidade , feita para processar poliuretanos poliéter ou poliéster.</p>
-               <ButtonInteresse />
+               <ButtonInteresse onClick={handleForm}/>
             </div>
             </div>
 
             <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
-            <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                <img className='w-[75%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/756/full/STAR_300S-MRP.png?1656006258' />
-                <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
+            <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex flex-col justify-between md:items-center'>
+                <img className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/756/full/STAR_300S-MRP.png?1656006258' />
+                <div className='flex w-[100%] md:w-auto flex-row gap-5 md:mt-[20px] mt-10  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
                 <img className='w-[100%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/913/888/full/Interse%C3%A7%C3%A3o_51.png?1656009020' />
                 <img className='w-[100%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/913/890/full/Interse%C3%A7%C3%A3o_52.png?1656009037' />
                 <img className='w-[100%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/913/892/full/Interse%C3%A7%C3%A3o_53.png?1656009056' />
+                <img className='w-[100%] md:w-[25%]' src="https://uploaddeimagens.com.br/images/003/924/515/full/Interse%C3%A7%C3%A3o_48.png?1656671465" alt="" />
                 </div>
             </div>
 
             <div className='md:w-[45%] mt-16'>
                <h1 className='text-gray-800 text-4xl  2xl:text-5xl mb-5 font-normal'>STAR <span className='text-sulpol-green font-black'>300S-MRP</span></h1>
                <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>Dosadora de poliuretano rotativa,  de giro contínuo ou stop and go, sistema de dosagem manual ou automático, com porta moldes para pé ou par por estação, de 36 a 60 estações. A Star 300-MRP é um equipamento que oferece precisão na dosagem e flexibilidade no processo. Por ser rotativa possui uma produtividade maior.  Equipamento com um alto nível de tecnologia e durabilidade , feita para processar poliuretanos poliéter ou poliéster.</p>
-               <ButtonInteresse />
+               <ButtonInteresse onClick={handleForm}/>
             </div>
             </div>
 
             <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
-            <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                <img className='w-[75%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/769/full/star300s-pv.png?1656006655' />
-                <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
+            <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex flex-col justify-between md:items-center'>
+                <img className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/769/full/star300s-pv.png?1656006655' />
+                <div className='flex w-[100%] md:w-auto flex-row gap-5 md:mt-[20px] mt-10  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
                 <img className='w-[100%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/914/007/full/Interse%C3%A7%C3%A3o_54.png?1656010953' />
                 <img className='w-[100%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/914/008/full/Interse%C3%A7%C3%A3o_55.png?1656010971' />
                 <img className='w-[100%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/914/009/full/Interse%C3%A7%C3%A3o_56.png?1656010991' />
+                <img className='w-[100%] md:w-[25%]' src="https://uploaddeimagens.com.br/images/003/924/515/full/Interse%C3%A7%C3%A3o_48.png?1656671465" alt="" />
                 </div>
             </div>
 
             <div className='md:w-[45%] mt-16'>
                <h1 className='text-gray-800 text-4xl  2xl:text-5xl mb-5 font-normal'>STAR <span className='text-sulpol-green font-black'>300S-PV</span></h1>
                <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>Dosadora de poliuretano estática, tipo banana, com sistema modular de porta-moldes com fechamento pneumático duplo sendo um para cada densidade. Cada módulo possui 6 estações, podendo somar 36 estações. O equipamento possui dois braços, cada um com um cabeçote dosador, sendo um para cada densidade. A Star 300 é um equipamento que oferece precisão na dosagem e flexibilidade no processo. Equipamento com um alto nível de tecnologia e durabilidade , feita para processar poliuretanos poliéter ou poliéster.</p>
-               <ButtonInteresse />
+               <ButtonInteresse onClick={handleForm}/>
             </div>
             </div>
 
             <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
-            <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                <img className='w-[75%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/796/full/1123dfd.png?1656007347' />
-                <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
+            <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex flex-col justify-between md:items-center'>
+                <img className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/796/full/1123dfd.png?1656007347' />
+                <div className='flex w-[100%] md:w-auto flex-row gap-5 md:mt-[20px] mt-10  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
                 <img className='w-[100%] md:w-[25%]' src={star300sThumb3} />
                 <img className='w-[100%] md:w-[25%]' src={star300sThumb1} />
                 <img className='w-[100%] md:w-[25%]' src={star300sThumb2} />
+                <img className='w-[100%] md:w-[25%]' src="https://uploaddeimagens.com.br/images/003/924/515/full/Interse%C3%A7%C3%A3o_48.png?1656671465" alt="" />
                 </div>
             </div>
 
             <div className='md:w-[45%] mt-16'>
                <h1 className='text-gray-800 text-4xl  2xl:text-5xl mb-5 font-normal'>STAR 300S<span className='text-sulpol-green font-black'>-R24/36</span></h1>
                <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>Dosadora de poliuretano rotativa,  de giro stop and go, sistema de dosagem automático, com 02 cabeçotes que dosam o par simultaneamente. Possui porta moldes para par por estação com giro da matriz para 02 densidades. Possui 24 com um carro dosador ou 36 estações com dois carros dosadores. A Star 300-R é um equipamento que oferece precisão na dosagem e flexibilidade no processo. Por ser rotativa e dosadora de par, possui uma alta produtividade.  Equipamento com um alto nível de tecnologia e durabilidade , feita para processar poliuretanos poliéter ou poliéster.</p>
-               <ButtonInteresse />
+               <ButtonInteresse onClick={handleForm}/>
             </div>
             </div>
 
             <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
-            <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                <img className='w-[75%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/802/full/star_300-tg.png?1656007443' />
-                <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
+            <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex flex-col justify-between md:items-center'>
+                <img className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/802/full/star_300-tg.png?1656007443' />
+                <div className='flex w-[100%] md:w-auto flex-row gap-5 md:mt-[20px] mt-10  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
                 <img className='w-[100%] md:w-[25%]' src={star300sThumb3} />
                 <img className='w-[100%] md:w-[25%]' src={star300sThumb1} />
                 <img className='w-[100%] md:w-[25%]' src={star300sThumb2} />
+                <img className='w-[100%] md:w-[25%]' src="https://uploaddeimagens.com.br/images/003/924/515/full/Interse%C3%A7%C3%A3o_48.png?1656671465" alt="" />
                 </div>
             </div>
 
             <div className='md:w-[45%] mt-16'>
                <h1 className='text-gray-800 text-4xl  2xl:text-5xl mb-5 font-normal'>STAR <span className='text-sulpol-green font-black'>300S-TG</span></h1>
                <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>Dosadora de poliuretano estática, tipo banana, com sistema modular de porta-moldes, sendo cada módulo de 6 estações, podendo somar 36 estações. Possui torre giratória com acionamento pneumático para dosagem das duas densidades. Própria para solados, cunhos e palmilhas bi densidade. Este sistema de giro permite que o mesmo operador faça o fechamento das duas densidade, propiciando uma maior produtividade. A Star 300 é um equipamento que oferece precisão na dosagem e flexibilidade no processo. Equipamento com um alto nível de tecnologia e durabilidade , feita para processar poliuretanos poliéter ou poliéster.</p>
-               <ButtonInteresse />
+               <ButtonInteresse onClick={handleForm}/>
             </div>
             </div>
 
@@ -232,6 +249,10 @@ function Star300S()  {
             </div>
 
         </div>   
+
+        <div className='flex w-full justify-center mt-20'>
+        <ButtonPrimary text="QUERO SABER MAIS" link="/LPCalcado#lpheader"/>
+        </div>
 
         <div className='py-36'>
 

@@ -12,7 +12,16 @@ function Star300SPV()  {
 
   const [precision, setPrecision] = useState(0); 
 
-  const { menuProdutos } = useContext(ContextProdutos)
+  const { menuProdutos, forms } = useContext(ContextProdutos)
+  
+
+  const handleForm = () => {
+
+    forms.current.focus()
+    console.log("Debug")
+    
+    window.scrollTo(0, 6900)
+  }
 
   const openPrecision = () => {
     setPrecision(!precision)

@@ -12,7 +12,16 @@ function DosadoraBaixapressao()  {
 
   const [precision, setPrecision] = useState(0); 
 
-  const { menuProdutos } = useContext(ContextProdutos)
+  const { menuProdutos, forms } = useContext(ContextProdutos)
+  
+
+  const handleForm = () => {
+
+    forms.current.focus()
+    console.log("Debug")
+    
+    window.scrollTo(0, 6900)
+  }
 
   const openPrecision = () => {
     setPrecision(!precision)
@@ -90,12 +99,13 @@ function DosadoraBaixapressao()  {
             <div className='md:w-[50%] mt-16'>
                <h1 className='text-gray-800 text-4xl  2xl:text-5xl mb-5 font-normal'>ST-C</h1>
                <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>Equipamento de baixa pressão, com misturador dinâmico, desenvolvido para trabalhar com Poliuretano, Poliéter ou Poliéster, para a produção de espuma flexível, pele integral, rígida ou semirrígida. Atende as necessidades de diversos setores das indústrias: automobilísticas, refrigeração, moveleira, construção civil, ortopédica, esportiva entre outros.</p>
-               <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] mb-16'>
+               <div className='flex w-[100%] md:w-autoflex-row gap-5 mt-10 md:mt-[20px] lg:mt-[20%] 2xl:mt-[10%] mb-16'>
                 <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/095/full/Interse%C3%A7%C3%A3o_64.png?1656013300' />
                 <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/096/full/Interse%C3%A7%C3%A3o_60.png?1656013339' />
                 <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/097/full/Interse%C3%A7%C3%A3o_63.png?1656013375' />
+                <img className='w-[100%] md:w-[15%]' src="https://uploaddeimagens.com.br/images/003/924/530/full/Interse%C3%A7%C3%A3o_63.png?1656674656" alt="" />
                 </div>
-               <ButtonInteresse />
+                <ButtonInteresse onClick={handleForm}/>
             </div>
             </div>
 

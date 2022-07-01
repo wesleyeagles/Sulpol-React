@@ -7,12 +7,22 @@ import { BsFillCheckCircleFill } from 'react-icons/bs'
 import { GoArrowSmallDown } from 'react-icons/go'
 import FormularioMaquinas from '../components/FormularioMaquinas/FormularioMaquinas'
 import ContextProdutos from '../contexts/ContextProdutos'
+import ButtonPrimary from '../components/ButtonPrimary/ButtonPrimary'
 
 function DosadoraPortatil()  {
 
   const [precision, setPrecision] = useState(0); 
 
-  const { menuProdutos } = useContext(ContextProdutos)
+  const { menuProdutos, forms } = useContext(ContextProdutos)
+  
+
+  const handleForm = () => {
+
+    forms.current.focus()
+    console.log("Debug")
+    
+    window.scrollTo(0, 6900)
+  }
 
   const openPrecision = () => {
     setPrecision(!precision)
@@ -90,12 +100,13 @@ function DosadoraPortatil()  {
             <div className='md:w-[60%] mt-16'>
                <h1 className='text-gray-800 text-4xl  2xl:text-5xl mb-5 font-normal'>ST-<span className='text-sulpol-green font-black'>P15A</span></h1>
                <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>Equipamento de baixa pressão, com misturador estático, desenvolvido exclusivamente para trabalhar com Poliuretano Poliéter, para a produção de espuma rígida ou semirrígida. Atende as necessidades de diversos setores da indústria, tais como: refrigeração, moveleira, construção civil, entre outros.</p>
-               <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] mb-16'>
+               <div className='flex w-[100%] md:w-auto flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] mb-16'>
                 <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/086/full/Interse%C3%A7%C3%A3o_60.png?1656013055' />
                 <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/087/full/Interse%C3%A7%C3%A3o_61.png?1656013071' />
                 <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/088/full/Interse%C3%A7%C3%A3o_62.png?1656013087' />
+                <img className='w-[100%] md:w-[15%]'  src="https://uploaddeimagens.com.br/images/003/924/519/full/Interse%C3%A7%C3%A3o_62.png?1656673194" alt="" />
                 </div>
-               <ButtonInteresse />
+                <ButtonInteresse onClick={handleForm}/>
             </div>
             </div>
 
@@ -140,6 +151,11 @@ function DosadoraPortatil()  {
             </div>
 
         </div>   
+
+        <div className='flex w-full justify-center mt-20'>
+        <ButtonPrimary text="QUERO SABER MAIS" link="/LPRefrigeracao#header"/>
+        </div>
+
 
         <div className='py-36'>
 

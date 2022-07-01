@@ -7,12 +7,22 @@ import { BsFillCheckCircleFill } from 'react-icons/bs'
 import { GoArrowSmallDown } from 'react-icons/go'
 import FormularioMaquinas from '../components/FormularioMaquinas/FormularioMaquinas'
 import ContextProdutos from '../contexts/ContextProdutos'
+import ButtonPrimary from '../components/ButtonPrimary/ButtonPrimary'
 
 function DosadoraElastomero()  {
 
   const [precision, setPrecision] = useState(0); 
 
-  const { menuProdutos } = useContext(ContextProdutos)
+  const { menuProdutos, forms } = useContext(ContextProdutos)
+  
+
+  const handleForm = () => {
+
+    forms.current.focus()
+    console.log("Debug")
+    
+    window.scrollTo(0, 6900)
+  }
 
   const openPrecision = () => {
     setPrecision(!precision)
@@ -80,12 +90,12 @@ function DosadoraElastomero()  {
         <div>
         <div className='container mx-auto'>
             <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
-            <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                <img className='w-[75%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/806/full/ST-ce9.png?1656007569' />
-                <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
-                <img className='w-[100%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/914/039/full/Interse%C3%A7%C3%A3o_57.png?1656011877' />
-                <img className='w-[100%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/914/040/full/Interse%C3%A7%C3%A3o_58.png?1656011901' />
-                <img className='w-[100%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/914/042/full/Interse%C3%A7%C3%A3o_59.png?1656011919' />
+            <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex flex-col justify-between md:items-center'>
+                <img className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/806/full/ST-ce9.png?1656007569' />
+                <div className='flex w-[100%] md:w-auto flex-row gap-5 md:mt-[20px] mt-10  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
+                <img className='w-[25%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/914/039/full/Interse%C3%A7%C3%A3o_57.png?1656011877' />
+                <img className='w-[25%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/914/040/full/Interse%C3%A7%C3%A3o_58.png?1656011901' />
+                <img className='w-[25%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/914/042/full/Interse%C3%A7%C3%A3o_59.png?1656011919' />
                 </div>
             </div>
 
@@ -93,7 +103,7 @@ function DosadoraElastomero()  {
                <h1 className='text-gray-800 text-4xl  2xl:text-5xl mb-5 font-normal'>ELASTOMACH</h1>
                <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>SULPOL ELASTOMACH é uma série de máquinas de baixa pressão, com configurações flexíveis e de fácil operação, para dosagem de diferentes tipos de poliuretanos elastoméricos disponíveis no mercado.
 A cada ano o número de aplicações com poliuretanos elastoméricos aumentam. Propriedades mecânicas, tais como: dureza, resistência a abrasão e elasticidade, fornecem resultados como poucos materiais. O rígido controle necessário para processamento dessas matérias-primas, são encontrados na série SULPOL® ELASTOMACH. O equipamento cumpre com todos requisitos técnicos necessários para prover eficiência produtiva e qualidade no produto final.</p>
-               <ButtonInteresse />
+            <ButtonInteresse onClick={handleForm}/>
             </div>
             </div>
 
@@ -169,6 +179,11 @@ A cada ano o número de aplicações com poliuretanos elastoméricos aumentam. P
             </div>
 
         </div>   
+
+        <div className='flex w-full justify-center mt-20'>
+        <ButtonPrimary text="QUERO SABER MAIS" link="/LPRefrigeracao#header"/>
+        </div>
+
 
         <div className='py-36'>
 

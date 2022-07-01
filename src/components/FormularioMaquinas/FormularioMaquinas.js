@@ -1,11 +1,11 @@
-import React, {useState} from 'react'
+import React, {useContext, useRef, useState} from 'react'
+import ContextProdutos from '../../contexts/ContextProdutos'
 import '../FormularioMaquinas/FormularioMaquinas.css'
-import SelectCities from './InputsSelect/SelectCities'
-import SelectStates from './InputsSelect/SelectStates'
 
 function FormularioMaquinas() {
 
   const [formValues, setFormValues] = useState({})
+  const { forms } = useContext(ContextProdutos)
 
   const handleInputChange = (e) => {
       e.preventDefault();
@@ -23,7 +23,7 @@ function FormularioMaquinas() {
             <p className="text-base text-[#202124] font-light lg:w-[75%] 2xl:w-[65%] mb-12">Complete o formulário abaixo para saber como a Sulpol contribuir para o desenvolvimento da sua empresa </p>
             <form action="">
               <div className="flex justify-between">
-                <input className="block border border-[#AAAAAA] rounded-lg p-4 w-[48%]" type="text" placeholder="Nome" name="name" id="name" />
+                <input className="block border border-[#AAAAAA] rounded-lg p-4 w-[48%]" type="text" placeholder="Nome" name="name" id="name" ref={forms}/>
                 <input className="block border border-[#AAAAAA] rounded-lg p-4 w-[48%]" type="text" placeholder="Sobrenome" name="sobname" id="sobname" />
               </div>
 

@@ -9,7 +9,7 @@ import ContextProdutos from '../contexts/ContextProdutos'
 import {motion} from "framer-motion"
 import ButtonPrimary from '../components/ButtonPrimary/ButtonPrimary'
 
-function DosadoraAltapressao()  {
+function DCPD()  {
 
   const [precision, setPrecision] = useState(0); 
 
@@ -93,15 +93,18 @@ function DosadoraAltapressao()  {
         <div className='container mx-auto'>
             <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
             <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                <img className='w-[75%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/816/full/ECOLOGICA-AP-100-A_sem_piso.png?1656007765' />
+                <img className='w-[75%] md:w-[80%]' src='https://uploaddeimagens.com.br/images/003/924/542/full/Ativo_1.png?1656676377' />
                 <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
 
                 </div>
             </div>
 
             <div className='md:w-[50%] mt-16'>
-               <h1 className='text-gray-800 text-4xl  2xl:text-5xl mb-5 font-normal'>ECOLÓGICA <span className='text-sulpol-green font-black'>AP</span></h1>
-               <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>A Série Ecológica AP configura uma linha de equipamentos para mistura de poliuretano em alta pressão. São equipadas com cabeçote auto-limpante, livre do uso de solventes. Precisas, confiáveis e de fácil operação, descrevem bem as principais características técnicas deste produto. Possui diversas configurações, se adaptando aos requisitos técnicos e econômicos de cada cliente.</p>
+               <h1 className='text-gray-800 text-4xl  2xl:text-5xl mb-5 font-normal'>DCPD <span className='text-sulpol-green font-black'>LÓGICA AP</span></h1>
+               <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>Equipamento ecologicamente correto, visando à 
+proteção do meio ambiente. Desenvolvido para trabalhar com Poliuretano, Poliéter, para a produção 
+de espuma flexível, pele integral, rígida ou semirrígida. Atende as necessidades de diversos setores 
+das indústrias: automobilísticas, refrigeração, moveleira, ortopédica, esportiva entre outros.</p>
                <div className='flex w-[100%] md:w-auto flex-row gap-5 mt-10 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] mb-16'>
                 <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/095/full/Interse%C3%A7%C3%A3o_64.png?1656013300' />
                 <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/096/full/Interse%C3%A7%C3%A3o_60.png?1656013339' />
@@ -183,4 +186,4 @@ function DosadoraAltapressao()  {
   )
 }
 
-export default DosadoraAltapressao;
+export default DCPD;

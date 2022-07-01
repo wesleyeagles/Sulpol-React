@@ -12,7 +12,16 @@ function Star300SMRP()  {
 
   const [precision, setPrecision] = useState(0); 
 
-  const { menuProdutos } = useContext(ContextProdutos)
+  const { menuProdutos, forms } = useContext(ContextProdutos)
+  
+
+  const handleForm = () => {
+
+    forms.current.focus()
+    console.log("Debug")
+    
+    window.scrollTo(0, 6900)
+  }
 
   const openPrecision = () => {
     setPrecision(!precision)
@@ -93,7 +102,7 @@ function Star300SMRP()  {
             <div className='md:w-[45%] mt-16'>
                <h1 className='text-gray-800 text-4xl  2xl:text-5xl mb-5 font-normal'>STAR <span className='text-sulpol-green font-black'>300S-MRP</span></h1>
                <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>Dosadora de poliuretano rotativa,  de giro contínuo ou stop and go, sistema de dosagem manual ou automático, com porta moldes para pé ou par por estação, de 36 a 60 estações. A Star 300-MRP é um equipamento que oferece precisão na dosagem e flexibilidade no processo. Por ser rotativa possui uma produtividade maior.  Equipamento com um alto nível de tecnologia e durabilidade , feita para processar poliuretanos poliéter ou poliéster.</p>
-               <ButtonInteresse />
+               <ButtonInteresse onClick={handleForm}/>
             </div>
             </div>
 

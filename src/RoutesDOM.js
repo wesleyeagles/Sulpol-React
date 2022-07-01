@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 
 import Home from "./pages/Home";
@@ -19,11 +19,19 @@ import DosadoraElastomero from "./maquinasPages/DosadoraElastomero";
 import DosadoraPortatil from "./maquinasPages/DosadoraPortatil";
 import DosadoraAltapressao from "./maquinasPages/DosadoraAltapressao";
 import DosadoraBaixapressao from "./maquinasPages/DosadoraBaixapressao";
+import DCPD from "./maquinasPages/DCPD";
+import CABECOTE from "./maquinasPages/CABECOTE";
+
 import LPCalcado from "./pages/LPCalcado";
+import Bombas from "./maquinasPages/Bombas";
+import PortaMoldes from "./maquinasPages/PortaMoldes";
+import PaineiseTelhas from "./maquinasPages/PaineiseTelhas";
+import ProjetosEspeciais from "./maquinasPages/ProjetosEspeciais";
 
 function RoutesDOM() {
     const [menuMobile, setMenuMobile] = useState(0);
     const [menuProdutos, setProdutos] = useState(0);
+    const forms = useRef(null)
 
     const [ptLang, setPtLang] = useState(true)
     const [enLang, setEnLang] = useState(false)
@@ -84,7 +92,7 @@ function RoutesDOM() {
 
    return(
        <BrowserRouter>
-       <ContextProdutos.Provider value={{menuMobile, setMenuMobile, menuProdutos, setProdutos, open, open2, open3, open4, open5, open6, setOpen, setOpen2, setOpen3, setOpen4, setOpen5, setOpen6, handleClose, handleClose2, handleClose3, handleClose4, handleClose5, handleClose6, handleOpen, handleOpen2, handleOpen3, handleOpen4, handleOpen5, handleOpen6, ptLang, enLang, esLang, handlePtLangChange, handleEnLangChange }}>
+       <ContextProdutos.Provider value={{menuMobile, setMenuMobile, menuProdutos, setProdutos, forms, open, open2, open3, open4, open5, open6, setOpen, setOpen2, setOpen3, setOpen4, setOpen5, setOpen6, handleClose, handleClose2, handleClose3, handleClose4, handleClose5, handleClose6, handleOpen, handleOpen2, handleOpen3, handleOpen4, handleOpen5, handleOpen6, ptLang, enLang, esLang, handlePtLangChange, handleEnLangChange }}>
            <TopNavBar />
            <Navbar />
           <Routes>
@@ -102,7 +110,13 @@ function RoutesDOM() {
            <Route path='/DosadoraElastomero' element={<DosadoraElastomero/>} />
            <Route path='/DosadoraPortatil' element={<DosadoraPortatil/>} />
            <Route path='/DosadoraAltapressao' element={<DosadoraAltapressao/>} />
-           <Route path='/DosadoraBaixapressao' element={<DosadoraBaixapressao/>} />
+           <Route path='/DosadoraBaixapressao' element={<DosadoraBaixapressao/>} />,
+           <Route path='/DCPD' element={<DCPD/>} />
+           <Route path='/Cabecote' element={<CABECOTE/>} />
+           <Route path='/Bombas' element={<Bombas/>} />
+           <Route path='/Porta-Moldes' element={<PortaMoldes/>} />
+           <Route path='/Paineis-e-Telhas' element={<PaineiseTelhas/>} />
+           <Route path='/Projetos-Especiais' element={<ProjetosEspeciais/>} />
 
 
 
