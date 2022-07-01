@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import ButtonLP from "../components/LPComponents/ButtonLP";
-import Navbar from "../components/LPComponents/Navbar";
 
 import  BrazilFlag  from '../images/flagBrazil.png';
 import  USAFlag  from '../images/flagUSA.png';
@@ -13,7 +12,6 @@ import {ReactComponent as PrevArrow} from '../images/prevArrow.svg'
 import {ReactComponent as NextArrow} from '../images/nextArrow.svg'
 import {ReactComponent as ExplorarArrow} from '../images/Explorar.svg'
 
-import EcologicaAP from '../images/ecologicaAP.png'
 import { HashLink } from 'react-router-hash-link'
 
 const links = [
@@ -29,11 +27,6 @@ const links = [
       "hash": '#aplicacao'
   },
 
-  {
-      "id": 3,
-      "name": 'CABEÇOTES MISTURADORES',
-      "hash": '#cabecote'
-  },
 
   {
       "id": 4,
@@ -42,7 +35,7 @@ const links = [
   },
 ]
 
-function LPRefrigeracao() {
+function LPCalcado() {
   setTimeout(() => {
     const topnavbar = document.getElementById("topbar");
     const navbar = document.getElementById("header");
@@ -103,6 +96,10 @@ function LPRefrigeracao() {
       
       }
 
+      const equipAnchor = (e) => {
+        window.scrollTo(0,3700)
+      }
+
   return (
     <motion.div
     
@@ -119,9 +116,9 @@ function LPRefrigeracao() {
       />
        <div className='container mx-auto relative z-20'>
         <nav className='flex justify-between items-center h-32'>
-            <div className='w-[50%] lg:w-[15%] 2xl:w-[20%]'><img className='w-[200px]' src='https://gistcdn.githack.com/wesleyeagles/5fa5f6b109b96123098345215f5cca30/raw/d5b08c4b3e36a69acdaae73ca04b0fbb662adb98/logoBranca.svg' alt='' /></div>
+            <div className='w-[50%] lg:w-[15%] 2xl:w-[45%]'><img className='w-[200px]' src='https://gistcdn.githack.com/wesleyeagles/5fa5f6b109b96123098345215f5cca30/raw/d5b08c4b3e36a69acdaae73ca04b0fbb662adb98/logoBranca.svg' alt='' /></div>
 
-            <ul className='hidden md:flex justify-center gap-5 lg:w-[55%] 2xl:w-[55%]' key={links.id}>
+            <ul className='hidden md:flex justify-center gap-5 lg:w-[50%] 2xl:w-[30%]' key={links.id}>
             {links.map((links) => (
              
               <a href={links.hash}><li className='text-white'>{links.name}</li></a>  
@@ -130,7 +127,7 @@ function LPRefrigeracao() {
             </ul>
 
             <div className='hidden md:block lg:w-[17%] 2xl:w-[15%]'>
-             <button className='bg-transparent border border-[#81D742] text-white py-3 px-6 rounded-full text-sm font-bold'>TENHO INTERESSE</button>
+             <button onClick={handleFocusInput} className='bg-transparent border border-[#81D742] hover:bg-[#81D742] text-white py-2 px-6 rounded-full text-sm font-bold duration-700'>TENHO INTERESSE</button>
                 
             </div>
             <div className='flex items-center gap-1 Flags md:w-[10%]'>
@@ -145,17 +142,10 @@ function LPRefrigeracao() {
         <div className="flex flex-col lg:flex-row justify-between mt-100 lg:mt-200 pb-20">
           <div className="lg:w-[38%] 2xl:w-[35%]">
             <h1 className="text-white text-lp-mobile lg:text-lp font-medium leading-tight mb-[40px]">
-              SOLUÇÕES COMPLETAS PARA APLICAÇÕES DE POLIURETANO NA ÁREA DE{" "}
-              <span className="text-[#81D742] font-extrabold">
-                REFRIGERAÇÃO
-              </span>
+              SOLUÇÕES PARA O <span className="text-[#81D742] font-extrabold"> SETOR CALÇADISTA </span>
             </h1>
             <p className="text-white font-light text-base mb-[60px] w-[90%]">
-              Dosadoras de poliuretano de alta tecnologia, desenvolvidas
-              especificamente para atender o mercado da refrigeração, com
-              expertise do mercado garantimos aos nossos clientes equipamentos
-              com dosagem precisa e com alta produtividade durante o processo de
-              produção.
+            Tem uma indústria de calçados e quer inovar? A tecnologia de PU pode ser uma grande aliada! Invista em dosadoras de poliuretano e conquiste o consumidor! Tendo como características <span className="text-[#81D742] font-extrabold">versatilidade e alto desempenho</span>, o material garante vantagens como conforto, <span className="text-[#81D742] font-extrabold">performance e resistência</span>, além de poder substituir diversos outros materiais com perfeição e menor custo. 
             </p>
             <ButtonLP onClick={handleFocusInput} text="QUERO MAIS PRODUTIVIDADE" />
           </div>
@@ -170,7 +160,7 @@ function LPRefrigeracao() {
               <div className="hidden lg:block lg:w-[35%] 2xl:w-auto">
                 <img
                   className="w-full"
-                  src="https://uploaddeimagens.com.br/images/003/912/269/full/Grupo_885.png?1655926495"
+                  src="https://uploaddeimagens.com.br/images/003/923/321/full/Grupo_849.png?1656597512"
                   alt=""
                 />
               </div>
@@ -233,10 +223,12 @@ function LPRefrigeracao() {
       <div className="py-36 bg-[#202124]" id="beneficios">
         <div className="container mx-auto">
             <div className="flex flex-col lg:flex-row justify-between">
-                <div className="w-full h-[300px] lg:h-auto lg:w-[50%]"><iframe className="w-full h-full" src="https://www.youtube.com/embed/vO0GIlYXSwY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div className="w-full h-[300px] lg:h-auto lg:w-[50%]">
+                  <img src="https://uploaddeimagens.com.br/images/003/923/324/full/Grupo_855.png?1656597618" alt="" />
+                </div>
 
                 <div className="w-full lg:w-[40%] mt-16 lg:mt-0">
-                    <h2 className="text-2xl lg:text-3xl text-white leading-snug font-medium mb-50">VOCÊ SABIA QUE O POLIURETANO É UTILIZADO PARA ISOLAMENTO TÉRMICO NA <span className="text-[#81D742] font-extrabold">REFRIGERAÇÃO?</span></h2>
+                    <h2 className="text-2xl lg:text-3xl text-white leading-snug font-medium mb-50">SOLUÇÕES PARA APLICAÇÕES DE PU EM <span className="text-[#81D742] font-extrabold">BOTAS, PALMILHAS E CALÇADOS DE SEGURANÇA</span></h2>
                     <p className="text-base text-white font-light mb-20">A Sulpol produz <span className="text-[#81D742] font-medium">dosadoras de Poliuretano, prensas, porta moldes e linhas completas, automáticas, semi-automáticas ou manuais</span>, de acordo com a necessidade de cada cliente, garantindo uma dosagem precisa e a densidade ideal para o seu produto!</p>
                     <ButtonLP onClick={handleFocusInput} text="QUERO SOLICITAR ORÇAMENTO"/>
                 </div>
@@ -246,59 +238,37 @@ function LPRefrigeracao() {
 
       <div className="py-36 bg-[#202124]">
         <div className="container mx-auto">
-            <h2 className="text-lp-mobile lg:text-lp font-medium text-white text-center mb-[40px]">VANTAGENS DO USO DO <span className="text-[#81D742] font-extrabold">PU</span> NA CADEIA DO FRIO </h2>
+            <h2 className="text-lp-mobile lg:text-lp font-medium text-white text-center mb-[40px]">VANTAGENS DO USO DO <span className="text-[#81D742] font-extrabold">PU</span> FABRICAÇÃO DE CALÇADOS </h2>
             <span className="text-[#81D742] text-center font-medium text-base block">A Sulpol desenvolve dosadoras de PU com o melhor da tecnologia do mercado! </span>
             <div className="flex flex-col lg:flex-row justify-between mt-100 relative">
+            <img className="hidden lg:block absolute -bottom-[270px] -left-[80px] z-30" src="https://uploaddeimagens.com.br/images/003/923/589/full/Grupo_850.png?1656605800" alt="" />
             <img className="hidden lg:block absolute right-72 top-20" src='https://gistcdn.githack.com/wesleyeagles/d4308663e7b90444d3da9580e577844e/raw/ac33c8bd8a7e6230d02875247810d21280983626/linegroup.svg' alt='' />
             <img className="hidden lg:block absolute z-50 lg:right-[270px] 2xl:right-[295px] lg:-bottom-[300px] 2xl:-bottom-[368px] w-[36%]" src='https://gistcdn.githack.com/wesleyeagles/3ead0ceee6e38fb8d2d0af3df7e67b5e/raw/50409fe51272287f73c2b32fe8502194d6af587d/linegroup.svg' alt='' />
             <div className="w-full lg:w-[680px] h-[240px] bg-gradient py-50 px-8 relative z-10">
                 <span className="absolute -top-20 text-[70px] lg:text-[100px] text-[#81D742] font-extrabold flex num-shadow">01</span>
-                <h3 className="text-white text-lg font-medium mb-[10px]">Economia e redução no consumo de energia</h3>
-                <p className="text-white text-sm font-light w-[90%]">Quando há muita troca de calor entre o ambiente externo e interno, o motor trabalha muito mais, e isso gera mais gasto energético. O revestimento em PU garante maior isolamento térmico e muito mais economia!</p>
+                <h3 className="text-white text-lg font-medium mb-[10px]">Conforto Extremo</h3>
+                <p className="text-white text-sm font-light w-[90%]">Uma das principais vantagens é o <span className="text-[#81D742] font-extrabold">conforto extremo</span> que ele proporciona, tanto para linhas de segurança, calçados esportivos ou para modelos casuais.
+A tecnologia do PU <span className="text-[#81D742] font-extrabold">reduz a fadiga</span> nos pés e nas pernas, através da absorção
+de impacto, evitando atritos em excesso com o solo!
+</p>
             </div>
             <div className="w-full lg:w-[680px] relative h-[240px] bg-gradient py-50 px-8 mt-20  lg:mt-[290px]">
                 <span className="absolute -top-20 text-[70px] lg:text-[100px] text-[#81D742] font-extrabold flex num-shadow">02</span>
-                <h3 className="text-white text-lg font-medium mb-[10px]">Resistência</h3>
-                <p className="text-white text-sm font-light w-[90%]">O PU não se fragmenta, e ainda possui alta capacidade de resistência a choques mecânicos, por isso, é perfeito para aplicação em câmaras frias, por se tratar de um local com concentração e estocagem de produtos, além de haver circulação de pessoas.</p>
+                <h3 className="text-white text-lg font-medium mb-[10px]">Flexibilidade</h3>
+                <p className="text-white text-sm font-light w-[90%]">Por suas características, os poliuretanos são aproveitados em <span className="text-[#81D742] font-extrabold">várias aplicações</span> nos calçados. Eles apresentam <span className="text-[#81D742] font-extrabold">excelente resistência mecânica</span>, densidades compatíveis para diferentes funções e outras propriedades bastante apropriadas para a indústria. </p>
             </div>
             </div>
         </div>
       </div>
 
-      <div className="pt-20 lg:pt-80 bg-[#202124] relative" id="aplicacao">
+      <div className="py-36 lg:pt-80 bg-[#202124] relative" id="aplicacao">
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row justify-between">
-          <div className="w-[60%] lg:w-[30%]">
-          <div><img className="absolute lg:max-w-max top-[100px] lg:top-[175px] left-[0px] lg:-left-[680px] 2xl:-left-[500px]" src="https://gistcdn.githack.com/wesleyeagles/fea557bd7ab7534d9e7464e9d3d48947/raw/0a8da4b8dc1339ce527621bda4127fa03738cdef/linegroup.svg" alt="" /></div>
-          <img className="relative z-10" src='https://uploaddeimagens.com.br/images/003/913/008/full/Grupo_584.png?1655986398' alt='' />
+          <div className="bg-gradient-180deg flex flex-col justify-center items-center w-full h-[25rem]">
+              <h2 className="text-center text-white text-3xl text-bold mb-[40px]">PRODUZA <span className="text-[#81D742] font-extrabold">CALÇADOS</span> COM O MÁXIMO CONFORTO</h2>
+              <p className="text-center text-white w-[95%] lg:w-[65%] text-base font-light mb-[50px]">Se você busca produzir calçados com foco no conforto, como calçados de segurança e tênis esportivos, a tecnologia do PU pode ser sua aliada. Solados desenvolvidos com este material absorvem o impacto da pisada, evitando atritos excessivos e reduzindo a fadiga nas pernas e pés.</p>
+              <ButtonLP onClick={equipAnchor} text="VER EQUIPAMENTOS"/>
           </div>
-
-          <div className="w-full lg:w-[65%] mt-16 lg:mt-0">
-            <h2 className="text-white text-2xl lg:text-lp font-medium lg:w-[85%] mb-[40px]">OTIMIZAÇÃO DE CUSTOS E <span className="text-[#81D742] font-extrabold">ISOLAMENTO TÉRMICO</span> DE QUALIDADE</h2>
-            <p className="text-white text-base font-light">poliuretano é muito usado na cadeia do frio, especialmente por suas propriedades como isolante térmico!</p>
-            <p className="text-[#81D742] text-base font-light my-[30px]">É aplicado em diversos produtos do segmento, como geladeiras, congeladores, câmaras frias, adegas, caixas térmicas e muitos outros.</p>
-            <p className="text-white text-base font-light mb-[80px]">Ele impede a troca de temperatura entre o meio externo e interno, garantindo que os produtos não sofram oscilações, assim, o meio interno fica mais estável e demanda menos desempenho dos outros componentes responsáveis pela temperatura!</p>
-            <ButtonLP onClick={handleFocusInput} text="QUERO OTIMIZAR MINHA PRODUÇÃO"/>
-          </div>
-        </div>
       </div>
-      </div>
-
-      <div className="py-36 bg-[#202124]" id="cabecote">
-        <div className="container mx-auto">
-          <div className="flex flex-col lg:flex-row justify-between items-center">
-            <div className="w-full lg:w-[60%]">
-              <h2 className="text-white text-lp-mobile lg:text-lp font-medium lg:w-[85%] mb-[40px]">CABEÇOTES DE ALTA PRESSÃO PARA A INDÚSTRIA DE <span className="text-[#81D742] font-extrabold">REFRIGERAÇÃO</span></h2>
-              <p className="text-white text-base mb-[30px] font-light w-[90%]"><span className="text-[#81D742] font-medium">Não importa se a espuma é rígida ou flexível, pele integral, isolamento térmico...</span>, se o assunto é aplicação e dosagem de PU, a SULPOL possui o cabeçote de alta pressão ideal para o seu equipamento!</p>
-              <p className="text-white text-base font-light mb-70 w-[90%]">Os cabeçotes de alta pressão SULPOL são compatíveis com todos os equipamentos do mercado, são altamente duráveis e resistentes a corrosões. Não necessitam de solvente para limpeza e possuem fabricação 100% nacional!</p>
-              <ButtonLP onClick={handleFocusInput} text='QUERO PEÇAS DE QUALIDADE'/>
-            </div>
-
-            <div className="w-[40%] hidden lg:block">
-              <img src='https://gistcdn.githack.com/wesleyeagles/792b8f3a2be9b49b2e007c0dbb910508/raw/9d7d3e5a8450bdb92a0cab8f3d74f8c7c0efe8a0/image.svg' alt='' />
-            </div>
-          </div>
-        </div>
       </div>
 
       <div className="py-36 bg-[#202124]">
@@ -310,10 +280,10 @@ function LPRefrigeracao() {
     <div ref={carousel} className='flex items-center overflow-x-auto gap-8 lg:w-[65%] 2xl:w-[87%] scroll-smooth h-[450px] carouselE'>
 
             <div className='w-full lg:w-[25rem] h-[430px] bg-[#2C2D2E] overflow-visible flex flex-none flex-col items-center justify-center relative rounded-lg'>
-            <div className="w-[250px] h-300  flex justify-center items-center"><img className='lg:w-[70%] 2xl:w-[100%]' src={EcologicaAP} /></div>
+            <div className="w-[250px] h-300  flex justify-center items-center"><img className='lg:w-[70%] 2xl:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/725/full/star_300S_2.png?1656005199' /></div>
             <div className='mb-10'>
-                <h3 className='text-center text-xl font-semibold text-white mb-3'>ECOLÓGICA AP</h3>
-                <p className='text-center text-lg font-light text-white mb-3'>Injetora/Dosadora de alta pressão</p>
+                <h3 className='text-center text-xl font-semibold text-white mb-3'>STAR 300S</h3>
+                <p className='text-center text-lg font-light text-white mb-3'>Dosadora estática</p>
                 <a className='flex items-center gap-2 text-center justify-center text-lg font-semibold text-sulpol-green cursor-pointer' onClick={handleFocusInput}>Explorar <ExplorarArrow className='mt-1' /> </a>
             </div>
             </div>
@@ -321,10 +291,10 @@ function LPRefrigeracao() {
  
          
               <div className='w-full lg:w-[25rem] h-[430px] bg-[#2C2D2E] overflow-visible flex flex-none flex-col items-center justify-center relative rounded-lg'>
-              <div className="w-[250px] h-300 flex justify-center items-center"><img className='lg:w-[70%] 2xl:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/806/full/ST-ce9.png?1656007569' /></div>
+              <div className="w-[250px] h-300 flex justify-center items-center"><img className='lg:w-[70%] 2xl:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/769/full/star300s-pv.png?1656006655' /></div>
                 <div className='mb-10'>
-                <h3 className='text-center text-xl font-semibold text-white mb-3'>ELASTOMACH</h3>
-                <p className='text-center text-lg font-light text-white mb-3'>Injetora/Dosadora para elastômero</p>
+                <h3 className='text-center text-xl font-semibold text-white mb-3'>STAR 300S - PV</h3>
+                <p className='text-center text-lg font-light text-white mb-3'>Dosadora estática</p>
                 <a className='flex items-center gap-2 text-center justify-center text-lg font-semibold text-sulpol-green cursor-pointer' onClick={handleFocusInput}>Explorar <ExplorarArrow className='mt-1' /> </a>
                 </div>
                 </div>
@@ -333,10 +303,10 @@ function LPRefrigeracao() {
     
        
             <div className='w-full lg:w-[25rem] h-[430px] bg-[#2C2D2E] overflow-visible flex flex-none flex-col items-center justify-center relative rounded-lg'>
-            <div className="w-[250px] h-300 flex justify-center items-center"><img className='lg:w-[70%] 2xl:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/817/full/ST-C4A-scaled.png?1656007852' /></div>
+            <div className="w-[300px] h-300 flex justify-center items-center"><img className='lg:w-[70%] 2xl:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/796/full/1123dfd.png?1656007347' /></div>
                 <div className='mb-10'>
-                <h3 className='text-center text-xl font-semibold text-white mb-3'>ST-C</h3>
-                <p className='text-center text-lg font-light text-white mb-3'>Injetora/Dosadora de baixa pressão</p>
+                <h3 className='text-center text-xl font-semibold text-white mb-3'>STAR 300S - R24/36</h3>
+                <p className='text-center text-lg font-light text-white mb-3'>Dosadora rotativa</p>
                 <a className='flex items-center gap-2 text-center justify-center text-lg font-semibold text-sulpol-green cursor-pointer' onClick={handleFocusInput}>Explorar <ExplorarArrow className='mt-1' /> </a>
                 </div>
             </div>
@@ -345,10 +315,10 @@ function LPRefrigeracao() {
    
        
             <div className='w-full lg:w-[25rem] h-[430px] bg-[#2C2D2E] overflow-visible flex flex-none flex-col items-center justify-center relative rounded-lg'>
-            <div className="w-[250px] h-300 flex justify-center items-center"><img className='lg:w-[70%] 2xl:w-[70%]' src='https://uploaddeimagens.com.br/images/003/913/809/full/ST-P15A-768x1024.png?1656007646' /></div>
+            <div className="w-[350px] h-300 flex justify-center items-center"><img className='lg:w-[70%] 2xl:w-[70%]' src='https://uploaddeimagens.com.br/images/003/913/802/full/star_300-tg.png?1656007443' /></div>
                 <div className='mb-10'>
-                <h3 className='text-center text-xl font-semibold text-white mb-3'>ST-P15A</h3>
-                <p className='text-center text-lg font-light text-white mb-3'>Injetora/Dosadora de baixa pressão</p>
+                <h3 className='text-center text-xl font-semibold text-white mb-3'>STAR 300S-TG</h3>
+                <p className='text-center text-lg font-light text-white mb-3'>Dosadora rotativa</p>
                 <a className='flex items-center gap-2 text-center justify-center text-lg font-semibold text-sulpol-green cursor-pointer' onClick={handleFocusInput}>Explorar <ExplorarArrow className='mt-1' /> </a>
                 </div>
             </div>
@@ -392,4 +362,4 @@ function LPRefrigeracao() {
   );
 }
 
-export default LPRefrigeracao;
+export default LPCalcado;

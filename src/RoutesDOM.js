@@ -19,10 +19,40 @@ import DosadoraElastomero from "./maquinasPages/DosadoraElastomero";
 import DosadoraPortatil from "./maquinasPages/DosadoraPortatil";
 import DosadoraAltapressao from "./maquinasPages/DosadoraAltapressao";
 import DosadoraBaixapressao from "./maquinasPages/DosadoraBaixapressao";
+import LPCalcado from "./pages/LPCalcado";
 
 function RoutesDOM() {
     const [menuMobile, setMenuMobile] = useState(0);
     const [menuProdutos, setProdutos] = useState(0);
+
+    const [ptLang, setPtLang] = useState(true)
+    const [enLang, setEnLang] = useState(false)
+    const [esLang, setESLang] = useState(false)
+
+    const handlePtLangChange = () => {
+        setPtLang(!ptLang)
+
+        if (enLang == true) {
+            setPtLang(!ptLang)
+            setEnLang(!enLang)
+        } else if (esLang == true) {
+            setPtLang(!ptLang)
+            setESLang(!esLang)
+        }
+    }
+
+    const handleEnLangChange = () => {
+        setEnLang(!enLang)
+
+        if (ptLang == true) {
+            setPtLang(!ptLang)
+            setEnLang(!enLang)
+
+        } else if (esLang == true) {
+            setEnLang(!enLang)
+            setESLang(!esLang)
+        }
+    }
 
     const [open, setOpen] = React.useState(false);
     const [open2, setOpen2] = React.useState(false);
@@ -54,7 +84,7 @@ function RoutesDOM() {
 
    return(
        <BrowserRouter>
-       <ContextProdutos.Provider value={{menuMobile, setMenuMobile, menuProdutos, setProdutos, open, open2, open3, open4, open5, open6, setOpen, setOpen2, setOpen3, setOpen4, setOpen5, setOpen6, handleClose, handleClose2, handleClose3, handleClose4, handleClose5, handleClose6, handleOpen, handleOpen2, handleOpen3, handleOpen4, handleOpen5, handleOpen6 }}>
+       <ContextProdutos.Provider value={{menuMobile, setMenuMobile, menuProdutos, setProdutos, open, open2, open3, open4, open5, open6, setOpen, setOpen2, setOpen3, setOpen4, setOpen5, setOpen6, handleClose, handleClose2, handleClose3, handleClose4, handleClose5, handleClose6, handleOpen, handleOpen2, handleOpen3, handleOpen4, handleOpen5, handleOpen6, ptLang, enLang, esLang, handlePtLangChange, handleEnLangChange }}>
            <TopNavBar />
            <Navbar />
           <Routes>
@@ -79,6 +109,7 @@ function RoutesDOM() {
 
 
            <Route path='/LPRefrigeracao' element={<LPRefrigeracao/>} />
+           <Route path='/LPCalcado' element={<LPCalcado/>} />
           </Routes>
           <Footer />
           

@@ -140,7 +140,7 @@ function Home() {
     animate={{opacity: 1, transition: {duration: 0.8}}}
     exit={{opacity: 0, transition: {duration: 0.1} }}
     >
-    <div>
+    <div id='bg-hero'>
       <Slider></Slider>
 
       <section className="pt-40 pb-40">
@@ -310,7 +310,7 @@ function Home() {
             <div className='pb-[30px] border-b border-gray-400' >
             <h3 className='text-xl font-medium'>Calçados</h3>
             <p className='text-base font-light mt-[10px] mb-[20px]'>Temos dosadoras de PU, injetoras de PU de baixa pressão e alta pressão específicas para produção na área dos calçados.</p>
-            <HashLink className='text-[#81D742] font-semibold text-sm' to='/LPCalcados'>Ver equipamentos</HashLink>
+            <HashLink className='text-[#81D742] font-semibold text-sm' to='/LPCalcado#header'>Ver equipamentos</HashLink>
             </div>
             <div className='pb-[30px] border-b border-gray-400 mt-[30px]' >
             <h3 className='text-xl font-medium'>Refrigeração</h3>

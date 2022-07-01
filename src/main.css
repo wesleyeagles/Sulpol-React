@@ -87,6 +87,11 @@ box-shadow: 0px 0px 50px 0px rgba(129,215,66,0.2);
     background: transparent linear-gradient(90deg, #2C2D2E 0%, #202124 100%) 0% 0% no-repeat padding-box;
 }
 
+.bg-gradient-180deg {
+
+    background: transparent linear-gradient(180deg, #2C2D2E 0%, #202124 100%) 0% 0% no-repeat padding-box;
+}
+
 .bg-ground {
 
     background-image: url('https://uploaddeimagens.com.br/images/003/913/339/full/Grupo_883.png?1655992584');

@@ -108,7 +108,7 @@ function FAQ({text, fontSize}) {
     }
 
   return (
-    <div>
+    <div id='faq'>
         <img src='https://gistcdn.githack.com/wesleyeagles/c6a95ea8c84246971191e10d516d21ae/raw/0c01a0d7482df69aa0503afba02486f5982be33a/faq.svg' alt='' />
       <h2 className={`${fontSize} font-medium mt-5 w-full lg:w-[70%]`}>{text}</h2>
       <div className='flex justify-between mt-[80px] mb-[30px]'>
