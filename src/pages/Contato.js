@@ -3,6 +3,28 @@ import FAQ from '../components/FAQ'
 import {motion} from "framer-motion"
 
 const Contato = () => {
+
+  setTimeout(() => {
+    const mobile = window.matchMedia("(max-width: 428px)")
+
+    if (mobile.matches) {
+      const topnavbar = document.getElementById("topbar");
+      const navbar = document.getElementById("header");
+      navbar.style.display = "block";
+      console.log("Mobile")
+    } else {
+
+      const topnavbar = document.getElementById("topbar");
+      const navbar = document.getElementById("header");
+      topnavbar.style.display = "block";
+      navbar.style.display = "block";
+      console.log("Desktop")
+    }
+
+
+   
+  }, 100);
+
   return (
     <motion.div
     initial={{opacity: 0}}
@@ -12,7 +34,7 @@ const Contato = () => {
     <div>
       <div className="pt-64 py-36">
         <div className="container mx-auto">
-          <div className="flex flex-col lg:flex-row justify-between border-b border-gray-400 pb-100">
+          <div className="flex flex-col lg:flex-row justify-between border-b border-gray-300 pb-100">
             <div className="lg:w-[30%]">
               <span className="text-base text-[#81D742] font-medium">
                 FALE CONOSCO
@@ -44,8 +66,8 @@ const Contato = () => {
                 <div>
                   <div className="bg-white form-shadow w-[25rem] lg:h-[28rem] rounded-2xl p-50 mt-20 lg:mt-0">
                     <h2 className="text-base text-[#202124] font-medium mb-14">PRECISA CONVERSAR DE FORMA RÁPIDA E DIRETA?</h2>
-                    <a href='https://wa.me/5551995283277' target='_blank'><span className="flex items-center justify-between w-full border-b border-gray-400 pb-5"><span className="bg-[#81D742] rounded-full w-[50px] h-[50px] flex justify-center items-center"><img src='https://gistcdn.githack.com/wesleyeagles/8262d76a5131781c620751b8cbef7b88/raw/d1e49b0d2a8eccb975e66a98dee8ab820ba5f942/whatsapp.svg' alt=''/></span><h2 className="w-[70%]">Chame no whatsapp</h2>  <img className="pt-1" src='https://gistcdn.githack.com/wesleyeagles/5be5bf697ec9fb1c641d49ff26362d00/raw/5d93320e6950259252c3ab186ee4d8c689a4f370/arrowrighta.svg' alt='' /></span></a>
-                    <a href='tel:555130756565' target='_blank'><span className="flex items-center justify-between w-full border-b border-gray-400 pb-5 mt-5"><span className="bg-[#81D742] rounded-full w-[50px] h-[50px]  flex justify-center items-center"><img src='https://gistcdn.githack.com/wesleyeagles/5ad20306df0657eb3f28149f126beec9/raw/a780a58c0e0089bd550736705b3b98e9dc922b29/whatsapp.svg' alt=''/></span><h2 className="w-[70%]">Ligar agora</h2>  <img className="pt-1" src='https://gistcdn.githack.com/wesleyeagles/5be5bf697ec9fb1c641d49ff26362d00/raw/5d93320e6950259252c3ab186ee4d8c689a4f370/arrowrighta.svg' alt='' /></span></a>
+                    <a href='https://wa.me/5551995283277' target='_blank'><span className="flex items-center justify-between w-full border-b border-gray-300 pb-5"><span className="bg-[#81D742] rounded-full w-[50px] h-[50px] flex justify-center items-center"><img src='https://gistcdn.githack.com/wesleyeagles/8262d76a5131781c620751b8cbef7b88/raw/d1e49b0d2a8eccb975e66a98dee8ab820ba5f942/whatsapp.svg' alt=''/></span><h2 className="w-[70%]">Chame no whatsapp</h2>  <img className="pt-1" src='https://gistcdn.githack.com/wesleyeagles/5be5bf697ec9fb1c641d49ff26362d00/raw/5d93320e6950259252c3ab186ee4d8c689a4f370/arrowrighta.svg' alt='' /></span></a>
+                    <a href='tel:555130756565' target='_blank'><span className="flex items-center justify-between w-full border-b border-gray-300 pb-5 mt-5"><span className="bg-[#81D742] rounded-full w-[50px] h-[50px]  flex justify-center items-center"><img src='https://gistcdn.githack.com/wesleyeagles/5ad20306df0657eb3f28149f126beec9/raw/a780a58c0e0089bd550736705b3b98e9dc922b29/whatsapp.svg' alt=''/></span><h2 className="w-[70%]">Ligar agora</h2>  <img className="pt-1" src='https://gistcdn.githack.com/wesleyeagles/5be5bf697ec9fb1c641d49ff26362d00/raw/5d93320e6950259252c3ab186ee4d8c689a4f370/arrowrighta.svg' alt='' /></span></a>
                     <a href='mailto:comercial@sulpol.com.br' target='_blank'><span className="flex items-center justify-between w-full mt-5"><span className="bg-[#81D742] rounded-full  w-[50px] h-[50px]  flex justify-center items-center"><img src='https://gistcdn.githack.com/wesleyeagles/da642aedf218ae3e3599379f380e442f/raw/bf72fb0bfd84338aca4451a6dab510b2efb38630/whatsapp.svg' alt=''/></span><h2 className="w-[70%]">Enviar um e-mail</h2>  <img className="pt-1" src='https://gistcdn.githack.com/wesleyeagles/5be5bf697ec9fb1c641d49ff26362d00/raw/5d93320e6950259252c3ab186ee4d8c689a4f370/arrowrighta.svg' alt='' /></span></a>
                   </div>
                 </div>
@@ -56,7 +78,7 @@ const Contato = () => {
       </div>
 
       <div className="" id="form">
-      <div className="container mx-auto  border-b border-gray-400 pb-100">
+      <div className="container mx-auto  border-b border-gray-300 pb-100">
         <div className="flex flex-col lg:flex-row justify-between">
           <div className="lg:w-[55%]">
             <h2 className="text-3xl text-[#202124] font-medium mb-10">Vamos conversar?</h2>
@@ -124,7 +146,7 @@ const Contato = () => {
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row justify-between">
           <div className="lg:w-[45%]">
-            <img className="w-full h-full" src='https://uploaddeimagens.com.br/images/003/911/936/full/Grupo_887.png?1655917516' alt='' />
+            <img className="w-full h-full max-h-700 flex-none" src='https://uploaddeimagens.com.br/images/003/911/936/full/Grupo_887.png?1655917516' alt='' />
           </div>
 
           <div className="lg:w-[50%] mt-10 lg:mt-0">

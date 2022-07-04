@@ -181,7 +181,7 @@ function Home() {
                 americano no desenvolvimento e fabricação de dosadoras e
                 injetoras de PU.
               </p>
-              <h2 className="border-t border-gray-400 pt-7 mt-10 mb-10 text-2xl font-medium">
+              <h2 className="border-t border-gray-300 pt-7 mt-10 mb-10 text-2xl font-medium">
                 Projetos personalizados
               </h2>
               <p className="text-base font-light">
@@ -204,7 +204,7 @@ function Home() {
                 equipamentos com alta tecnologia, desempenho, qualidade,
                 eficiência e produtividade.
               </p>
-              <h2 className="pt-8 mt-10 border-t border-gray-400 mb-8 text-2xl font-medium">
+              <h2 className="pt-8 mt-10 border-t border-gray-300 mb-8 text-2xl font-medium">
                 Tecnologia sulpol
               </h2>
               <p className="mb-16 text-base font-light">

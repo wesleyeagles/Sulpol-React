@@ -9,6 +9,7 @@ const ASulpol = () => {
 
   const carousel = useRef(null)
   const border = useRef(null)
+  const mobile = window.matchMedia("(max-width: 428px)")
 
     const handleLeftClick = (e) => {
         e.preventDefault();
@@ -20,6 +21,26 @@ const ASulpol = () => {
         carousel.current.scrollLeft += 490;
 
       };
+
+      setTimeout(() => {
+
+        if (mobile.matches) {
+          const topnavbar = document.getElementById("topbar");
+          const navbar = document.getElementById("header");
+          navbar.style.display = "block";
+          console.log("Mobile")
+        } else {
+  
+          const topnavbar = document.getElementById("topbar");
+          const navbar = document.getElementById("header");
+          topnavbar.style.display = "block";
+          navbar.style.display = "block";
+          console.log("Desktop")
+        }
+  
+  
+       
+      }, 100);
 
 
   return (
@@ -39,7 +60,7 @@ const ASulpol = () => {
         </div>
 
         <div className='pt-36'>
-        <div className='container mx-auto  border-b border-gray-400 pb-100'>
+        <div className='container mx-auto  border-b border-gray-300 pb-100'>
         <div className='flex flex-col lg:flex-row justify-between'>
           <div className='lg:w-[42%]'>
             <img src='https://uploaddeimagens.com.br/images/003/910/911/full/Grupo_886.png?1655839880' alt='' />
@@ -47,7 +68,7 @@ const ASulpol = () => {
 
           <div className='lg:w-[48%] mt-10 lg:mt-0'>
             <h2 className='text-3xl lg:text-4xl font-medium text-[#202124] mb-[30px]'>30 anos de uma jornada de conhecimento e evolução</h2>
-            <p className='text-base text-[#373737] font-light pb-[40px] border-b border-gray-400'>Fundada em 1989 pelo Sr. Gilberto Alves da Silva, a empresa iniciou as suas operações com o propósito principal a fabricação de injetoras para o poliuretano</p>
+            <p className='text-base text-[#373737] font-light pb-[40px] border-b border-gray-300'>Fundada em 1989 pelo Sr. Gilberto Alves da Silva, a empresa iniciou as suas operações com o propósito principal a fabricação de injetoras para o poliuretano</p>
             <p className='text-base text-[#373737] font-light mt-[30px]'>Hoje somos líderes no mercado brasileiro e latino americano na fabricação de dosadoras de PU, nossa capacidade tecnológica e fabril nos traz a possibilidade de  desenvolver e fabricar projetos especiais de pequeno, médio e grande porte</p>
             <div className='flex flex-wrap lg:flex-nowrap gap-16 mt-[50px]'>
             <div>
@@ -109,9 +130,8 @@ const ASulpol = () => {
           <div className='flex flex-col relative h-full justify-center'>
           <div className='flex-none bg-white w-[28.75rem] h-[260px] rounded-xl relative px-[30px] pt-50'>
           <span className='bg-[#81D742] p-2 text-white text-xl rounded-md absolute left-[30px] -top-[30px]'>1989</span>
-          <span className='bg-[#81D742] w-[5px] h-[35px] flex absolute right-[30px] lg:top-[100px] 2xl:top-[110px]'></span>
           <h3 className='text-xl text-[#202124] font-normal mb-[15px]'>Fundação</h3>
-          <p className='text-sm font-light text-[#373737] w-[95%]'>A Sulpol, fundada em 1989 por Gilberto Alves da Silva, tinha como principal propósito a fabricação de injetoras para poliuretano.</p>
+          <p className='text-sm font-light text-[#373737] w-[100%] max-h-28 overflow-y-scroll pr-8 scroll-text'>A Sulpol, fundada em 1989 por Gilberto Alves da Silva, tinha como principal propósito a fabricação de injetoras para poliuretano. Aliando o suporte industrial de sua outra empresa (Fratec – Indústria de componentes para equipamentos importados) com o “know-how” técnico mecânico, foi possível criar tecnologia própria para produzir injetoras para PU. No mesmo ano, a Sulpol obtém sucesso e aponta para um futuro promissor.</p>
           </div>
           <img className='flex-none w-[15px] absolute bottom-0 left-2/4 -translate-x-2/4' src='https://gistcdn.githack.com/wesleyeagles/8058292159a7b4626e6c10134e18f375/raw/9934191030c80008944781072400b61c72fa1fd3/lifeline.svg' alt='' />
           </div>
@@ -119,9 +139,8 @@ const ASulpol = () => {
           <div className='flex flex-col relative h-full justify-center'>
           <div className='flex-none bg-white w-[28.75rem] h-[260px] rounded-xl relative px-[30px] pt-50'>
           <span className='bg-[#81D742] p-2 text-white text-xl rounded-md absolute left-[30px] -top-[30px]'>1994</span>
-          <span className='bg-[#81D742] w-[5px] h-[35px] flex absolute right-[30px] lg:top-[100px] 2xl:top-[110px]'></span>
           <h3 className='text-xl text-[#202124] font-normal mb-[15px]'>Primeira exportação</h3>
-          <p className='text-sm font-light text-[#373737] w-[95%]'>Em 1994, é realizada a primeira exportação de um equipamento (injetora para PU) com tecnologia Sulpol.</p>
+          <p className='text-sm font-light text-[#373737] w-[100%] max-h-28 overflow-y-scroll pr-8 scroll-text'>Em 1994, é realizada a primeira exportação de um equipamento (injetora para PU) com tecnologia Sulpol. A partir daí, as exportações acontecem sucessivamente, tornando a marca Sulpol uma referência de qualidade e produtividade no mercado latino americano.</p>
           </div>
           <img className='flex-none w-[15px] absolute bottom-0 left-2/4 -translate-x-2/4' src='https://gistcdn.githack.com/wesleyeagles/8058292159a7b4626e6c10134e18f375/raw/9934191030c80008944781072400b61c72fa1fd3/lifeline.svg' alt='' />
           </div>
@@ -129,29 +148,71 @@ const ASulpol = () => {
           <div className='flex flex-col relative h-full justify-center'>
           <div className='flex-none bg-white w-[28.75rem] h-[260px] rounded-xl relative px-[30px] pt-50'>
           <span className='bg-[#81D742] p-2 text-white text-xl rounded-md absolute left-[30px] -top-[30px]'>1999</span>
-          <span className='bg-[#81D742] w-[5px] h-[35px] flex absolute right-[30px] lg:top-[100px] 2xl:top-[110px]'></span>
           <h3 className='text-xl text-[#202124] font-normal mb-[15px]'>Expansão</h3>
-          <p className='text-sm font-light text-[#373737] w-[95%]'>Visando atender aos mais diversos segmentos da indústria, acontece a expansão de sua área física, aumento no número de colaboradores e de modelos de injetoras.</p>
+          <p className='text-sm font-light text-[#373737] w-[100%] max-h-28 overflow-y-scroll pr-8 scroll-text'>Em 1999, 10 anos depois de sua fundação, toda a previsão foi confirmada. Visando atender aos mais diversos segmentos da indústria (calçadista, automobilística, moveleira, de refrigeração, naval, isolamento térmico, de brinquedos, entre outras), acontece a expansão de sua área física, aumento no número de colaboradores e de modelos de injetoras. Consequentemente a marca Sulpol é fortalecida e conquista maior abrangência tanto no mercado Nacional quanto no Internacional.</p>
           </div>
           <img className='flex-none w-[15px] absolute bottom-0 left-2/4 -translate-x-2/4' src='https://gistcdn.githack.com/wesleyeagles/8058292159a7b4626e6c10134e18f375/raw/9934191030c80008944781072400b61c72fa1fd3/lifeline.svg' alt='' />
           </div>
 
           <div className='flex flex-col relative h-full justify-center'>
           <div className='flex-none bg-white w-[28.75rem] h-[260px] rounded-xl relative px-[30px] pt-50'>
-          <span className='bg-[#81D742] p-2 text-white text-xl rounded-md absolute left-[30px] -top-[30px]'>1999</span>
-          <span className='bg-[#81D742] w-[5px] h-[35px] flex absolute right-[30px] lg:top-[100px] 2xl:top-[110px]'></span>
-          <h3 className='text-xl text-[#202124] font-normal mb-[15px]'>Expansão</h3>
-          <p className='text-sm font-light text-[#373737] w-[95%]'>Visando atender aos mais diversos segmentos da indústria, acontece a expansão de sua área física, aumento no número de colaboradores e de modelos de injetoras.</p>
+          <span className='bg-[#81D742] p-2 text-white text-xl rounded-md absolute left-[30px] -top-[30px]'>2001</span>
+          <h3 className='text-xl text-[#202124] font-normal mb-[15px]'>Linha para Termoplásticos</h3>
+          <p className='text-sm font-light text-[#373737] w-[100%] max-h-28 overflow-y-scroll pr-8 scroll-text'>Sempre atenta aos movimentos de mercado, com foco nas necessidades de seus clientes, em 2001 a Sulpol desenvolve a linha de injetoras para termoplásticos, mono e bi colores. Construídas com um alto padrão tecnológico objetivando uma maior produtividade e desempenho com um menor consumo de energia.</p>
           </div>
           <img className='flex-none w-[15px] absolute bottom-0 left-2/4 -translate-x-2/4' src='https://gistcdn.githack.com/wesleyeagles/8058292159a7b4626e6c10134e18f375/raw/9934191030c80008944781072400b61c72fa1fd3/lifeline.svg' alt='' />
           </div>
 
           <div className='flex flex-col relative h-full justify-center'>
           <div className='flex-none bg-white w-[28.75rem] h-[260px] rounded-xl relative px-[30px] pt-50'>
-          <span className='bg-[#81D742] p-2 text-white text-xl rounded-md absolute left-[30px] -top-[30px]'>1999</span>
-          <span className='bg-[#81D742] w-[5px] h-[35px] flex absolute right-[30px] lg:top-[100px] 2xl:top-[110px]'></span>
-          <h3 className='text-xl text-[#202124] font-normal mb-[15px]'>Expansão</h3>
-          <p className='text-sm font-light text-[#373737] w-[95%]'>Visando atender aos mais diversos segmentos da indústria, acontece a expansão de sua área física, aumento no número de colaboradores e de modelos de injetoras.</p>
+          <span className='bg-[#81D742] p-2 text-white text-xl rounded-md absolute left-[30px] -top-[30px]'>2004</span>
+          <h3 className='text-xl text-[#202124] font-normal mb-[15px]'>Linha de injetoras para grandes indústrias automotivas</h3>
+          <p className='text-sm font-light text-[#373737] w-[100%] max-h-28 overflow-y-scroll pr-8 scroll-text'>Em 2004, a grande visibilidade da marca Sulpol e o seu DNA genuinamente brasileiro, proporcionaram a grande oportunidade de fornecer uma linha completa de equipamentos para grandes indústrias do mercado automotivo. Com isso, projetos com necessidades especiais começaram a fazer parte de nosso dia a dia, abrindo a oportunidade para um forte investimento em nosso setor de criação e desenvolvimento ampliando, ainda mais, nossa capacidade de inovação. </p>
+          </div>
+          <img className='flex-none w-[15px] absolute bottom-0 left-2/4 -translate-x-2/4' src='https://gistcdn.githack.com/wesleyeagles/8058292159a7b4626e6c10134e18f375/raw/9934191030c80008944781072400b61c72fa1fd3/lifeline.svg' alt='' />
+          </div>
+
+          <div className='flex flex-col relative h-full justify-center'>
+          <div className='flex-none bg-white w-[28.75rem] h-[260px] rounded-xl relative px-[30px] pt-50'>
+          <span className='bg-[#81D742] p-2 text-white text-xl rounded-md absolute left-[30px] -top-[30px]'>2005</span>
+          <h3 className='text-xl text-[#202124] font-normal mb-[15px]'>Tecnologia 100% Nacional para Elastômero</h3>
+          <p className='text-sm font-light text-[#373737] w-[100%] max-h-28 overflow-y-scroll pr-8 scroll-text'>Em 2005, a Sulpol lança o primeiro equipamento para injeção de poliuretano elastômero com fabricação, projeto e tecnologia 100% nacional.
+          O Poliuretano elastômero, uma matéria prima de alto custo e sem possibilidade de reciclagem, possuía um grande índice de perda em seu processamento manual, e os equipamentos, somente importados tinham um valor bastante alto e sem possibilidades de financiamento impossibilitando sua aquisição.
+          A partir deste evento, os fabricantes nacionais com apoio de financiamentos do tipo BNDES, PROGER URBANO dentre outros, conseguiram viabilizar seus projetos, fomentando negócios com o aumento da produtividade e a diminuição dos desperdícios em seus processos. </p>
+          </div>
+          <img className='flex-none w-[15px] absolute bottom-0 left-2/4 -translate-x-2/4' src='https://gistcdn.githack.com/wesleyeagles/8058292159a7b4626e6c10134e18f375/raw/9934191030c80008944781072400b61c72fa1fd3/lifeline.svg' alt='' />
+          </div>
+
+          <div className='flex flex-col relative h-full justify-center'>
+          <div className='flex-none bg-white w-[28.75rem] h-[260px] rounded-xl relative px-[30px] pt-50'>
+          <span className='bg-[#81D742] p-2 text-white text-xl rounded-md absolute left-[30px] -top-[30px]'>2007</span>
+          <h3 className='text-xl text-[#202124] font-normal mb-[15px]'>Certificado de Qualidade</h3>
+          <p className='text-sm font-light text-[#373737] w-[100%] max-h-28 overflow-y-scroll pr-8 scroll-text'>Em 2007, mais um grande acontecimento amplia de forma considerável a capacidade da Sulpol em atender projetos especiais. Sua parceira, Fratec Industrial Mecânica Ltda, iniciou atividades no processo de usinagem pesada, aumentando as possibilidades de absorção de projetos de grande porte. Com isso a Sulpol inicia o processo de busca por oportunidades em diversos segmentos.
+
+Neste mesmo ano, a empresa conquistou pela primeira vez a certificação de qualidade, iniciando uma grande fase de aprimoramento de seus produtos e serviços apostando no treinamento de seus colaboradores e na melhoria contínua de seus processos.
+
+Ainda no ano de 2007, a Sulpol iniciou uma forte parceria com uma tradicional empresa asiática para a comercialização de equipamentos horizontais para termoplásticos em todo o território nacional. Com preços competitivos e alta tecnologia, iniciou as primeiras vendas e o retorno não poderia ter sido melhor. A satisfação dos clientes e usuários foi muito positiva, reforçando os seus esforços para se manter firme neste novo mercado. </p>
+          </div>
+          <img className='flex-none w-[15px] absolute bottom-0 left-2/4 -translate-x-2/4' src='https://gistcdn.githack.com/wesleyeagles/8058292159a7b4626e6c10134e18f375/raw/9934191030c80008944781072400b61c72fa1fd3/lifeline.svg' alt='' />
+          </div>
+
+          <div className='flex flex-col relative h-full justify-center'>
+          <div className='flex-none bg-white w-[28.75rem] h-[260px] rounded-xl relative px-[30px] pt-50'>
+          <span className='bg-[#81D742] p-2 text-white text-xl rounded-md absolute left-[30px] -top-[30px]'>2008</span>
+          <h3 className='text-xl text-[#202124] font-normal mb-[15px]'>Grandes Resultados</h3>
+          <p className='text-sm font-light text-[#373737] w-[100%] max-h-28 overflow-y-scroll pr-8 scroll-text'>Nada melhor que iniciar 2008 recebendo o prêmio Lançamentos FIMEC, uma das maiores e principais feiras do mundo para máquinas e componentes destinados ao Mercado de calçados, onde a Sulpol apresentou equipamentos que inovaram as aplicações de produtos para linha calçadista, destacando-se no evento.
+          Neste mesmo ano, os investimentos feitos na Fratec começaram a dar resultados e a Sulpol faz o fornecimento de linhas de grande porte para a fabricação de acentos e encostos de veículos para o mercado automotivo. Empresas multinacionais que antes somente possuíam fornecedores internacionais agora também possuem a oportunidade de montar suas linhas com um parceiro nacional com todas as vantagens desta nova opção, inclusive a de financiamentos subsidiados pelo governo brasileiro. </p>
+          </div>
+          <img className='flex-none w-[15px] absolute bottom-0 left-2/4 -translate-x-2/4' src='https://gistcdn.githack.com/wesleyeagles/8058292159a7b4626e6c10134e18f375/raw/9934191030c80008944781072400b61c72fa1fd3/lifeline.svg' alt='' />
+          </div>
+
+          <div className='flex flex-col relative h-full justify-center'>
+          <div className='flex-none bg-white w-[28.75rem] h-[260px] rounded-xl relative px-[30px] pt-50'>
+          <span className='bg-[#81D742] p-2 text-white text-xl rounded-md absolute left-[30px] -top-[30px]'>2011</span>
+          <h3 className='text-xl text-[#202124] font-normal mb-[15px]'>Lançamento de dosadora para DCPD</h3>
+          <p className='text-sm font-light text-[#373737] w-[100%] max-h-28 overflow-y-scroll pr-8 scroll-text'>Em 2011, em perfeita harmonia com seu slogan “Tecnologia em constante movimento”, a Sulpol lançou em primeira mão o equipamento para injeção de DCPD (Diciclopentadiêno).Um produto inovador que revolucionou a indústria automotiva de linha pesada, assim como outros mercados.
+          E também, como não poderia deixar de ser, a Sulpol novamente foi premiada na FIMEC pelo lançamento de seu novo equipamento rotativo para injeção de termoplásticos expandidos, Centauro.
+          A Sulpol não para por ai, procura cada vez mais ampliar sua tecnologia, desenvolvendo novos equipamentos para materiais alternativos, proporcionando aos seus clientes a tradicional qualidade, confiabilidade e produtividade. Ano após ano a Sulpol vem progressivamente prosperando como empresa, abrindo novos mercados e consolidando sua marca tanto em nível nacional como internacional. </p>
           </div>
           <img className='flex-none w-[15px] absolute bottom-0 left-2/4 -translate-x-2/4' src='https://gistcdn.githack.com/wesleyeagles/8058292159a7b4626e6c10134e18f375/raw/9934191030c80008944781072400b61c72fa1fd3/lifeline.svg' alt='' />
           </div>
