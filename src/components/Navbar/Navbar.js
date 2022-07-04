@@ -82,7 +82,9 @@ function Navbar() {
 
           <div  className="ml-10 flex items-center lg:flex-row lg:gap-1 xl:gap-4">
           <HashLink className='text-white rounded-full bg-[#81D742] py-3 px-6 lg:hidden xl:block text-tiny font-bold' to='/Contato#header'>ENTRAR EM CONTATO</HashLink> 
+          {/* 
           <Flags></Flags>
+          */}
           </div>
         </ul>
 
@@ -159,7 +161,9 @@ function Navbar() {
 
           <div  className="ml-10 flex items-center lg:flex-row lg:gap-1 xl:gap-4">
           <HashLink className='text-white rounded-full bg-[#81D742] py-3 px-6 lg:hidden xl:block text-tiny font-bold' to='/Contato#header'>CONTACT US</HashLink> 
+          {/* 
           <Flags></Flags>
+          */}
           </div>
         </ul>
 

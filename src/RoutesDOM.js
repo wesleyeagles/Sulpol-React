@@ -27,6 +27,7 @@ import Bombas from "./maquinasPages/Bombas";
 import PortaMoldes from "./maquinasPages/PortaMoldes";
 import PaineiseTelhas from "./maquinasPages/PaineiseTelhas";
 import ProjetosEspeciais from "./maquinasPages/ProjetosEspeciais";
+import LPFiltros from "./pages/LPFiltros";
 
 function RoutesDOM() {
     const [menuMobile, setMenuMobile] = useState(0);
@@ -124,6 +125,7 @@ function RoutesDOM() {
 
            <Route path='/LPRefrigeracao' element={<LPRefrigeracao/>} />
            <Route path='/LPCalcado' element={<LPCalcado/>} />
+           <Route path='/LPFiltros' element={<LPFiltros/>} />
           </Routes>
           <Footer />
           

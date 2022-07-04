@@ -42,7 +42,7 @@ export default function BasicModal() {
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
-            Projetos especiais
+            Garantia
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
           ​Possuímos departamento de engenharia interno, com profissionais altamente capacitados, e temos totais condições de desenvolver um projeto para facilitar o seu processo de fabricação, agregando ainda mais qualidade ao seu produto final.

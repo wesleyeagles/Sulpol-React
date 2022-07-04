@@ -12,6 +12,7 @@ const Flags = () => {
 
 
   return (
+    
     <div className='flex items-center gap-1 Flags'>
         <button onClick={handlePtLangChange}> <img className={`${ptLang? 'grayscale-0' : 'grayscale'}`} src={BrazilFlag}/> </button>
         <button onClick={handleEnLangChange}> <img className={`${enLang? 'grayscale-0' : 'grayscale'}`} src={USAFlag}/></button>

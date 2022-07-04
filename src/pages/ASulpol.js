@@ -178,7 +178,7 @@ const ASulpol = () => {
             <div>
             <h2 className='text-xl text-[#202124] font-medium'>Mercado de Calçados</h2>
             <p className='text-base text-[#505050] font-light mt-[10px] mb-[40px]'>Temos dosadoras de PU, injetoras de PU de baixa pressão e alta pressão específicas para produção na área dos calçados.</p>
-            <HashLink to='/LPCalcados#lpheader' className='text-sm text-[#81D742] font-semibold flex items-center gap-2' rel='noreferrer'>Ver equipamentos <img className='mt-1' src='https://gistcdn.githack.com/wesleyeagles/7966ded13d7f4bd7d4874cdd9b17798b/raw/7f6cd6b287866fc22b004a6424ab007d66c21bd8/arrowrightx.svg' alt=''></img></HashLink>
+            <HashLink to='/LPCalcado#lpheader' className='text-sm text-[#81D742] font-semibold flex items-center gap-2' rel='noreferrer'>Ver equipamentos <img className='mt-1' src='https://gistcdn.githack.com/wesleyeagles/7966ded13d7f4bd7d4874cdd9b17798b/raw/7f6cd6b287866fc22b004a6424ab007d66c21bd8/arrowrightx.svg' alt=''></img></HashLink>
             </div>
 
             <div className='my-50'>

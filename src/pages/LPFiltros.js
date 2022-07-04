@@ -35,7 +35,7 @@ const links = [
   },
 ]
 
-function LPCalcado() {
+function LPFiltros() {
   setTimeout(() => {
     const topnavbar = document.getElementById("topbar");
     const navbar = document.getElementById("header");
@@ -362,4 +362,4 @@ de impacto, evitando atritos em excesso com o solo!
   );
 }
 
-export default LPCalcado;
+export default LPFiltros;
