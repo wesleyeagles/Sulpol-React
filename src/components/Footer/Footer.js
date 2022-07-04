@@ -12,7 +12,7 @@ function Footer() {
     <div className='container mx-auto'>
     <div className='flex flex-wrap justify-between border-b border-gray-600 pb-100'>
     <div className='flex flex-col gap-10 lg:w-[16%]'>
-    <img className='w-[200px]' src='https://gistcdn.githack.com/wesleyeagles/5fa5f6b109b96123098345215f5cca30/raw/d5b08c4b3e36a69acdaae73ca04b0fbb662adb98/logoBranca.svg' alt='' />
+    <img className='w-[200px]' src='https://uploaddeimagens.com.br/images/003/927/023/full/Ativo_1.png?1656938385' alt='' />
     <p className='text-white text-tiny font-light'>Fundada em 1989, hoje somos líder no mercado brasileiro e latino americano no desenvolvimento e  fabricação de dosadoras e injetoras de PU.</p>
     </div>
     

@@ -100,7 +100,7 @@ function Bombas()  {
                <h1 className='text-gray-800 text-4xl  2xl:text-5xl mb-5 font-normal'>BOMBAS DE <span className='text-sulpol-green font-black'>PU</span></h1>
                <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>Conjunto de Bombeamento dosador de PU para equipamentos de alta pressão</p>
               
-               <ButtonInteresse onClick={handleForm}/>
+               <ButtonInteresse link="#forms" onClick={handleForm}/>
             </div>
             </div>
 

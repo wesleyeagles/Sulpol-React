@@ -22,6 +22,24 @@ import BasicModal4 from '../components/BasicModal4'
 import BasicModal5 from '../components/BasicModal5'
 import BasicModal6 from '../components/BasicModal6'
 
+
+import { IoIosConstruct } from 'react-icons/io'
+import { MdOutlineSmartToy, MdCable } from 'react-icons/md'
+import { GiSlippers, GiGloves, GiFoamyDisc, GiElectric, GiSofa } from 'react-icons/gi'
+import { AiFillCar } from 'react-icons/ai'
+import { FiPackage, FiFilter } from 'react-icons/fi'
+import { HiOutlineDesktopComputer } from 'react-icons/hi'
+import { BsBag } from 'react-icons/bs'
+import { ThermometerSimple } from 'phosphor-react'
+import { FaTeethOpen } from 'react-icons/fa'
+import { CgSmartHomeRefrigerator } from 'react-icons/cg'
+
+
+
+
+
+
+
 function Home() {
 
     const services = useRef([])
@@ -306,21 +324,105 @@ function Home() {
             <img src='https://uploaddeimagens.com.br/images/003/910/159/full/Interse%C3%A7%C3%A3o_5.png?1655816485' alt='' />
             </div>
 
-            <div className='w-full md:w-[40%] mt-8 lg:mt-0'>
-            <div className='pb-[30px] border-b border-gray-400' >
-            <h3 className='text-xl font-medium'>Calçados</h3>
-            <p className='text-base font-light mt-[10px] mb-[20px]'>Temos dosadoras de PU, injetoras de PU de baixa pressão e alta pressão específicas para produção na área dos calçados.</p>
-            <HashLink className='text-[#81D742] font-semibold text-sm' to='/LPCalcado#header'>Ver equipamentos</HashLink>
-            </div>
-            <div className='pb-[30px] border-b border-gray-400 mt-[30px]' >
-            <h3 className='text-xl font-medium'>Refrigeração</h3>
-            <p className='text-base font-light mt-[10px] mb-[20px]'>Nossas dosadoras de Poliuretano e injetoras de alta pressão de PU são equipamentos projetados com características específicas  para empresas do ramo de refrigeração.</p>
-            <HashLink className='text-[#81D742] font-semibold text-sm' to='/LPRefrigeracao#header'>Ver equipamentos</HashLink>
-            </div>
-            <div className=' mt-[30px]' >
-            <h3 className='text-xl font-medium'>Filtros automotivos</h3>
-            <p className='text-base font-light mt-[10px] mb-[20px]'>Nossas dosadoras e injetoras para elastômeros podem ser concebidas diretamente e com características únicas, feitas sob demanda para o mercado de filtros automotivos.</p>
-            <HashLink className='text-[#81D742] font-semibold text-sm' to='/LPFiltros'>Ver equipamentos</HashLink>
+            <div className='w-full md:w-[50%] mt-8 lg:mt-0'>
+            <div className="flex flex-wrap justify-between lg:gap-8">
+              <div className='w-[29%] lg:w-[20%] flex flex-col items-center justify-center'>
+                <h3 className='text-center h-20 flex items-end pb-3'>Acessórios para construção civíl</h3>
+                <IoIosConstruct size={40} color="#81D742"/>
+                
+              </div>
+
+              <div className='w-[29%] lg:w-[20%] flex flex-col items-center justify-center'>
+                <h3 className='text-center h-20 flex items-end pb-3'>Automotiva</h3>
+                <AiFillCar size={40} color="#81D742"/>
+                
+              </div>
+
+              <div className='w-[29%] lg:w-[20%] flex flex-col items-center justify-center'>
+                <h3 className='text-center h-20 flex items-end pb-3'>Brinquedos</h3>
+                <MdOutlineSmartToy size={40} color="#81D742"/>
+                
+              </div>
+
+              <div className='w-[29%] lg:w-[20%] flex flex-col items-center justify-center'>
+                <h3 className='text-center h-20 flex items-end pb-3'>Calçado</h3>
+                <GiSlippers size={40} color="#81D742"/>
+                
+              </div>
+
+
+              <div className='w-[29%] lg:w-[20%] flex flex-col items-center justify-center'>
+                <h3 className='text-center h-20 flex items-end pb-3'>Embalagens</h3>
+                <FiPackage size={40} color="#81D742"/>
+                
+              </div>
+
+              <div className='w-[29%] lg:w-[20%] flex flex-col items-center justify-center'>
+                <h3 className='text-center h-20 flex items-end pb-3'>EPIS</h3>
+                <GiGloves size={40} color="#81D742"/>
+                
+              </div>
+
+              <div className='w-[30%] lg:w-[20%] flex flex-col items-center justify-center'>
+                <h3 className='text-center h-20 flex items-end pb-3'>Equipamentos para informática</h3>
+                <HiOutlineDesktopComputer size={40} color="#81D742" stroke='#81D742'/>
+                
+              </div>
+
+              <div className='w-[29%] lg:w-[20%] flex flex-col items-center justify-center'>
+                <h3 className='text-center h-20 flex items-end pb-3'>Espumas</h3>
+                <GiFoamyDisc size={40} color="#81D742"/>
+                
+              </div>
+
+
+              <div className='w-[29%] lg:w-[20%] flex flex-col items-center justify-center'>
+                <h3 className='text-center h-20 flex items-end pb-3'>Tubos para elétrica</h3>
+                <MdCable size={40} color="#81D742"/>
+                
+              </div>
+
+              <div className='w-[29%] lg:w-[20%] flex flex-col items-center justify-center'>
+                <h3 className='text-center h-20 flex items-end pb-3'>Filtros</h3>
+                <FiFilter size={40} color="#81D742"/>
+                
+              </div>
+
+              <div className='w-[29%] lg:w-[20%] flex flex-col items-center justify-center'>
+                <h3 className='text-center h-20 flex items-end pb-3'>Plástico</h3>
+                <BsBag size={40} color="#81D742"/>
+                
+              </div>
+
+              <div className='w-[29%] lg:w-[20%] flex flex-col items-center justify-center'>
+                <h3 className='text-center h-20 flex items-end pb-3'>Isolamento Térmico</h3>
+                <ThermometerSimple size={40} color="#81D742" weight="duotone" />
+                
+              </div>
+
+              <div className='w-[29%] lg:w-[20%] flex flex-col items-center justify-center'>
+                <h3 className='text-center h-20 flex items-end pb-3'>Materiais elétricos</h3>
+                <GiElectric size={40} color="#81D742" weight="duotone" />
+                
+              </div>
+
+              <div className='w-[29%] lg:w-[20%] flex flex-col items-center justify-center'>
+                <h3 className='text-center h-20 flex items-end pb-3'>Médico odontológica</h3>
+                <FaTeethOpen size={40} color="#81D742" weight="duotone" />
+                
+              </div>
+
+              <div className='w-[29%] lg:w-[20%] flex flex-col items-center justify-center'>
+                <h3 className='text-center h-20 flex items-end pb-3'>Móveis</h3>
+                <GiSofa size={40} color="#81D742" weight="duotone" />
+                
+              </div>
+
+              <div className='w-[29%] lg:w-[20%] flex flex-col items-center justify-center'>
+                <h3 className='text-center h-20 flex items-end pb-3'>Refrigeração</h3>
+                <CgSmartHomeRefrigerator size={40} color="#81D742" weight="duotone" />
+                
+              </div>
             </div>
             </div>
           </div>

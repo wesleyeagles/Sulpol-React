@@ -111,14 +111,11 @@ function FAQ({text, fontSize}) {
     <div id='faq'>
         <img src='https://gistcdn.githack.com/wesleyeagles/c6a95ea8c84246971191e10d516d21ae/raw/0c01a0d7482df69aa0503afba02486f5982be33a/faq.svg' alt='' />
       <h2 className={`${fontSize} font-medium mt-5 w-full lg:w-[70%]`}>{text}</h2>
-      <div className='flex justify-between mt-[80px] mb-[30px]'>
-      <span onClick={handleEmpresaClick} className={`text-lg lg:text-base flex items-center gap-2 cursor-pointer ${useEmpresa? 'text-[#81D742] font-medium' : null}`}><img className={`hidden lg:block ${useEmpresa? 'grayscale-0' : 'grayscale'}`} src='https://gistcdn.githack.com/wesleyeagles/ad5c39c805b48cc578e58feca8e036e5/raw/859e8c19a8c8d6f9244e045440152814662a2512/empresa.svg' alt='' /> A Empresa</span>
-      <span onClick={handleServicosClick} className={`text-lg lg:text-base flex items-center gap-2 cursor-pointer ${useServicos? 'text-[#81D742] font-medium' : null}`}><img className={`hidden lg:block ${useServicos? 'grayscale-0' : 'grayscale'}`} src='https://gistcdn.githack.com/wesleyeagles/40d0ddf47388916152d33227c0650180/raw/4d984814655cd28becff7e92e3e105444eef9ddd/servi%C3%A7os.svg' alt='' /> Serviços</span>
-      <span onClick={handleEquipamentosClick} className={`text-lg lg:text-base flex items-center gap-2 cursor-pointer ${useEquipamentos? 'text-[#81D742] font-medium' : null}`}><img className={`hidden lg:block ${useEquipamentos? 'grayscale-0' : 'grayscale'}`} src='https://gistcdn.githack.com/wesleyeagles/c9536fd698fff7cc3d5981795ad3c4c6/raw/767e2301f9180c8989159aa7fb8bea595d803783/equipamentos.svg' alt='' /> Equipamentos</span>
+      <div className='flex justify-between mt-[30px] mb-[30px]'>
       </div>
       <div className='relative'>
       <span className='border-b border-gray-400 w-full flex'></span>
-      <span className={`border-b absolute duration-700 border-4 border-[#81D742] flex ${useEmpresa? 'w-[18%]' : null} ${useServicos? 'w-[58%]' : null} ${useEquipamentos? 'w-full' : null}`}></span>
+      <span className={`border-b absolute duration-700 border-4 border-[#81D742] flex ${useEmpresa? 'w-[100%]' : null} ${useServicos? 'w-[58%]' : null} ${useEquipamentos? 'w-full' : null}`}></span>
       </div>
 
 

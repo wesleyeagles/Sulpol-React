@@ -108,7 +108,7 @@ function DosadoraAltapressao()  {
                 <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/097/full/Interse%C3%A7%C3%A3o_63.png?1656013375' />
                 <img className='w-[100%] md:w-[15%]' src="https://uploaddeimagens.com.br/images/003/924/525/full/Interse%C3%A7%C3%A3o_63.png?1656674167" alt="" />
                 </div>
-                <ButtonInteresse onClick={handleForm}/>
+                <ButtonInteresse link="#forms" onClick={handleForm}/>
             </div>
             </div>
 

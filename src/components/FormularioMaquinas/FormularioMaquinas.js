@@ -18,7 +18,7 @@ function FormularioMaquinas() {
 
 
   return (
-    <div className="lg:w-[55%]">
+    <div className="lg:w-[55%]" id='forms'>
             <h2 className="text-3xl text-[#202124] font-medium mb-10">Vamos conversar?</h2>
             <p className="text-base text-[#202124] font-light lg:w-[75%] 2xl:w-[65%] mb-12">Complete o formulário abaixo para saber como a Sulpol contribuir para o desenvolvimento da sua empresa </p>
             <form action="">

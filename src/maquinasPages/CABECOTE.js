@@ -105,7 +105,7 @@ function Cabecote()  {
 produtos, principalmente quando são importados de outras marcas, a Sulpol comercializa 
 separadamente seus cabeçotes de alta pressão para adequação em equipamentos importados. Todos os cabeçotes são produzidos pela própria Sulpol, que presta serviços de manutenção e reparo de maneira ágil e rápida.</p>
               
-<ButtonInteresse onClick={handleForm}/>
+<ButtonInteresse link="#forms" onClick={handleForm}/>
             </div>
             </div>
 

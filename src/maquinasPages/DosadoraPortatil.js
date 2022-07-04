@@ -106,7 +106,7 @@ function DosadoraPortatil()  {
                 <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/088/full/Interse%C3%A7%C3%A3o_62.png?1656013087' />
                 <img className='w-[100%] md:w-[15%]'  src="https://uploaddeimagens.com.br/images/003/924/519/full/Interse%C3%A7%C3%A3o_62.png?1656673194" alt="" />
                 </div>
-                <ButtonInteresse onClick={handleForm}/>
+                <ButtonInteresse link="#forms" onClick={handleForm}/>
             </div>
             </div>
 

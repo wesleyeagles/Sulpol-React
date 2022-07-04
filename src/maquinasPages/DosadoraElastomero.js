@@ -103,7 +103,7 @@ function DosadoraElastomero()  {
                <h1 className='text-gray-800 text-4xl  2xl:text-5xl mb-5 font-normal'>ELASTOMACH</h1>
                <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>SULPOL ELASTOMACH é uma série de máquinas de baixa pressão, com configurações flexíveis e de fácil operação, para dosagem de diferentes tipos de poliuretanos elastoméricos disponíveis no mercado.
 A cada ano o número de aplicações com poliuretanos elastoméricos aumentam. Propriedades mecânicas, tais como: dureza, resistência a abrasão e elasticidade, fornecem resultados como poucos materiais. O rígido controle necessário para processamento dessas matérias-primas, são encontrados na série SULPOL® ELASTOMACH. O equipamento cumpre com todos requisitos técnicos necessários para prover eficiência produtiva e qualidade no produto final.</p>
-            <ButtonInteresse onClick={handleForm}/>
+            <ButtonInteresse link="#forms" onClick={handleForm}/>
             </div>
             </div>
 
