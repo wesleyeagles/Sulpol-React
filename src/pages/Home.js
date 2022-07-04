@@ -112,42 +112,34 @@ function Home() {
 
 
 
-  const carousel = useRef(null)
-  const border = useRef(null)
+  const carouselx = useRef(null)
 
     const handleLeftClick = (e) => {
         e.preventDefault();
         if (mobile.matches) {
-          carousel.current.scrollLeft -= 354;
+          carouselx.current.scrollLeft -= 354;
 
         } else {
 
-          carousel.current.scrollLeft -= 736;
+          carouselx.current.scrollLeft -= 736;
+          console.log("Teste")
         }
         
 
-        if (border.current.offsetWidth == 1224) {
-          border.current.style.width = "66%"
-        } else if (border.current.offsetWidth == 808) {
-          border.current.style.width = "33%"
-        }
+       
       };
     
       const handleRightClick = (e) => {
         e.preventDefault();
         if (mobile.matches) {
-          carousel.current.scrollLeft += 354;
+          carouselx.current.scrollLeft += 354;
         } else {
-          carousel.current.scrollLeft -= 736;
+          carouselx.current.scrollLeft += 736;
+          console.log("Teste")
         }
        
 
-        if (border.current.offsetWidth ==
-           404) {
-          border.current.style.width = "66%"
-        } else if (border.current.offsetWidth == 808) {
-          border.current.style.width = "100%"
-        }
+        
       };
 
  
@@ -230,17 +222,10 @@ function Home() {
             </span>
             <h2 className="text-4xl">Serviços que oferecemos</h2>
           </div>
-          <div ref={carousel} className="carouselE flex overflow-x-auto gap-9 scroll-smooth">
+          <div ref={carouselx} className="carouselE flex overflow-x-auto gap-9 scroll-smooth">
+
             <div className='relative w-full lg:w-700 h-300 lg:h-400 flex-none'>
               <img className='absolute -z-10 w-full h-full' src='https://uploaddeimagens.com.br/images/003/910/072/full/Grupo_111.png?1655812767' alt='' />
-  
-              <BasicModal />
-            <BasicModal2 />
-            <BasicModal3 />
-            <BasicModal4 />
-            <BasicModal5 />
-            <BasicModal6 />
-
               <div className={`flex flex-col justify-end duration-1000 overflow-hidden pl-50 ${serviceMenu1? 'h-0' : 'h-full pb-50'}`}>
                 <h3 className='text-xl text-white font-medium'>Projetos especiais</h3>
                 <p className='text-sm text-white mt-[10px] mb-[15px] font-light w-[90%] lg:w-[65%]'>Com mais de 30 anos de atuação no mercado mundial do Poliuretano, a SULPOL já desenvolveu vários projetos para as diversas áreas que utilizam Poliuretano.</p>
@@ -248,12 +233,8 @@ function Home() {
               </div>
             </div>
 
-          
-
-
             <div className='relative w-full lg:w-700 h-300 lg:h-400 flex-none'>
               <img className='absolute -z-10 w-full h-full' src='https://uploaddeimagens.com.br/images/003/917/591/full/IMG_4899_edited.png?1656332875' alt='' />
-
               <div className={`flex flex-col justify-end duration-1000 overflow-hidden pl-50 ${serviceMenu2? 'h-0' : 'h-full pb-50'}`}>
                 <h3 className='text-xl text-white font-medium'>Garantia</h3>
                 <p className='text-sm text-white mt-[10px] mb-[15px] font-light w-[90%] lg:w-[65%]'>Não se preocupe, com a SULPOL você tem garantia nos seus produtos​ e serviços</p>
@@ -300,12 +281,10 @@ function Home() {
                 <a onClick={handleOpen6} id='6' className='text-sm text-white font-semibold cursor-pointer'>Ver mais</a>
               </div>
             </div>
-
-
-
-
-
           </div>
+
+
+
           <div className='flex justify-end items-center mt-7 lg:mt-70'>
           <div className='flex gap-2 lg:gap-4'>
             <PrevArrow className='cursor-pointer' onClick={handleLeftClick}/>
@@ -467,7 +446,7 @@ function Home() {
     
       </div>
 
-      <div className={`flex flex-wrap mb-50 overflow-hidden duration-1000 ${useTenReasons? 'max-h-500' : 'max-h-0'}`}>
+      <div className={`flex flex-wrap mb-50 overflow-hidden duration-1000 ${useTenReasons? 'max-h-800' : 'max-h-0'}`}>
 
       <div className='lg:w-[33%] pr-[3.125rem] lg:border-r border-b border-t pt-[40px] pb-[40px] border-gray-300'>
       <div className='flex items-center gap-[40px] mb-[30px]'><img src='https://gistcdn.githack.com/wesleyeagles/3b1ac3172e4fd4cd99f92e593056a8f6/raw/14d85911889e148492ccdd8daa2a4c1691aed99b/qualidade.svg' alt='' /><h3 className='text-xl font-medium'>Parque Fabril</h3></div>
@@ -570,6 +549,13 @@ function Home() {
       </div>
       </div>
       </div>
+      
+            <BasicModal />
+            <BasicModal2 />
+            <BasicModal3 />
+            <BasicModal4 />
+            <BasicModal5 />
+            <BasicModal6 />
     </div>
     </motion.div>
   );
