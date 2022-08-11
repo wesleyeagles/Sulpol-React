@@ -54,7 +54,7 @@ const ASulpol = () => {
           <img className='absolute w-full h-full object-cover -z-10' alt='slide-1' src='https://uploaddeimagens.com.br/images/003/910/884/full/Grupo_141.png?1655839430' />
           <div className='container mx-auto'>
             <h1 className='text-white text-4xl leading-tight font-medium lg:w-[55%] 2xl:w-[40%] mb-7 pt-40'>Somos tecnologia em constante movimento</h1>
-            <p className='text-base text-white mb-12 lg:w-[35%]'>Fundada em 1989, hoje somos líder no mercado brasileiro e latino americano no desenvolvimento e  fabricação de dosadoras e injetoras de PU.</p>
+            <p className='text-base text-white mb-12 lg:w-[35%]'>Fundada em 1989, hoje a SULPOL é líder no mercado brasileiro e latino americano no desenvolvimento e fabricação de dosadoras de Poliuretano.</p>
             <ButtonPrimary link="/Contato#header" text="Entrar em contato" />
           </div>
         </div>
@@ -68,7 +68,7 @@ const ASulpol = () => {
 
           <div className='lg:w-[48%] mt-10 lg:mt-0'>
             <h2 className='text-3xl lg:text-4xl font-medium text-[#202124] mb-[30px]'>30 anos de uma jornada de conhecimento e evolução</h2>
-            <p className='text-base text-[#373737] font-light pb-[40px] border-b border-gray-300'>Fundada em 1989 pelo Sr. Gilberto Alves da Silva, a empresa iniciou as suas operações com o propósito principal a fabricação de injetoras para o poliuretano</p>
+            <p className='text-base text-[#373737] font-light pb-[40px] border-b border-gray-300'>Utilizando tecnologia de ponta e a sua experiência de mais de 30 anos de atuação no mercado do Poliuretano, fornecendo soluções para facilitar os processos e  evitar desperdícios no processo, bem como evitar a geração de resíduos.</p>
             <p className='text-base text-[#373737] font-light mt-[30px]'>Hoje somos líderes no mercado brasileiro e latino americano na fabricação de dosadoras de PU, nossa capacidade tecnológica e fabril nos traz a possibilidade de  desenvolver e fabricar projetos especiais de pequeno, médio e grande porte</p>
             <div className='flex flex-wrap lg:flex-nowrap gap-16 mt-[50px]'>
             <div>
@@ -87,6 +87,9 @@ const ASulpol = () => {
             </div>
             </div>
           </div>
+        </div>
+        <div className='mt-10'>
+        <p className='text-base text-[#373737] font-light mt-[30px]'>A SULPOL é uma empresa fabricante de equipamentos para aplicação de Poliuretano, e também uma empresa de engenharia, que conta com corpo técnico especializado nesse mercado para desenvolver produtos especiais que optimizem o processo de fabricação de peças para  os diversos setores da indústria, agregando ainda mais qualidade ao seu produto final.</p>
         </div>
         </div>
         </div>

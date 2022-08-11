@@ -37,7 +37,7 @@ export default () => {
           <img className='absolute w-full h-full object-cover -z-10' alt='slide-1' src={Slide1} />
           <div className='container mx-auto'>
             <h1 className='text-white text-4xl leading-tight font-medium lg:w-[55%] 2xl:w-[40%] mb-7 pt-40'>Soluções tecnológicas para poliuretanos</h1>
-            <p className='text-base text-white mb-12 lg:w-[33%]'>Há mais de 30 anos entregando máquinas e equipamentos de alta confiabilidade e eficiência.</p>
+            <p className='text-base text-white mb-12 lg:w-[33%]'>Há mais de 30 anos entregando máquinas e equipamentos de alta produtividade, confiabilidade e eficiência.</p>
             <ButtonPrimary link="/Contato#header" text="Entrar em contato" />
           </div>
         </div>
@@ -48,7 +48,7 @@ export default () => {
           <img className='absolute w-full h-full object-cover -z-10' alt='slide-1' src={Slide2} />
           <div className='container mx-auto'>
             <h1 className='text-white text-4xl leading-tight font-medium lg:w-[55%] 2xl:w-[60%] mb-7 pt-40'>Líder no mercado de fabricação de equipamentos para Poliuretano</h1>
-            <p className='text-base text-white mb-12 lg:w-[33%]'>Há mais de 30 anos entregando máquinas e equipamentos de alta confiabilidade e eficiência.</p>
+            <p className='text-base text-white mb-12 lg:w-[33%]'>Conta com corpo técnico especializado nesse mercado para desenvolver produtos especiais.</p>
             <ButtonPrimary link="/Contato#header" text="Entrar em contato" />
           </div>
         </div>
@@ -57,7 +57,8 @@ export default () => {
         <div className='relative w-full h-[100vh] items-center flex z-10'>
           <img className='absolute w-full h-full object-cover -z-10' alt='slide-1' src={Slide3} />
           <div className='container mx-auto'>
-            <h1 className='text-white text-4xl leading-tight font-medium lg:w-[55%] 2xl:w-[60%] mb-7 pt-40'>Há mais de 30 anos entregando máquinas e equipamentos de alta confiabilidade e eficiência</h1>
+            <h1 className='text-white text-4xl leading-tight font-medium lg:w-[55%] 2xl:w-[60%] mb-7 pt-40'>Desenvolve produtos especiais que optimizem o processo de fabricação de peças</h1>
+            <p className='text-base text-white mb-12 lg:w-[33%]'>Atendendo os diversos setores da indústria, agregando ainda mais qualidade ao seu produto final.</p>
             <ButtonPrimary link="/Contato#header" text="Entrar em contato" />
           </div>
         </div>

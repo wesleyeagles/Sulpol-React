@@ -129,14 +129,9 @@ function LPRefrigeracao() {
             ))}
             </ul>
 
-            <div className='hidden md:block lg:w-[17%] 2xl:w-[15%]'>
+            <div className='hidden md:block lg:w-[17%] 2xl:w-[18%]'>
              <button className='bg-transparent border border-[#81D742] text-white py-3 px-6 rounded-full text-sm font-bold'>TENHO INTERESSE</button>
                 
-            </div>
-            <div className='flex items-center gap-1 Flags md:w-[10%]'>
-            <button> <img src={BrazilFlag}/> </button>
-            <button> <img className='grayscale' src={USAFlag}/></button>
-            <button> <img className='grayscale' src={SpainFlag}/></button>
             </div>
 
         </nav>
@@ -151,11 +146,10 @@ function LPRefrigeracao() {
               </span>
             </h1>
             <p className="text-white font-light text-base mb-[60px] w-[90%]">
-              Dosadoras de poliuretano de alta tecnologia, desenvolvidas
-              especificamente para atender o mercado da refrigeração, com
-              expertise do mercado garantimos aos nossos clientes equipamentos
-              com dosagem precisa e com alta produtividade durante o processo de
-              produção.
+            A SULPOL fornece tecnologias inovadoras que reduzem fortemente o tempo de produção em linha. 
+            Os Equipamentos são desenvolvidos especificamente para atender o mercado da refrigeração, 
+            com expertise do mercado garantimos aos nossos clientes equipamentos com dosagem precisa 
+            e com alta produtividade durante o processo de produção.
             </p>
             <ButtonLP onClick={handleFocusInput} text="QUERO MAIS PRODUTIVIDADE" />
           </div>

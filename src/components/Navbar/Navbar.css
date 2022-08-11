@@ -16,15 +16,7 @@
     font-weight: 500;
 }
 
-.productsMenu {
 
-    scrollbar-width: 0.1px;
-}
-
-.productsMenu::-webkit-scrollbar {
-
-    display: none;
-}
 
 .overheight {
 
@@ -32,11 +24,6 @@
     scrollbar-width: none;
 }
 
-.overheight::-webkit-scrollbar {
-
-    width: 0.1px;
-    appearance: none;
-}
 
 
 

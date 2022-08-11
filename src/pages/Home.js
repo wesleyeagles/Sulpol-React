@@ -10,7 +10,6 @@ import Equipamentos from '../components/Equipamentos/Equipamentos'
 
 import {ReactComponent as PrevArrow} from '../images/prevArrow.svg'
 import {ReactComponent as NextArrow} from '../images/nextArrow.svg'
-import { HashLink } from 'react-router-hash-link'
 import FAQ from '../components/FAQ'
 
 import ContextProdutos from '../contexts/ContextProdutos'
@@ -24,15 +23,14 @@ import BasicModal6 from '../components/BasicModal6'
 
 
 import { IoIosConstruct } from 'react-icons/io'
-import { MdOutlineSmartToy, MdCable } from 'react-icons/md'
-import { GiSlippers, GiGloves, GiFoamyDisc, GiElectric, GiSofa } from 'react-icons/gi'
+import { SiPolymerproject } from 'react-icons/si'
+import { GiSlippers, GiGloves, GiFoamyDisc, GiElectric, GiSofa, GiRunningShoe } from 'react-icons/gi'
 import { AiFillCar } from 'react-icons/ai'
-import { FiPackage, FiFilter } from 'react-icons/fi'
-import { HiOutlineDesktopComputer } from 'react-icons/hi'
-import { BsBag } from 'react-icons/bs'
+import { FiFilter } from 'react-icons/fi'
 import { ThermometerSimple } from 'phosphor-react'
 import { FaTeethOpen } from 'react-icons/fa'
 import { CgSmartHomeRefrigerator } from 'react-icons/cg'
+import { HashLink } from 'react-router-hash-link'
 
 
 
@@ -42,15 +40,14 @@ import { CgSmartHomeRefrigerator } from 'react-icons/cg'
 
 function Home() {
 
-    const services = useRef([])
     const mobile = window.matchMedia("(max-width: 428px)")
 
-    const [serviceMenu1, setServiceMenu1] = useState(false)
-    const [serviceMenu2, setServiceMenu2] = useState(false)
-    const [serviceMenu3, setServiceMenu3] = useState(false)
-    const [serviceMenu4, setServiceMenu4] = useState(false)
-    const [serviceMenu5, setServiceMenu5] = useState(false)
-    const [serviceMenu6, setServiceMenu6] = useState(false)
+    const [serviceMenu1] = useState(false)
+    const [serviceMenu2] = useState(false)
+    const [serviceMenu3] = useState(false)
+    const [serviceMenu4] = useState(false)
+    const [serviceMenu5] = useState(false)
+    const [serviceMenu6] = useState(false)
 
     const [useTenReasons, setUseTenReasons] = useState(0)
 
@@ -60,40 +57,12 @@ function Home() {
 
 
     const { handleOpen, handleOpen2, handleOpen3, handleOpen4, handleOpen5, handleOpen6 } = useContext(ContextProdutos)
-
-
-    const handleServiceMenu = (event) => {
-      if (event.target.id == '1') {
-        setServiceMenu1(!serviceMenu1)
-      } 
-      
-      else if (event.target.id == '2') {
-        setServiceMenu2(!serviceMenu2)
-      } 
-      
-      else if (event.target.id == '3') {
-        setServiceMenu3(!serviceMenu3)
-      } 
-      
-      else if (event.target.id == '4') {
-        setServiceMenu4(!serviceMenu4)
-      }
-
-      else if (event.target.id == '5') {
-        setServiceMenu5(!serviceMenu5)
-      }
-
-      else if (event.target.id == '6') {
-        setServiceMenu6(!serviceMenu6)
-      }
-    }
     
 
    
     setTimeout(() => {
 
       if (mobile.matches) {
-        const topnavbar = document.getElementById("topbar");
         const navbar = document.getElementById("header");
         navbar.style.display = "block";
         console.log("Mobile")
@@ -163,7 +132,7 @@ function Home() {
               <h2 className="text-[#202124] text-4xl font-medium w-[100%] leading-tight">
                 Somos tecnologia em constante movimento
               </h2>
-              <img className="mt-16" src={ImgTecnologia} />
+              <img className="mt-16" src={ImgTecnologia} alt=''/>
             </div>
 
             <div className="lg:w-[50%] mt-10 lg:mt-0">
@@ -229,7 +198,7 @@ function Home() {
               <div className={`flex flex-col justify-end duration-1000 overflow-hidden pl-50 ${serviceMenu1? 'h-0' : 'h-full pb-50'}`}>
                 <h3 className='text-xl text-white font-medium'>Projetos especiais</h3>
                 <p className='text-sm text-white mt-[10px] mb-[15px] font-light w-[90%] lg:w-[65%]'>Com mais de 30 anos de atuação no mercado mundial do Poliuretano, a SULPOL já desenvolveu vários projetos para as diversas áreas que utilizam Poliuretano.</p>
-                <a onClick={handleOpen} id='1' className='text-sm text-white font-semibold cursor-pointer'>Ver mais</a>
+                <button onClick={handleOpen} id='1' className='text-sm text-white font-semibold cursor-pointer w-max'>Ver mais</button>
               </div>
             </div>
 
@@ -238,7 +207,7 @@ function Home() {
               <div className={`flex flex-col justify-end duration-1000 overflow-hidden pl-50 ${serviceMenu2? 'h-0' : 'h-full pb-50'}`}>
                 <h3 className='text-xl text-white font-medium'>Garantia</h3>
                 <p className='text-sm text-white mt-[10px] mb-[15px] font-light w-[90%] lg:w-[65%]'>Não se preocupe, com a SULPOL você tem garantia nos seus produtos​ e serviços</p>
-                <a onClick={handleOpen2} id='2' className='text-sm text-white font-semibold cursor-pointer'>Ver mais</a>
+                <button onClick={handleOpen2} id='2' className='text-sm text-white font-semibold cursor-pointer w-max'>Ver mais</button>
               </div>
             </div>
 
@@ -248,7 +217,7 @@ function Home() {
               <div className={`flex flex-col justify-end duration-1000 overflow-hidden pl-50 ${serviceMenu3? 'h-0' : 'h-full pb-50'}`}>
                 <h3 className='text-xl text-white font-medium'>Treinamentos</h3>
                 <p className='text-sm text-white mt-[10px] mb-[15px] font-light w-[90%] lg:w-[65%]'>Capacitação técnica para melhor operação e durabilidade dos equipamentos.</p>
-                <a onClick={handleOpen3} id='3' className='text-sm text-white font-semibold cursor-pointer'>Ver mais</a>
+                <button onClick={handleOpen3} id='3' className='text-sm text-white font-semibold cursor-pointer w-max'>Ver mais</button>
               </div>
             </div>
 
@@ -258,7 +227,7 @@ function Home() {
               <div className={`flex flex-col justify-end duration-1000 overflow-hidden pl-50 ${serviceMenu4? 'h-0' : 'h-full pb-50'}`}>
                 <h3 className='text-xl text-white font-medium'>Assistência Técnica</h3>
                 <p className='text-sm text-white mt-[10px] mb-[15px] font-light w-[90%] lg:w-[65%]'>Equipe qualificada e atendimento ágil na solução de problemas​.</p>
-                <a onClick={handleOpen4} id='4' className='text-sm text-white font-semibold cursor-pointer'>Ver mais</a>
+                <button onClick={handleOpen4} id='4' className='text-sm text-white font-semibold cursor-pointer w-max'>Ver mais</button>
               </div>
             </div>
 
@@ -268,7 +237,7 @@ function Home() {
               <div className={`flex flex-col justify-end duration-1000 overflow-hidden pl-50 ${serviceMenu5? 'h-0' : 'h-full pb-50'}`}>
                 <h3 className='text-xl text-white font-medium'>Peças de Reposição</h3>
                 <p className='text-sm text-white mt-[10px] mb-[15px] font-light w-[90%] lg:w-[65%]'>Utilize peças originais SULPOL e prolongue a vida útil do seu equipamento​.</p>
-                <a onClick={handleOpen5} id='5' className='text-sm text-white font-semibold cursor-pointer'>Ver mais</a>
+                <button onClick={handleOpen5} id='5' className='text-sm text-white font-semibold cursor-pointer w-max'>Ver mais</button>
               </div>
             </div>
 
@@ -278,7 +247,7 @@ function Home() {
               <div className={`flex flex-col justify-end duration-1000 overflow-hidden pl-50 ${serviceMenu6? 'h-0' : 'h-full pb-50'}`}>
                 <h3 className='text-xl text-white font-medium'>Upgrades e Retrofits</h3>
                 <p className='text-sm text-white mt-[10px] mb-[15px] font-light w-[90%] lg:w-[65%]'>É possível prolongar a vida útil e atualizar equipamentos. </p>
-                <a onClick={handleOpen6} id='6' className='text-sm text-white font-semibold cursor-pointer'>Ver mais</a>
+                <button onClick={handleOpen6} id='6' className='text-sm text-white font-semibold cursor-pointer w-max'>Ver mais</button>
               </div>
             </div>
           </div>
@@ -306,7 +275,7 @@ function Home() {
             <div className='w-full md:w-[50%] mt-8 lg:mt-0'>
             <div className="flex flex-wrap justify-between lg:gap-8">
               <div className='w-[29%] lg:w-[20%] flex flex-col items-center justify-center'>
-                <h3 className='text-center h-20 flex items-end pb-3'>Acessórios para construção civíl</h3>
+                <h3 className='text-center h-20 flex items-end pb-3'>Construção civíl</h3>
                 <IoIosConstruct size={40} color="#81D742"/>
                 
               </div>
@@ -317,22 +286,10 @@ function Home() {
                 
               </div>
 
-              <div className='w-[29%] lg:w-[20%] flex flex-col items-center justify-center'>
-                <h3 className='text-center h-20 flex items-end pb-3'>Brinquedos</h3>
-                <MdOutlineSmartToy size={40} color="#81D742"/>
-                
-              </div>
 
               <div className='w-[29%] lg:w-[20%] flex flex-col items-center justify-center'>
-                <h3 className='text-center h-20 flex items-end pb-3'>Calçado</h3>
+                <h3 className='text-center h-20 flex items-end pb-3'>Calçados</h3>
                 <GiSlippers size={40} color="#81D742"/>
-                
-              </div>
-
-
-              <div className='w-[29%] lg:w-[20%] flex flex-col items-center justify-center'>
-                <h3 className='text-center h-20 flex items-end pb-3'>Embalagens</h3>
-                <FiPackage size={40} color="#81D742"/>
                 
               </div>
 
@@ -342,34 +299,15 @@ function Home() {
                 
               </div>
 
-              <div className='w-[30%] lg:w-[20%] flex flex-col items-center justify-center'>
-                <h3 className='text-center h-20 flex items-end pb-3'>Equipamentos para informática</h3>
-                <HiOutlineDesktopComputer size={40} color="#81D742" stroke='#81D742'/>
-                
-              </div>
-
               <div className='w-[29%] lg:w-[20%] flex flex-col items-center justify-center'>
                 <h3 className='text-center h-20 flex items-end pb-3'>Espumas</h3>
                 <GiFoamyDisc size={40} color="#81D742"/>
                 
               </div>
 
-
-              <div className='w-[29%] lg:w-[20%] flex flex-col items-center justify-center'>
-                <h3 className='text-center h-20 flex items-end pb-3'>Tubos para elétrica</h3>
-                <MdCable size={40} color="#81D742"/>
-                
-              </div>
-
               <div className='w-[29%] lg:w-[20%] flex flex-col items-center justify-center'>
                 <h3 className='text-center h-20 flex items-end pb-3'>Filtros</h3>
                 <FiFilter size={40} color="#81D742"/>
-                
-              </div>
-
-              <div className='w-[29%] lg:w-[20%] flex flex-col items-center justify-center'>
-                <h3 className='text-center h-20 flex items-end pb-3'>Plástico</h3>
-                <BsBag size={40} color="#81D742"/>
                 
               </div>
 
@@ -386,8 +324,8 @@ function Home() {
               </div>
 
               <div className='w-[29%] lg:w-[20%] flex flex-col items-center justify-center'>
-                <h3 className='text-center h-20 flex items-end pb-3'>Médico odontológica</h3>
-                <FaTeethOpen size={40} color="#81D742" weight="duotone" />
+                <h3 className='text-center h-20 flex items-end pb-3'>Médico ortopédico</h3>
+                <GiRunningShoe size={40} color="#81D742" weight="duotone" />
                 
               </div>
 
@@ -400,6 +338,12 @@ function Home() {
               <div className='w-[29%] lg:w-[20%] flex flex-col items-center justify-center'>
                 <h3 className='text-center h-20 flex items-end pb-3'>Refrigeração</h3>
                 <CgSmartHomeRefrigerator size={40} color="#81D742" weight="duotone" />
+                
+              </div>
+
+              <div className='w-[29%] lg:w-[20%] flex flex-col items-center justify-center'>
+                <h3 className='text-center h-20 flex items-end pb-3'>Elastômeros</h3>
+                <SiPolymerproject size={40} color="#81D742" weight="duotone" />
                 
               </div>
             </div>
@@ -486,7 +430,7 @@ function Home() {
       <div className='mt-50'>
       <span className='text-base font-medium'>POST1</span>
       <p className='text-sm font-light mt-[30px] mb-[20px] w-100%'>A SULPOL preza pela eficácia e eficiência ao prestar um atendimento ágil, pois considera que este é um fator determinante para a rentabilidade do seu negócio.</p>
-      <a className='text-sm font-semibold text-[#81D742]' href='' rel='noreferrer'>Ver mais</a>
+      <HashLink to='' className='text-sm font-semibold text-[#81D742]' rel='noreferrer'>Ver mais</HashLink>
       </div>
       </div>
       <div className='w-full lg:w-[32%]'>
@@ -494,7 +438,7 @@ function Home() {
       <div className='mt-50'>
       <span className='text-base font-medium'>POST2</span>
       <p className='text-sm font-light mt-[30px] mb-[20px] w-100%'>A SULPOL preza pela eficácia e eficiência ao prestar um atendimento ágil, pois considera que este é um fator determinante para a rentabilidade do seu negócio.</p>
-      <a className='text-sm font-semibold text-[#81D742]' href='' rel='noreferrer'>Ver mais</a>
+      <HashLink to='' className='text-sm font-semibold text-[#81D742]' rel='noreferrer'>Ver mais</HashLink>
       </div>
       </div>
       <div className='w-full lg:w-[32%]'>
@@ -502,7 +446,7 @@ function Home() {
       <div className='mt-50'>
       <span className='text-base font-medium'>POST3</span>
       <p className='text-sm font-light mt-[30px] mb-[20px] w-100%'>A SULPOL preza pela eficácia e eficiência ao prestar um atendimento ágil, pois considera que este é um fator determinante para a rentabilidade do seu negócio.</p>
-      <a className='text-sm font-semibold text-[#81D742]' href='' rel='noreferrer'>Ver mais</a>
+      <HashLink to='' className='text-sm font-semibold text-[#81D742]' rel='noreferrer'>Ver mais</HashLink>
       </div>
       </div>
       </div>
@@ -513,7 +457,7 @@ function Home() {
       <div className='container mx-auto'>
         <div className='flex flex-col lg:flex-row justify-between items-center'>
           <div className='flex items-center gap-4 lg:w-[65%] xl:w-[60%]'>
-            <img src='https://gistcdn.githack.com/wesleyeagles/388fcbf87e2b8b2820b7dea80297c176/raw/8185f72379ef809d156fee7cfc7e5ea868ed7680/mail.svg' />
+            <img src='https://gistcdn.githack.com/wesleyeagles/388fcbf87e2b8b2820b7dea80297c176/raw/8185f72379ef809d156fee7cfc7e5ea868ed7680/mail.svg' alt=''/>
             <h2 className='mt-2 text-base lg:text-2xl'>Deixe seu e-mail para receber novidades</h2>
           </div>
 

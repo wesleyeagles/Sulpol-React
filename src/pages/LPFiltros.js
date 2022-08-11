@@ -130,11 +130,7 @@ function LPFiltros() {
              <button onClick={handleFocusInput} className='bg-transparent border border-[#81D742] hover:bg-[#81D742] text-white py-2 px-6 rounded-full text-sm font-bold duration-700'>TENHO INTERESSE</button>
                 
             </div>
-            <div className='flex items-center gap-1 Flags md:w-[10%]'>
-            <button> <img src={BrazilFlag}/> </button>
-            <button> <img className='grayscale' src={USAFlag}/></button>
-            <button> <img className='grayscale' src={SpainFlag}/></button>
-            </div>
+          
 
         </nav>
     </div>
@@ -145,7 +141,7 @@ function LPFiltros() {
               SOLUÇÕES PARA O <span className="text-[#81D742] font-extrabold"> SETOR CALÇADISTA </span>
             </h1>
             <p className="text-white font-light text-base mb-[60px] w-[90%]">
-            Tem uma indústria de calçados e quer inovar? A tecnologia de PU pode ser uma grande aliada! Invista em dosadoras de poliuretano e conquiste o consumidor! Tendo como características <span className="text-[#81D742] font-extrabold">versatilidade e alto desempenho</span>, o material garante vantagens como conforto, <span className="text-[#81D742] font-extrabold">performance e resistência</span>, além de poder substituir diversos outros materiais com perfeição e menor custo. 
+            O PU é muito usado para a fabricação veículos. Ele está presente em painéis, teto, componentes da suspensão, filtros do ar condicionado, apoio de cabeça, volante, manopla de câmbio, assento, parachoque, revestimento de portas e muito mais. A Sulpol desenvolve continuamente novos equipamentos e sistemas com produtividade e automação aprimoradas, reduzindo as necessidades de recursos humanos, com o objetivo de diminuir os tempos  de ciclo produtivo.  
             </p>
             <ButtonLP onClick={handleFocusInput} text="QUERO MAIS PRODUTIVIDADE" />
           </div>

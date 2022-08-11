@@ -30,11 +30,11 @@ function Star300S()  {
   const openPrecision = () => {
     setPrecision(!precision)
     
-    if (tecnology == true) {
+    if (tecnology === true) {
         setTecnology(!tecnology)
-    } else if (flexibility == true) {
+    } else if (flexibility === true) {
         setFlexibility(!flexibility)
-    } else if (durability == true) {
+    } else if (durability === true) {
         setDurability(!durability)
     }
   }  
@@ -44,11 +44,11 @@ function Star300S()  {
   const openTecnology = () => {
       setTecnology(!tecnology)
       
-      if (precision == true) {
+      if (precision === true) {
           setPrecision(!precision)
-      } else if (flexibility == true) {
+      } else if (flexibility === true) {
           setFlexibility(!flexibility)
-      } else if (durability == true) {
+      } else if (durability === true) {
         setDurability(!durability)
     }
   }
@@ -58,11 +58,11 @@ function Star300S()  {
   const openFlexibility = () => {
       setFlexibility(!flexibility)
 
-      if (precision == true) {
+      if (precision === true) {
           setPrecision(!precision) 
-      } else if (tecnology == true) {
+      } else if (tecnology === true) {
           setTecnology(!tecnology)
-      } else if (durability == true) {
+      } else if (durability === true) {
         setDurability(!durability)
     }
 
@@ -74,11 +74,11 @@ function Star300S()  {
   const openDurability = () => {
       setDurability(!durability)
 
-      if (precision == true) {
+      if (precision === true) {
           setPrecision(!precision)
-      } else if (tecnology == true) {
+      } else if (tecnology === true) {
           setTecnology(!tecnology)
-      } else if (flexibility == true) {
+      } else if (flexibility === true) {
           setFlexibility(!flexibility)
       }
   }
@@ -95,12 +95,11 @@ function Star300S()  {
         <div className='container mx-auto'>
             <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
             <div className='w-[100%] md:w-[40%] lg:mt-[40px] flex flex-col justify-between md:items-center'>
-                <img className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/725/full/star_300S_2.png?1656005199' />
+                <img className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/725/full/star_300S_2.png?1656005199' alt=''/>
                 <div className='flex flex-wrap lg:flex-nowrap w-[100%] md:w-auto flex-row gap-5 mt-10 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
-                <img className='w-[28%] md:w-[25%]' src={star300sThumb3} />
-                <img className='w-[28%] md:w-[25%]' src={star300sThumb1} />
-                <img className='w-[28%] md:w-[25%]' src={star300sThumb2} />
-                <img className='w-[28%] md:w-[25%]' src="https://uploaddeimagens.com.br/images/003/924/515/full/Interse%C3%A7%C3%A3o_48.png?1656671465" alt="" />
+                <img className='w-[28%] md:w-[25%]' src={star300sThumb3} alt=''/>
+                <img className='w-[28%] md:w-[25%]' src={star300sThumb1} alt=''/>
+                <img className='w-[28%] md:w-[25%]' src={star300sThumb2} alt=''/>
                 </div>
             </div>
 
@@ -113,12 +112,11 @@ function Star300S()  {
 
             <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
             <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex flex-col justify-between md:items-center'>
-                <img className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/756/full/STAR_300S-MRP.png?1656006258' />
+                <img className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/756/full/STAR_300S-MRP.png?1656006258' alt=''/>
                 <div className='flex  flex-wrap lg:flex-nowrap w-[100%] md:w-auto flex-row gap-5 md:mt-[20px] mt-10  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
-                <img className='w-[28%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/913/888/full/Interse%C3%A7%C3%A3o_51.png?1656009020' />
-                <img className='w-[28%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/913/890/full/Interse%C3%A7%C3%A3o_52.png?1656009037' />
-                <img className='w-[28%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/913/892/full/Interse%C3%A7%C3%A3o_53.png?1656009056' />
-                <img className='w-[28%] md:w-[25%]' src="https://uploaddeimagens.com.br/images/003/924/515/full/Interse%C3%A7%C3%A3o_48.png?1656671465" alt="" />
+                <img className='w-[28%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/913/888/full/Interse%C3%A7%C3%A3o_51.png?1656009020' alt=''/>
+                <img className='w-[28%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/913/890/full/Interse%C3%A7%C3%A3o_52.png?1656009037' alt=''/>
+                <img className='w-[28%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/913/892/full/Interse%C3%A7%C3%A3o_53.png?1656009056' alt=''/>
                 </div>
             </div>
 
@@ -131,12 +129,11 @@ function Star300S()  {
 
             <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
             <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex flex-col justify-between md:items-center'>
-                <img className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/769/full/star300s-pv.png?1656006655' />
+                <img className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/769/full/star300s-pv.png?1656006655' alt=''/>
                 <div className='flex  flex-wrap lg:flex-nowrap w-[100%] md:w-auto flex-row gap-5 md:mt-[20px] mt-10  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
-                <img className='w-[28%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/914/007/full/Interse%C3%A7%C3%A3o_54.png?1656010953' />
-                <img className='w-[28%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/914/008/full/Interse%C3%A7%C3%A3o_55.png?1656010971' />
-                <img className='w-[28%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/914/009/full/Interse%C3%A7%C3%A3o_56.png?1656010991' />
-                <img className='w-[28%] md:w-[25%]' src="https://uploaddeimagens.com.br/images/003/924/515/full/Interse%C3%A7%C3%A3o_48.png?1656671465" alt="" />
+                <img className='w-[28%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/914/007/full/Interse%C3%A7%C3%A3o_54.png?1656010953' alt=''/>
+                <img className='w-[28%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/914/008/full/Interse%C3%A7%C3%A3o_55.png?1656010971' alt=''/>
+                <img className='w-[28%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/914/009/full/Interse%C3%A7%C3%A3o_56.png?1656010991' alt=''/>
                 </div>
             </div>
 
@@ -149,12 +146,11 @@ function Star300S()  {
 
             <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
             <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex flex-col justify-between md:items-center'>
-                <img className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/796/full/1123dfd.png?1656007347' />
+                <img className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/796/full/1123dfd.png?1656007347' alt=''/>
                 <div className='flex  flex-wrap lg:flex-nowrap w-[100%] md:w-auto flex-row gap-5 md:mt-[20px] mt-10  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
-                <img className='w-[28%] md:w-[25%]' src={star300sThumb3} />
-                <img className='w-[28%] md:w-[25%]' src={star300sThumb1} />
-                <img className='w-[28%] md:w-[25%]' src={star300sThumb2} />
-                <img className='w-[28%] md:w-[25%]' src="https://uploaddeimagens.com.br/images/003/924/515/full/Interse%C3%A7%C3%A3o_48.png?1656671465" alt="" />
+                <img className='w-[28%] md:w-[25%]' src={star300sThumb3} alt=''/>
+                <img className='w-[28%] md:w-[25%]' src={star300sThumb1} alt=''/>
+                <img className='w-[28%] md:w-[25%]' src={star300sThumb2} alt=''/>
                 </div>
             </div>
 
@@ -167,12 +163,11 @@ function Star300S()  {
 
             <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
             <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex flex-col justify-between md:items-center'>
-                <img className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/802/full/star_300-tg.png?1656007443' />
+                <img className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/802/full/star_300-tg.png?1656007443' alt=''/>
                 <div className='flex  flex-wrap lg:flex-nowrap w-[100%] md:w-auto flex-row gap-5 md:mt-[20px] mt-10  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
-                <img className='w-[28%] md:w-[25%]' src={star300sThumb3} />
-                <img className='w-[28%] md:w-[25%]' src={star300sThumb1} />
-                <img className='w-[28%] md:w-[25%]' src={star300sThumb2} />
-                <img className='w-[28%] md:w-[25%]' src="https://uploaddeimagens.com.br/images/003/924/515/full/Interse%C3%A7%C3%A3o_48.png?1656671465" alt="" />
+                <img className='w-[28%] md:w-[25%]' src={star300sThumb3} alt=''/>
+                <img className='w-[28%] md:w-[25%]' src={star300sThumb1} alt=''/>
+                <img className='w-[28%] md:w-[25%]' src={star300sThumb2} alt=''/>
                 </div>
             </div>
 

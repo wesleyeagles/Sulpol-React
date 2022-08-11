@@ -7,6 +7,7 @@ import TopNavBar from "./components/TopNavBar/TopNavBar";
 import Navbar from "./components/Navbar/Navbar";
 import ASulpol from "./pages/ASulpol";
 import Footer from "./components/Footer/Footer";
+import WhatsappButton from './components/WhatsappButton'
 import LPRefrigeracao from "./pages/LPRefrigeracao";
 import  ContextProdutos from "./contexts/ContextProdutos";
 
@@ -128,8 +129,10 @@ function RoutesDOM() {
            <Route path='/LPFiltros' element={<LPFiltros/>} />
           </Routes>
           <Footer />
+          <WhatsappButton />
           
       </ContextProdutos.Provider>
+
 
        </BrowserRouter>
    )

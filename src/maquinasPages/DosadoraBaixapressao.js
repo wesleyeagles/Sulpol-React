@@ -26,11 +26,11 @@ function DosadoraBaixapressao()  {
   const openPrecision = () => {
     setPrecision(!precision)
     
-    if (tecnology == true) {
+    if (tecnology === true) {
         setTecnology(!tecnology)
-    } else if (flexibility == true) {
+    } else if (flexibility === true) {
         setFlexibility(!flexibility)
-    } else if (durability == true) {
+    } else if (durability === true) {
         setDurability(!durability)
     }
   }  
@@ -40,44 +40,19 @@ function DosadoraBaixapressao()  {
   const openTecnology = () => {
       setTecnology(!tecnology)
       
-      if (precision == true) {
+      if (precision === true) {
           setPrecision(!precision)
-      } else if (flexibility == true) {
+      } else if (flexibility === true) {
           setFlexibility(!flexibility)
-      } else if (durability == true) {
+      } else if (durability === true) {
         setDurability(!durability)
     }
   }
 
   const [flexibility, setFlexibility] = useState(0);
 
-  const openFlexibility = () => {
-      setFlexibility(!flexibility)
-
-      if (precision == true) {
-          setPrecision(!precision) 
-      } else if (tecnology == true) {
-          setTecnology(!tecnology)
-      } else if (durability == true) {
-        setDurability(!durability)
-    }
-
-
-  }
-
   const [durability, setDurability] = useState(0);
 
-  const openDurability = () => {
-      setDurability(!durability)
-
-      if (precision == true) {
-          setPrecision(!precision)
-      } else if (tecnology == true) {
-          setTecnology(!tecnology)
-      } else if (flexibility == true) {
-          setFlexibility(!flexibility)
-      }
-  }
       
    
 
@@ -90,7 +65,7 @@ function DosadoraBaixapressao()  {
         <div className='container mx-auto'>
             <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
             <div className='w-[100%] md:w-[40%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                <img className='w-[75%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/817/full/ST-C4A-scaled.png?1656007852' />
+                <img className='w-[75%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/817/full/ST-C4A-scaled.png?1656007852' alt=''/>
                 <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
 
                 </div>
@@ -100,10 +75,9 @@ function DosadoraBaixapressao()  {
                <h1 className='text-gray-800 text-4xl  2xl:text-5xl mb-5 font-normal'>ST-C</h1>
                <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>Equipamento de baixa pressão, com misturador dinâmico, desenvolvido para trabalhar com Poliuretano, Poliéter ou Poliéster, para a produção de espuma flexível, pele integral, rígida ou semirrígida. Atende as necessidades de diversos setores das indústrias: automobilísticas, refrigeração, moveleira, construção civil, ortopédica, esportiva entre outros.</p>
                <div className='flex w-[100%] md:w-autoflex-row gap-5 mt-10 md:mt-[20px] lg:mt-[20%] 2xl:mt-[10%] mb-16'>
-                <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/095/full/Interse%C3%A7%C3%A3o_64.png?1656013300' />
-                <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/096/full/Interse%C3%A7%C3%A3o_60.png?1656013339' />
-                <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/097/full/Interse%C3%A7%C3%A3o_63.png?1656013375' />
-                <img className='w-[100%] md:w-[15%]' src="https://uploaddeimagens.com.br/images/003/924/530/full/Interse%C3%A7%C3%A3o_63.png?1656674656" alt="" />
+                <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/095/full/Interse%C3%A7%C3%A3o_64.png?1656013300' alt=''/>
+                <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/096/full/Interse%C3%A7%C3%A3o_60.png?1656013339' alt=''/>
+                <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/097/full/Interse%C3%A7%C3%A3o_63.png?1656013375' alt=''/>
                 </div>
                 <ButtonInteresse link="#forms" onClick={handleForm}/>
             </div>
@@ -115,7 +89,7 @@ function DosadoraBaixapressao()  {
         <div className='flex flex-col mt-20 items-center'>
             <div className='flex flex-col sm:flex-col md:flex-row justify-between'>
                 <div className='md:w-[45%] lg:w-[48%] 2xl:w-[45%] lg:h-[190px] border-b pb-2 sm:pb-0 sm:border-none'>
-                    <h2 onClick={openPrecision} className='flex items-center gap-2 text-2xl mb-2'><BsFillCheckCircleFill size={20} color={'#81D742'} className="mr-2"/> Precisão de dosagem <GoArrowSmallDown className='block sm:hidden ml-auto' size={25} color={'#81D742'} /></h2>
+                    <h2 onClick={openPrecision} className='flex items-center gap-2 text-2xl mb-2'><BsFillCheckCircleFill size={20} color={'#81D742'} className="mr-2"/> Cabeçote dosador <GoArrowSmallDown className='block sm:hidden ml-auto' size={25} color={'#81D742'} /></h2>
                     <p className={`h-0 sm:h-auto overflow-hidden text-sm ml-9 transition-all ${precision ? "h-32" : null}`}>Bombas de circulação e pistola de aplicação desenvolvidas e fabricadas por SULPOL para trabalhar com Poliuretano, garantindo relação e mistura perfeita.</p>
                 </div>
                 <div className='md:w-[45%] lg:w-[48%] 2xl:w-[45%] lg:h-[190px] border-b mt-2 pb-2 sm:pb-0 sm:border-none sm:mt-10 md:mt-0'>

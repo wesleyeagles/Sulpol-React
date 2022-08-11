@@ -98,7 +98,14 @@ function Bombas()  {
 
             <div className='md:w-[50%] mt-16'>
                <h1 className='text-gray-800 text-4xl  2xl:text-5xl mb-5 font-normal'>BOMBAS DE <span className='text-sulpol-green font-black'>PU</span></h1>
-               <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>Conjunto de Bombeamento dosador de PU para equipamentos de alta pressão</p>
+               <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>Sabendo das dificuldades encontradas pelas empresas que
+processam Poliuretano em relação ao seu maquinário, principalmente quando eles são importados, a
+SULPOL fornece bombas dosadoras de alta e baixa pressão. Todas as bombas fornecidas pela
+SULPOL, foram desenvolvidas exclusivamente para trabalhar com Poliuretano, e contam com
+materiais de alta qualidade tornando o conjunto altamente durável e resistente, com proteção contra
+choques mecânicos e com ótima absorção de impacto, capaz de suportar variações de pressão e
+processos de corrosão. A SULPOL também presta serviços de manutenção e reparo de maneira ágil e
+rápida.</p>
               
                <ButtonInteresse link="#forms" onClick={handleForm}/>
             </div>

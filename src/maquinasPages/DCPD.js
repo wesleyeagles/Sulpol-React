@@ -27,11 +27,11 @@ function DCPD()  {
   const openPrecision = () => {
     setPrecision(!precision)
     
-    if (tecnology == true) {
+    if (tecnology === true) {
         setTecnology(!tecnology)
-    } else if (flexibility == true) {
+    } else if (flexibility === true) {
         setFlexibility(!flexibility)
-    } else if (durability == true) {
+    } else if (durability === true) {
         setDurability(!durability)
     }
   }  
@@ -41,44 +41,22 @@ function DCPD()  {
   const openTecnology = () => {
       setTecnology(!tecnology)
       
-      if (precision == true) {
+      if (precision === true) {
           setPrecision(!precision)
-      } else if (flexibility == true) {
+      } else if (flexibility === true) {
           setFlexibility(!flexibility)
-      } else if (durability == true) {
+      } else if (durability === true) {
         setDurability(!durability)
     }
   }
 
   const [flexibility, setFlexibility] = useState(0);
 
-  const openFlexibility = () => {
-      setFlexibility(!flexibility)
 
-      if (precision == true) {
-          setPrecision(!precision) 
-      } else if (tecnology == true) {
-          setTecnology(!tecnology)
-      } else if (durability == true) {
-        setDurability(!durability)
-    }
-
-
-  }
 
   const [durability, setDurability] = useState(0);
 
-  const openDurability = () => {
-      setDurability(!durability)
 
-      if (precision == true) {
-          setPrecision(!precision)
-      } else if (tecnology == true) {
-          setTecnology(!tecnology)
-      } else if (flexibility == true) {
-          setFlexibility(!flexibility)
-      }
-  }
       
    
 
@@ -93,7 +71,7 @@ function DCPD()  {
         <div className='container mx-auto'>
             <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
             <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                <img className='w-[75%] md:w-[80%]' src='https://uploaddeimagens.com.br/images/003/924/542/full/Ativo_1.png?1656676377' />
+                <img className='w-[75%] md:w-[80%]' src='https://uploaddeimagens.com.br/images/003/924/542/full/Ativo_1.png?1656676377' alt=''/>
                 <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
 
                 </div>
@@ -106,10 +84,9 @@ proteção do meio ambiente. Desenvolvido para trabalhar com Poliuretano, Polié
 de espuma flexível, pele integral, rígida ou semirrígida. Atende as necessidades de diversos setores 
 das indústrias: automobilísticas, refrigeração, moveleira, ortopédica, esportiva entre outros.</p>
                <div className='flex w-[100%] md:w-auto flex-row gap-5 mt-10 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] mb-16'>
-                <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/095/full/Interse%C3%A7%C3%A3o_64.png?1656013300' />
-                <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/096/full/Interse%C3%A7%C3%A3o_60.png?1656013339' />
-                <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/097/full/Interse%C3%A7%C3%A3o_63.png?1656013375' />
-                <img className='w-[100%] md:w-[15%]' src="https://uploaddeimagens.com.br/images/003/924/525/full/Interse%C3%A7%C3%A3o_63.png?1656674167" alt="" />
+                <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/095/full/Interse%C3%A7%C3%A3o_64.png?1656013300' alt=''/>
+                <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/096/full/Interse%C3%A7%C3%A3o_60.png?1656013339' alt=''/>
+                <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/097/full/Interse%C3%A7%C3%A3o_63.png?1656013375' alt=''/>
                 </div>
                 <ButtonInteresse link="#forms" onClick={handleForm}/>
             </div>

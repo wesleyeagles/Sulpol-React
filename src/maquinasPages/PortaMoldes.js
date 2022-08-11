@@ -1,17 +1,13 @@
-import React, {useContext, useState} from 'react'
+import React, {useContext} from 'react'
 import {motion} from "framer-motion"
 
 import ButtonInteresse from '../components/ButtonInteresse/ButtonInteresse'
 
-import { BsFillCheckCircleFill } from 'react-icons/bs'
-import { GoArrowSmallDown } from 'react-icons/go'
 import FormularioMaquinas from '../components/FormularioMaquinas/FormularioMaquinas'
 import ContextProdutos from '../contexts/ContextProdutos'
-import ButtonPrimary from '../components/ButtonPrimary/ButtonPrimary'
 
 function PortaMoldes()  {
 
-  const [precision, setPrecision] = useState(0); 
 
   const { menuProdutos, forms } = useContext(ContextProdutos)
   
@@ -24,61 +20,9 @@ function PortaMoldes()  {
     window.scrollTo(0, 6900)
   }
 
-  const openPrecision = () => {
-    setPrecision(!precision)
-    
-    if (tecnology == true) {
-        setTecnology(!tecnology)
-    } else if (flexibility == true) {
-        setFlexibility(!flexibility)
-    } else if (durability == true) {
-        setDurability(!durability)
-    }
-  }  
-
-  const [tecnology, setTecnology] = useState(0);
-
-  const openTecnology = () => {
-      setTecnology(!tecnology)
-      
-      if (precision == true) {
-          setPrecision(!precision)
-      } else if (flexibility == true) {
-          setFlexibility(!flexibility)
-      } else if (durability == true) {
-        setDurability(!durability)
-    }
-  }
-
-  const [flexibility, setFlexibility] = useState(0);
-
-  const openFlexibility = () => {
-      setFlexibility(!flexibility)
-
-      if (precision == true) {
-          setPrecision(!precision) 
-      } else if (tecnology == true) {
-          setTecnology(!tecnology)
-      } else if (durability == true) {
-        setDurability(!durability)
-    }
 
 
-  }
 
-  const [durability, setDurability] = useState(0);
-
-  const openDurability = () => {
-      setDurability(!durability)
-
-      if (precision == true) {
-          setPrecision(!precision)
-      } else if (tecnology == true) {
-          setTecnology(!tecnology)
-      } else if (flexibility == true) {
-          setFlexibility(!flexibility)
-      }
-  }
       
    
 
@@ -91,7 +35,7 @@ function PortaMoldes()  {
         <div className='container mx-auto'>
             <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
             <div className='w-[100%] md:w-[40%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                <img className='w-[75%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/924/570/full/Ativo_2.png?1656678952' />
+                <img className='w-[75%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/924/570/full/Ativo_2.png?1656678952' alt=''/>
                 <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
 
                 </div>
@@ -105,10 +49,9 @@ poliuretano durante seu processo de aplicação. Os porta moldes podem ser utili
 por vez, ou combiná-lo com outros porta-moldes em linha, com deslocamento automatizado do cabeçote de injeção para trabalhar com múltiplos plugs, assim obtendo maior 
 produtividade.</p>
                <div className='flex w-[100%] md:w-auto flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] mb-16'>
-                <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/086/full/Interse%C3%A7%C3%A3o_60.png?1656013055' />
-                <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/087/full/Interse%C3%A7%C3%A3o_61.png?1656013071' />
-                <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/088/full/Interse%C3%A7%C3%A3o_62.png?1656013087' />
-                <img className='w-[100%] md:w-[15%]'  src="https://uploaddeimagens.com.br/images/003/924/519/full/Interse%C3%A7%C3%A3o_62.png?1656673194" alt="" />
+                <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/086/full/Interse%C3%A7%C3%A3o_60.png?1656013055' alt=''/>
+                <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/087/full/Interse%C3%A7%C3%A3o_61.png?1656013071' alt=''/>
+                <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/088/full/Interse%C3%A7%C3%A3o_62.png?1656013087' alt=''/>
                 </div>
                 <ButtonInteresse link="#forms" onClick={handleForm}/>
             </div>

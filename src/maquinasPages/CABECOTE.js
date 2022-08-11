@@ -101,9 +101,10 @@ function Cabecote()  {
 
             <div className='md:w-[50%] mt-16'>
                <h1 className='text-gray-800 text-4xl  2xl:text-5xl mb-5 font-normal'>CABEÇOTES <span className='text-sulpol-green font-black'>MISTURADORES</span></h1>
-               <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>Sabendo da dificuldade que os clientes possuem em lidar com a manutenção desses 
-produtos, principalmente quando são importados de outras marcas, a Sulpol comercializa 
-separadamente seus cabeçotes de alta pressão para adequação em equipamentos importados. Todos os cabeçotes são produzidos pela própria Sulpol, que presta serviços de manutenção e reparo de maneira ágil e rápida.</p>
+               <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>Sabendo das dificuldades encontradas pelas empresas que processam Poliuretano em relação ao
+seu maquinário, principalmente quando eles são importados, a SULPOL fornece cabeçotes de
+alta pressão. Todos os cabeçotes são 100% fabricados pela própria SULPOL, que também presta
+serviços de manutenção e reparo de maneira ágil e rápida.</p>
               
 <ButtonInteresse link="#forms" onClick={handleForm}/>
             </div>
