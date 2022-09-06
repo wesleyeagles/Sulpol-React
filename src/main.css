@@ -16,6 +16,11 @@ body {
     scrollbar-color: #81d742 transparent;   /* scroll thumb and track */
 }
 
+.lp-ul {
+
+    list-style-image: url(https://uploaddeimagens.com.br/images/004/012/874/full/Caminho_278.png?1662492702);
+}
+
   body::-webkit-scrollbar {
 
     width: 7px;

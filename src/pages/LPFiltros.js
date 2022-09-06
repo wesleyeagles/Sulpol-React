@@ -111,7 +111,7 @@ function LPFiltros() {
     <div className="relative bg-[#202124]" id="lpheader">
       <img
         className="absolute w-full lg:h-auto 2xl:h-auto object-cover"
-        src="https://uploaddeimagens.com.br/images/003/912/087/full/Grupo_583.png?1655921460"
+        src="https://uploaddeimagens.com.br/images/004/012/721/full/Grupo_882.png?1662489243"
         alt=""
       />
        <div className='container mx-auto relative z-20'>
@@ -138,7 +138,7 @@ function LPFiltros() {
         <div className="flex flex-col lg:flex-row justify-between mt-100 lg:mt-200 pb-20">
           <div className="lg:w-[38%] 2xl:w-[35%]">
             <h1 className="text-white text-lp-mobile lg:text-lp font-medium leading-tight mb-[40px]">
-              SOLUÇÕES PARA O <span className="text-[#81D742] font-extrabold"> SETOR CALÇADISTA </span>
+             <span className="text-[#81D742] font-extrabold"> POLIURETANO </span> PRESENTE ATÉ MESMO NO SEU CARRO
             </h1>
             <p className="text-white font-light text-base mb-[60px] w-[90%]">
             O PU é muito usado para a fabricação veículos. Ele está presente em painéis, teto, componentes da suspensão, filtros do ar condicionado, apoio de cabeça, volante, manopla de câmbio, assento, parachoque, revestimento de portas e muito mais. A Sulpol desenvolve continuamente novos equipamentos e sistemas com produtividade e automação aprimoradas, reduzindo as necessidades de recursos humanos, com o objetivo de diminuir os tempos  de ciclo produtivo.  
@@ -156,7 +156,7 @@ function LPFiltros() {
               <div className="hidden lg:block lg:w-[35%] 2xl:w-auto">
                 <img
                   className="w-full"
-                  src="https://uploaddeimagens.com.br/images/003/923/321/full/Grupo_849.png?1656597512"
+                  src="https://uploaddeimagens.com.br/images/004/012/734/full/Grupo_881.png?1662489768"
                   alt=""
                 />
               </div>
@@ -219,13 +219,13 @@ function LPFiltros() {
       <div className="py-36 bg-[#202124]" id="beneficios">
         <div className="container mx-auto">
             <div className="flex flex-col lg:flex-row justify-between">
-                <div className="w-full h-[300px] lg:h-auto lg:w-[50%]">
-                  <img src="https://uploaddeimagens.com.br/images/003/923/324/full/Grupo_855.png?1656597618" alt="" />
+                <div className="w-full h-[400px] lg:w-[50%]">
+                <iframe className='w-full h-full' src="https://www.youtube.com/embed/6z5iJPTyiAY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
 
                 <div className="w-full lg:w-[40%] mt-16 lg:mt-0">
-                    <h2 className="text-2xl lg:text-3xl text-white leading-snug font-medium mb-50">SOLUÇÕES PARA APLICAÇÕES DE PU EM <span className="text-[#81D742] font-extrabold">BOTAS, PALMILHAS E CALÇADOS DE SEGURANÇA</span></h2>
-                    <p className="text-base text-white font-light mb-20">A Sulpol produz <span className="text-[#81D742] font-medium">dosadoras de Poliuretano, prensas, porta moldes e linhas completas, automáticas, semi-automáticas ou manuais</span>, de acordo com a necessidade de cada cliente, garantindo uma dosagem precisa e a densidade ideal para o seu produto!</p>
+                    <h2 className="text-2xl lg:text-3xl text-white leading-snug font-medium mb-50">LINHA DE DOSAGEM DE PU PARA <span className="text-[#81D742] font-extrabold">COMPONENTES AUTOMOTIVOS</span></h2>
+                    <p className="text-base text-white font-light mb-20"><span className="text-[#81D742] font-medium">A Sulpol desenvolve soluções dedicadas de alta tecnologia, </span>de acordo com a necessidade de cada cliente, para a fabricação de filtros com PU expansivo ou adesivo. Projetamos e fabricamos linhas de produção sempre buscando aumentar a produtividade e reduzir os custos de produção.</p>
                     <ButtonLP onClick={handleFocusInput} text="QUERO SOLICITAR ORÇAMENTO"/>
                 </div>
             </div>
@@ -234,24 +234,20 @@ function LPFiltros() {
 
       <div className="py-36 bg-[#202124]">
         <div className="container mx-auto">
-            <h2 className="text-lp-mobile lg:text-lp font-medium text-white text-center mb-[40px]">VANTAGENS DO USO DO <span className="text-[#81D742] font-extrabold">PU</span> FABRICAÇÃO DE CALÇADOS </h2>
+            <h2 className="text-lp-mobile lg:text-lp font-medium text-white text-center mb-[40px] uppercase"> <span className="text-[#81D742] font-extrabold">Melhor Performance</span> do seu filtro! </h2>
             <span className="text-[#81D742] text-center font-medium text-base block">A Sulpol desenvolve dosadoras de PU com o melhor da tecnologia do mercado! </span>
             <div className="flex flex-col lg:flex-row justify-between mt-100 relative">
-            <img className="hidden lg:block absolute -bottom-[270px] -left-[80px] z-30" src="https://uploaddeimagens.com.br/images/003/923/589/full/Grupo_850.png?1656605800" alt="" />
+            <img className="hidden lg:block absolute -bottom-[270px] -left-[80px] z-30" src="https://uploaddeimagens.com.br/images/004/012/752/full/Grupo_861.png?1662490561" alt="" />
             <img className="hidden lg:block absolute right-72 top-20" src='https://gistcdn.githack.com/wesleyeagles/d4308663e7b90444d3da9580e577844e/raw/ac33c8bd8a7e6230d02875247810d21280983626/linegroup.svg' alt='' />
             <img className="hidden lg:block absolute z-50 lg:right-[270px] 2xl:right-[295px] lg:-bottom-[300px] 2xl:-bottom-[368px] w-[36%]" src='https://gistcdn.githack.com/wesleyeagles/3ead0ceee6e38fb8d2d0af3df7e67b5e/raw/50409fe51272287f73c2b32fe8502194d6af587d/linegroup.svg' alt='' />
             <div className="w-full lg:w-[680px] h-[240px] bg-gradient py-50 px-8 relative z-10">
                 <span className="absolute -top-20 text-[70px] lg:text-[100px] text-[#81D742] font-extrabold flex num-shadow">01</span>
-                <h3 className="text-white text-lg font-medium mb-[10px]">Conforto Extremo</h3>
-                <p className="text-white text-sm font-light w-[90%]">Uma das principais vantagens é o <span className="text-[#81D742] font-extrabold">conforto extremo</span> que ele proporciona, tanto para linhas de segurança, calçados esportivos ou para modelos casuais.
-A tecnologia do PU <span className="text-[#81D742] font-extrabold">reduz a fadiga</span> nos pés e nas pernas, através da absorção
-de impacto, evitando atritos em excesso com o solo!
-</p>
+                <p className="text-white text-sm font-light w-[90%]">Os filtros tem função importante no funcionamento do equipamento seja no setor automotivo ou industrial. Para isto é de extrema importância que sejam produzidos com equipamentos precisos para o alto desempenho deste componente.
+                </p>
             </div>
             <div className="w-full lg:w-[680px] relative h-[240px] bg-gradient py-50 px-8 mt-20  lg:mt-[290px]">
                 <span className="absolute -top-20 text-[70px] lg:text-[100px] text-[#81D742] font-extrabold flex num-shadow">02</span>
-                <h3 className="text-white text-lg font-medium mb-[10px]">Flexibilidade</h3>
-                <p className="text-white text-sm font-light w-[90%]">Por suas características, os poliuretanos são aproveitados em <span className="text-[#81D742] font-extrabold">várias aplicações</span> nos calçados. Eles apresentam <span className="text-[#81D742] font-extrabold">excelente resistência mecânica</span>, densidades compatíveis para diferentes funções e outras propriedades bastante apropriadas para a indústria. </p>
+                <p className="text-white text-sm font-light w-[90%]">O Poliuretano garante muitos benefícios, além de aumentar o desempenho do filtro, garantindo melhor vedação e resistência, desde que haja a dosagem correta!</p>
             </div>
             </div>
         </div>
@@ -259,74 +255,46 @@ de impacto, evitando atritos em excesso com o solo!
 
       <div className="py-36 lg:pt-80 bg-[#202124] relative" id="aplicacao">
       <div className="container mx-auto">
-          <div className="bg-gradient-180deg flex flex-col justify-center items-center w-full h-[25rem]">
-              <h2 className="text-center text-white text-3xl text-bold mb-[40px]">PRODUZA <span className="text-[#81D742] font-extrabold">CALÇADOS</span> COM O MÁXIMO CONFORTO</h2>
-              <p className="text-center text-white w-[95%] lg:w-[65%] text-base font-light mb-[50px]">Se você busca produzir calçados com foco no conforto, como calçados de segurança e tênis esportivos, a tecnologia do PU pode ser sua aliada. Solados desenvolvidos com este material absorvem o impacto da pisada, evitando atritos excessivos e reduzindo a fadiga nas pernas e pés.</p>
+          <div className="bg-gradient-180deg flex flex-col justify-center items-center w-full p-3 sm:p-0 sm:h-[25rem]">
+              <h2 className="text-center text-white text-3xl text-bold mb-[40px] lg:w-[60%]">SOLUÇÕES PARA A APLICAÇÃO DE POLIURETANO EM <span className="text-[#81D742] font-extrabold">FILTROS AUTOMOTIVOS</span></h2>
+              <p className="text-center text-white w-[95%] lg:w-[65%] text-base font-light mb-[50px]">
+                Para atender o mercado de filtros automotivos, a Sulpol desenvolve dosadoras de poliuretano (expansivo, compacto e adesivo) e automaçõesde acordo com a necessidade de cada cliente, visando o aumento de produtividade e as reduções nos custos de produção.
+              </p>
               <ButtonLP onClick={equipAnchor} text="VER EQUIPAMENTOS"/>
           </div>
       </div>
       </div>
 
-      <div className="py-36 bg-[#202124]">
-      <div className="container mx-auto" id="equipamentos">
-      <div className="flex justify-center">
-        <h2 className="text-white text-lp-mobile lg:text-lp text-center lg:w-[90%] font-medium"><span className="text-[#81D742] font-extrabold">MAIS DE 30 ANOS</span> DESENVOLVENDO TECNOLOGIAS EM EQUIPAMENTOS E PERIFÉRICOS PARA PU</h2>
-      </div>
-      <div className='wrapper flex flex-col lg:flex-row justify-center w-full relative mt-16'>
-    <div ref={carousel} className='flex items-center overflow-x-auto gap-8 lg:w-[65%] 2xl:w-[87%] scroll-smooth h-[450px] carouselE'>
+      <div className="py-36 lg:pt-80 bg-[#202124] relative">
+        <div className="container mx-auto">
+            <div className="flex flex-col lg:flex-row justify-between">
+              <div>
+                <div>
+                  <img src="https://uploaddeimagens.com.br/images/004/012/827/full/sasas.png?1662492173" alt="" />
+                </div>
+                <div className="pl-40">
+                  <img src="https://uploaddeimagens.com.br/images/004/012/831/original/Grupo_870.png?1662492301" alt="" />
+                </div>
+              </div>
 
-            <div className='w-full lg:w-[25rem] h-[430px] bg-[#2C2D2E] overflow-visible flex flex-none flex-col items-center justify-center relative rounded-lg'>
-            <div className="w-[250px] h-300  flex justify-center items-center"><img className='lg:w-[70%] 2xl:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/725/full/star_300S_2.png?1656005199' /></div>
-            <div className='mb-10'>
-                <h3 className='text-center text-xl font-semibold text-white mb-3'>STAR 300S</h3>
-                <p className='text-center text-lg font-light text-white mb-3'>Dosadora estática</p>
-                <a className='flex items-center gap-2 text-center justify-center text-lg font-semibold text-sulpol-green cursor-pointer' onClick={handleFocusInput}>Explorar <ExplorarArrow className='mt-1' /> </a>
+              <div className="lg:w-[40%] mt-20 lg:mt-0">
+              <h2 className="text-lp-mobile lg:text-lp font-medium text-white mb-[40px] uppercase"> Filtros <span className="text-[#81D742] font-extrabold">Planos</span> </h2>
+              <p className="text-white font-light text-base">A SULPOL fabrica dosadoras de Poliuretano com mesas de coordenadas, e outros sistemas de aplicação tais como carrosséis e manipuladores. Cada equipamento é projetado de acordo com a necessidade do cliente sempre visando otimizar a produção.</p>
+              <div>
+                <ul className="lp-ul ml-5 mt-10">
+                  <li className="text-white my-3">Dosadoras de poliuretano multicomponentes</li>
+                  <li className="text-white my-3">Sistema de pigmentação direta</li>
+                  <li className="text-white my-3">Sistema cartesiano X,Y,Z</li>
+                  <li className="text-white my-3">Sistemas automatizados de aplicação de desmoldante</li>
+                  <li className="text-white my-3">Carrosséis automatizados com parada</li>
+                  <li className="text-white my-3">Esteiras de condução e alimentação</li>
+                  <li className="text-white my-3">Sistema de rebarbação</li>
+                  <li className="text-white my-3">Outros projetos especiais</li>
+                </ul>
+              </div>
+              </div>
             </div>
-            </div>
-        
- 
-         
-              <div className='w-full lg:w-[25rem] h-[430px] bg-[#2C2D2E] overflow-visible flex flex-none flex-col items-center justify-center relative rounded-lg'>
-              <div className="w-[250px] h-300 flex justify-center items-center"><img className='lg:w-[70%] 2xl:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/769/full/star300s-pv.png?1656006655' /></div>
-                <div className='mb-10'>
-                <h3 className='text-center text-xl font-semibold text-white mb-3'>STAR 300S - PV</h3>
-                <p className='text-center text-lg font-light text-white mb-3'>Dosadora estática</p>
-                <a className='flex items-center gap-2 text-center justify-center text-lg font-semibold text-sulpol-green cursor-pointer' onClick={handleFocusInput}>Explorar <ExplorarArrow className='mt-1' /> </a>
-                </div>
-                </div>
-            
-  
-    
-       
-            <div className='w-full lg:w-[25rem] h-[430px] bg-[#2C2D2E] overflow-visible flex flex-none flex-col items-center justify-center relative rounded-lg'>
-            <div className="w-[300px] h-300 flex justify-center items-center"><img className='lg:w-[70%] 2xl:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/796/full/1123dfd.png?1656007347' /></div>
-                <div className='mb-10'>
-                <h3 className='text-center text-xl font-semibold text-white mb-3'>STAR 300S - R24/36</h3>
-                <p className='text-center text-lg font-light text-white mb-3'>Dosadora rotativa</p>
-                <a className='flex items-center gap-2 text-center justify-center text-lg font-semibold text-sulpol-green cursor-pointer' onClick={handleFocusInput}>Explorar <ExplorarArrow className='mt-1' /> </a>
-                </div>
-            </div>
-     
-   
-   
-       
-            <div className='w-full lg:w-[25rem] h-[430px] bg-[#2C2D2E] overflow-visible flex flex-none flex-col items-center justify-center relative rounded-lg'>
-            <div className="w-[350px] h-300 flex justify-center items-center"><img className='lg:w-[70%] 2xl:w-[70%]' src='https://uploaddeimagens.com.br/images/003/913/802/full/star_300-tg.png?1656007443' /></div>
-                <div className='mb-10'>
-                <h3 className='text-center text-xl font-semibold text-white mb-3'>STAR 300S-TG</h3>
-                <p className='text-center text-lg font-light text-white mb-3'>Dosadora rotativa</p>
-                <a className='flex items-center gap-2 text-center justify-center text-lg font-semibold text-sulpol-green cursor-pointer' onClick={handleFocusInput}>Explorar <ExplorarArrow className='mt-1' /> </a>
-                </div>
-            </div>
-        
-    </div>
-    <div className="flex gap-4 lg:gap-0 lg:block mt-4 lg:mt-0">
-    <PrevArrow onClick={handleLeftClick} className='lg:absolute left-0 lg:translate-y-[200px] cursor-pointer'/>
-    <NextArrow onClick={handleRightClick} className='lg:absolute right-0 lg:translate-y-[200px] cursor-pointer'/>
-    </div>
-    </div>
-     
-      </div>
+        </div>
       </div>
 
       <div className="py-36 bg-[#202124]">
