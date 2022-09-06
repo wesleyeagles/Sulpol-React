@@ -265,7 +265,7 @@ function LPFiltros() {
       </div>
       </div>
 
-      <div className="py-36 lg:pt-80 bg-[#202124] relative">
+      <div className="py-36 lg:pt-80 bg-[#202124] relative" id="equipamentos">
         <div className="container mx-auto">
             <div className="flex flex-col lg:flex-row justify-between">
               <div>
