@@ -37,6 +37,24 @@ body {
     
 
   }
+
+  .styled-scrollbar-menu::-webkit-scrollbar {
+
+    width: 7px;
+  }
+
+  .styled-scrollbar-menu::-webkit-scrollbar-track {
+    background: rgba(142, 142, 142, 0.461);        /* color of the tracking area */
+  }
+  
+  .styled-scrollbar-menu::-webkit-scrollbar-thumb {
+    background-color: #81d742;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #81d742;  /* creates padding around scroll thumb */
+    
+
+  }
+  
   
 
 .active {

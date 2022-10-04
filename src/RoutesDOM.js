@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 
+import { ChakraProvider } from '@chakra-ui/react'
+
 import Home from "./pages/Home";
 import Contato from "./pages/Contato";
 import TopNavBar from "./components/TopNavBar/TopNavBar";
@@ -94,6 +96,7 @@ function RoutesDOM() {
 
    return(
        <BrowserRouter>
+       <ChakraProvider>
        <ContextProdutos.Provider value={{menuMobile, setMenuMobile, menuProdutos, setProdutos, forms, open, open2, open3, open4, open5, open6, setOpen, setOpen2, setOpen3, setOpen4, setOpen5, setOpen6, handleClose, handleClose2, handleClose3, handleClose4, handleClose5, handleClose6, handleOpen, handleOpen2, handleOpen3, handleOpen4, handleOpen5, handleOpen6, ptLang, enLang, esLang, handlePtLangChange, handleEnLangChange }}>
            <TopNavBar />
            <Navbar />
@@ -132,8 +135,7 @@ function RoutesDOM() {
           <WhatsappButton />
           
       </ContextProdutos.Provider>
-
-
+      </ChakraProvider>
        </BrowserRouter>
    )
 }

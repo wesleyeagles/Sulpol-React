@@ -12,13 +12,12 @@ import '../Navbar/Navbar.css'
 import { HashLink } from 'react-router-hash-link'
 import { useContext } from 'react';
 import ContextProdutos from '../../contexts/ContextProdutos';
+import { Box, Button, Divider, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Heading, Image, Stack, Text, useDisclosure } from '@chakra-ui/react';
 
 function Navbar() {
 
   const { menuMobile, setMenuMobile, menuProdutos, setProdutos, ptLang, enLang } = useContext(ContextProdutos)
-
-
- 
+  const { isOpen, onOpen, onClose } = useDisclosure()
 
   const openMenu = () => {
 
@@ -53,15 +52,9 @@ function Navbar() {
 
   const [data, setData] = useState(0)
 
-
- 
-
-
-
-
   return (
 
-
+    <>
     <div>
     {ptLang? <div id='header'>
     <nav className={`bg-white h-28 shadow-md w-full top-0 lg:top-[2.5rem] z-50 fixed duration-500`}>
@@ -71,7 +64,7 @@ function Navbar() {
         <ul className='hidden lg:flex gap-7 nav-HashLinks items-center'>
           <HashLink onClick={closeMenu} className="nav-HashLink text-base" to={'/#header'}>Inicio</HashLink>   
           <HashLink onClick={closeMenu} className="nav-HashLink text-base" to={'/A-Sulpol#header'}>A Sulpol</HashLink>
-          <li onClick={openProdutos} className="nav-HashLink text-base flex items-center cursor-pointer">Produtos <IoMdArrowDropdown className='mt-1' /></li>
+          <li onClick={onOpen} className="nav-HashLink text-base flex items-center cursor-pointer">Produtos <IoMdArrowDropdown className='mt-1' /></li>
           <HashLink onClick={closeMenu} to={'/#services'}><li className="nav-HashLink text-base cursor-pointer">Serviços</li></HashLink>
           <HashLink onClick={closeMenu} to={'/#aplicacoes'}><li className="nav-HashLink text-base cursor-pointer">Aplicação</li></HashLink>
           <HashLink onClick={closeMenu} to={'/#faq'}><li className="nav-HashLink text-base cursor-pointer">FAQ</li></HashLink>
@@ -219,6 +212,192 @@ function Navbar() {
 
 
     </div>
+
+    
+    <Drawer
+      
+        size='md'
+        isOpen={isOpen}
+        placement='left'
+        onClose={onClose}
+      >
+        <DrawerOverlay />
+        <DrawerContent>
+          <DrawerCloseButton />
+          <DrawerHeader>Produtos</DrawerHeader>
+
+          <DrawerBody className='styled-scrollbar-menu'>
+            <Stack>
+              <HashLink to='/Star300S#header' onClick={onClose}>
+               <Box display='flex' justifyContent='space-between' h='60px' alignItems='center'>
+                  <Box>
+                      <Heading fontSize='16px' textTransform='uppercase'>
+                          Dosadoras de <Text color='#81d742' as='span'>CALÇADO</Text>
+                      </Heading>
+                  </Box>
+
+                  <Box>
+                      <Image w='80px' src='https://uploaddeimagens.com.br/images/003/913/725/full/star_300S_2.png?1656005199' />
+                  </Box>
+               </Box>
+               </HashLink>
+               <Divider />
+
+               <HashLink to='/DosadoraElastomero#header' onClick={onClose}>
+               <Box display='flex' justifyContent='space-between' h='70px' alignItems='center'>
+                  <Box>
+                      <Heading fontSize='16px' textTransform='uppercase'>
+                          Dosadora <Text color='#81d742' as='span'>Elastômero</Text>
+                      </Heading>
+                  </Box>
+
+                  <Box>
+                      <Image w='80px' src='https://uploaddeimagens.com.br/images/003/913/806/full/ST-ce9.png?1656007569' />
+                  </Box>
+               </Box>
+               </HashLink>
+               <Divider />
+
+               <HashLink to='/DosadoraPortatil#header' onClick={onClose}>
+               <Box display='flex' justifyContent='space-between' h='70px' alignItems='center'>
+                  <Box>
+                      <Heading fontSize='16px' textTransform='uppercase'>
+                          Dosadora <Text color='#81d742' as='span'>Portátil</Text>
+                      </Heading>
+                  </Box>
+
+                  <Box>
+                      <Image w='50px' marginRight='20px' src='https://uploaddeimagens.com.br/images/003/913/809/full/ST-P15A-768x1024.png?1656007646' />
+                  </Box>
+               </Box>
+               </HashLink>
+               <Divider />
+
+               <HashLink to='/DosadoraAltapressao#header' onClick={onClose}>
+               <Box display='flex' justifyContent='space-between' h='70px' alignItems='center'>
+                  <Box>
+                      <Heading fontSize='16px' textTransform='uppercase'>
+                          Dosadora de <Text color='#81d742' as='span'>Alta Pressão</Text>
+                      </Heading>
+                  </Box>
+
+                  <Box>
+                      <Image w='80px' marginRight='10px' src='https://uploaddeimagens.com.br/images/003/913/816/full/ECOLOGICA-AP-100-A_sem_piso.png?1656007765' />
+                  </Box>
+               </Box>
+               </HashLink>
+               <Divider />
+
+               <HashLink to='/DosadoraBaixapressao#header' onClick={onClose}>
+               <Box display='flex' justifyContent='space-between' h='70px' alignItems='center'>
+                  <Box>
+                      <Heading fontSize='16px' textTransform='uppercase'>
+                          Dosadora de <Text color='#81d742' as='span'>Baixa Pressão</Text>
+                      </Heading>
+                  </Box>
+
+                  <Box>
+                      <Image w='70px' src='https://uploaddeimagens.com.br/images/003/913/817/full/ST-C4A-scaled.png?1656007852' />
+                  </Box>
+               </Box>
+               </HashLink>
+               <Divider />
+
+               <HashLink to='/DCPD#header' onClick={onClose}>
+               <Box display='flex' justifyContent='space-between' h='70px' alignItems='center'>
+                  <Box>
+                      <Heading fontSize='16px' textTransform='uppercase'>
+                          DCPD <Text color='#81d742' as='span'>Lógica AP</Text>
+                      </Heading>
+                  </Box>
+
+                  <Box>
+                      <Image w='70px' marginRight='10px' src='https://uploaddeimagens.com.br/images/003/924/542/full/Ativo_1.png?1656676377' />
+                  </Box>
+               </Box>
+               </HashLink>
+               <Divider />
+
+               <HashLink to='/Cabecote#header' onClick={onClose}>
+               <Box display='flex' justifyContent='space-between' h='70px' alignItems='center'>
+                  <Box>
+                      <Heading fontSize='16px' textTransform='uppercase'>
+                          Cabeçotes <Text color='#81d742' as='span'>Misturadores</Text>
+                      </Heading>
+                  </Box>
+
+                  <Box>
+                      <Image w='40px' marginRight='20px' src='https://uploaddeimagens.com.br/images/003/924/552/full/Ativo_1.png?1656677238' />
+                  </Box>
+               </Box>
+               </HashLink>
+               <Divider />
+
+               <HashLink to='/Bombas#header' onClick={onClose}>
+               <Box display='flex' justifyContent='space-between' h='70px' alignItems='center'>
+                  <Box>
+                      <Heading fontSize='16px' textTransform='uppercase'>
+                          Bombas de <Text color='#81d742' as='span'>PU</Text>
+                      </Heading>
+                  </Box>
+
+                  <Box>
+                      <Image w='80px' src='https://uploaddeimagens.com.br/images/003/924/560/full/WhatsApp_Image_2022-07-01_at_09.21.51-removebg-preview.png?1656678154' />
+                  </Box>
+               </Box>
+               </HashLink>
+               <Divider />
+
+               <HashLink to='/Porta-Moldes#header' onClick={onClose}>
+               <Box display='flex' justifyContent='space-between' h='70px' alignItems='center'>
+                  <Box>
+                      <Heading fontSize='16px' textTransform='uppercase'>
+                          Porta <Text color='#81d742' as='span'>Moldes</Text>
+                      </Heading>
+                  </Box>
+
+                  <Box>
+                      <Image w='60px' marginRight='10px' src='https://uploaddeimagens.com.br/images/003/924/570/full/Ativo_2.png?1656678952' />
+                  </Box>
+               </Box>
+               </HashLink>
+               <Divider />
+
+               <HashLink to='/Paineis-e-Telhas#header' onClick={onClose}>
+               <Box display='flex' justifyContent='space-between' h='70px' alignItems='center'>
+                  <Box>
+                      <Heading fontSize='16px' textTransform='uppercase'>
+                          Painéis / <Text color='#81d742' as='span'>Telhas</Text>
+                      </Heading>
+                  </Box>
+
+                  <Box>
+                      <Image w='60px' marginRight='10px' src='https://uploaddeimagens.com.br/images/003/924/578/full/termoacusticas-removebg-preview.png?1656679360' />
+                  </Box>
+               </Box>
+               </HashLink>
+               <Divider />
+
+               <HashLink to='/Projetos-Especiais#header' onClick={onClose}>
+               <Box display='flex' justifyContent='space-between' h='70px' alignItems='center'>
+                  <Box>
+                      <Heading fontSize='16px' textTransform='uppercase'>
+                          Projetos / <Text color='#81d742' as='span'>Especiais</Text>
+                      </Heading>
+                  </Box>
+
+                  <Box>
+                      <Image w='60px' marginRight='10px' src='https://uploaddeimagens.com.br/images/003/924/593/full/Ativo_3-removebg-preview.png?1656680249' />
+                  </Box>
+               </Box>
+               </HashLink>
+               <Divider />
+            </Stack>
+          </DrawerBody>
+        </DrawerContent>
+      </Drawer>
+
+    </>
     
 
     
