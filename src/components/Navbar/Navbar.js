@@ -224,7 +224,7 @@ function Navbar() {
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-          <DrawerHeader>Produtos</DrawerHeader>
+          <DrawerHeader boxShadow='0px 4px 15px 0px #00000020'>Produtos</DrawerHeader>
 
           <DrawerBody className='styled-scrollbar-menu'>
             <Stack>
