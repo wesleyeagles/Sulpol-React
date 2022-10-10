@@ -3,34 +3,34 @@ import { Route, BrowserRouter, Routes } from "react-router-dom";
 
 import { ChakraProvider } from '@chakra-ui/react'
 
-import Home from "./pages/Home";
-import Contato from "./pages/Contato";
-import TopNavBar from "./components/TopNavBar/TopNavBar";
-import Navbar from "./components/Navbar/Navbar";
-import ASulpol from "./pages/ASulpol";
-import Footer from "./components/Footer/Footer";
-import WhatsappButton from './components/WhatsappButton'
-import LPRefrigeracao from "./pages/LPRefrigeracao";
-import  ContextProdutos from "./contexts/ContextProdutos";
+import Home from "../pages/Home";
+import Contato from "../pages/Contato";
+import TopNavBar from "./TopNavBar/TopNavBar";
+import Navbar from "./Navbar/Navbar";
+import ASulpol from "../pages/ASulpol";
+import Footer from "./Footer/Footer";
+import WhatsappButton from './WhatsappButton'
+import LPRefrigeracao from "../pages/LPRefrigeracao";
+import  ContextProdutos from "../contexts/ContextProdutos";
 
-import Star300S from "./maquinasPages/Star300S";
-import Star300SMRP from "./maquinasPages/Star300SMRP";
-import Star300SPV from "./maquinasPages/Star300SPV";
-import Star300SR2436 from "./maquinasPages/Star300SR2436";
-import Star300STG from "./maquinasPages/Star300STG";
-import DosadoraElastomero from "./maquinasPages/DosadoraElastomero";
-import DosadoraPortatil from "./maquinasPages/DosadoraPortatil";
-import DosadoraAltapressao from "./maquinasPages/DosadoraAltapressao";
-import DosadoraBaixapressao from "./maquinasPages/DosadoraBaixapressao";
-import DCPD from "./maquinasPages/DCPD";
-import CABECOTE from "./maquinasPages/CABECOTE";
+import Star300S from "../maquinasPages/Star300S";
+import Star300SMRP from "../maquinasPages/Star300SMRP";
+import Star300SPV from "../maquinasPages/Star300SPV";
+import Star300SR2436 from "../maquinasPages/Star300SR2436";
+import Star300STG from "../maquinasPages/Star300STG";
+import DosadoraElastomero from "../maquinasPages/DosadoraElastomero";
+import DosadoraPortatil from "../maquinasPages/DosadoraPortatil";
+import DosadoraAltapressao from "../maquinasPages/DosadoraAltapressao";
+import DosadoraBaixapressao from "../maquinasPages/DosadoraBaixapressao";
+import DCPD from "../maquinasPages/DCPD";
+import CABECOTE from "../maquinasPages/CABECOTE";
 
-import LPCalcado from "./pages/LPCalcado";
-import Bombas from "./maquinasPages/Bombas";
-import PortaMoldes from "./maquinasPages/PortaMoldes";
-import PaineiseTelhas from "./maquinasPages/PaineiseTelhas";
-import ProjetosEspeciais from "./maquinasPages/ProjetosEspeciais";
-import LPFiltros from "./pages/LPFiltros";
+import LPCalcado from "../pages/LPCalcado";
+import Bombas from "../maquinasPages/Bombas";
+import PortaMoldes from "../maquinasPages/PortaMoldes";
+import PaineiseTelhas from "../maquinasPages/PaineiseTelhas";
+import ProjetosEspeciais from "../maquinasPages/ProjetosEspeciais";
+import LPFiltros from "../pages/LPFiltros";
 
 function RoutesDOM() {
     const [menuMobile, setMenuMobile] = useState(0);
