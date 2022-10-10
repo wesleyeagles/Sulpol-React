@@ -43,11 +43,15 @@ function PortaMoldes()  {
 
             <div className='md:w-[55%] mt-16'>
                <h1 className='text-gray-800 text-4xl  2xl:text-5xl mb-5 font-normal'>PORTA<span className='text-sulpol-green font-black'> MOLDES</span></h1>
-               <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>A Sulpol possui em suas linhas de produtos, sistemas de porta moldes para produção de 
-gabinetes. Os porta-moldes, são sistemas automatizados para contenção da expansão do 
-poliuretano durante seu processo de aplicação. Os porta moldes podem ser utilizados individualmente para trabalhar com um plug (sistema de contenção interna dos gabinetes) 
-por vez, ou combiná-lo com outros porta-moldes em linha, com deslocamento automatizado do cabeçote de injeção para trabalhar com múltiplos plugs, assim obtendo maior 
-produtividade.</p>
+               <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>A Sulpol possui em suas linhas de produtos, sistemas de porta moldes para produção
+                de gabinetes. Os sistemas porta-moldes são automatizados, com a possibilidade de
+                instalação de um sistema que leva o gabinete para a posição de injeção e também com
+                a movimentação da contenção interna da expansão do poliuretano. Os porta moldes
+                podem ser usados individualmente para trabalhar com um plugue (sistema de
+                contenção interna dos gabinetes) por vez, ou combiná-lo com outros porta-moldes
+                que ficam dispostos em linha. Desta forma o cabeçote de injeção se desloca para
+                atender mais de um porta molde, gerando assim uma maior produtividade.
+                </p>
                <div className='flex w-[100%] md:w-auto flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] mb-16'>
                 <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/086/full/Interse%C3%A7%C3%A3o_60.png?1656013055' alt=''/>
                 <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/087/full/Interse%C3%A7%C3%A3o_61.png?1656013071' alt=''/>

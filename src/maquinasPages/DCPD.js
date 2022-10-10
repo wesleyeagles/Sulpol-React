@@ -72,22 +72,47 @@ function DCPD()  {
             <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
             <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
                 <img className='w-[75%] md:w-[80%]' src='https://uploaddeimagens.com.br/images/003/924/542/full/Ativo_1.png?1656676377' alt=''/>
-                <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
-
+                <div className='flex w-[100%] md:w-auto flex-row gap-5 mt-10 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] mb-16'>
+                <img className='w-[100%] md:w-[33%]' src='https://uploaddeimagens.com.br/images/004/050/032/full/octagone1.png?1664978910' alt=''/>
+                <img className='w-[100%] md:w-[33%]' src='https://uploaddeimagens.com.br/images/004/050/060/full/octagone2.png?1664979268' alt=''/>
+                <img className='w-[100%] md:w-[33%]' src='https://uploaddeimagens.com.br/images/004/050/078/thumb/octagone3.png?1664979542' alt=''/>
                 </div>
+
             </div>
 
             <div className='md:w-[50%] mt-16'>
                <h1 className='text-gray-800 text-4xl  2xl:text-5xl mb-5 font-normal'>DCPD <span className='text-sulpol-green font-black'>LÓGICA AP</span></h1>
-               <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>Equipamento ecologicamente correto, visando à 
-proteção do meio ambiente. Desenvolvido para trabalhar com Poliuretano, Poliéter, para a produção 
-de espuma flexível, pele integral, rígida ou semirrígida. Atende as necessidades de diversos setores 
-das indústrias: automobilísticas, refrigeração, moveleira, ortopédica, esportiva entre outros.</p>
-               <div className='flex w-[100%] md:w-auto flex-row gap-5 mt-10 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] mb-16'>
-                <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/095/full/Interse%C3%A7%C3%A3o_64.png?1656013300' alt=''/>
-                <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/096/full/Interse%C3%A7%C3%A3o_60.png?1656013339' alt=''/>
-                <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/097/full/Interse%C3%A7%C3%A3o_63.png?1656013375' alt=''/>
-                </div>
+               <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>O DCPD (Diciclopentadieno) é um material que apresenta ótima resistência a impacto mesmo em
+                baixas temperaturas e ótima resistência a distorção em altas temperaturas. Atualmente vem
+                substituindo materiais tradicionais, tais como: metais, madeiras, fibra e ainda as soluções mais
+                recentes de plástico de engenharia moldado por injeção.
+                Entre as suas aplicações mais comuns, estão: veículos, ônibus, caminhões, implementos agrícolas e
+                equipamentos de construção, mas novas aplicações vem sendo amplamente estudas pelo
+                mercado.
+                Apresentando um processo mais simplificado de produção e aliando um menor custo de
+                investimento, o DCPD se tornou uma das melhores opções para projetos de grandes peças,
+                trazendo benefícios de maior produtividade e durabilidade do produto final, bem como facilitando
+                a aplicação acabamento superficial estético para uso externo em relação aos materiais
+                tradicionais.
+                Como solução para o processamento do DCPD, a SULPOL apresenta a linha LÓGICA AP. Um
+                equipamento completo que possui rígidos e tecnológicos controles de processo. As principais
+                características do equipamento são:<br/> <br/>
+
+                • Vazões de 7 à 250 kg/min.<br></br>
+                • Tanques de 100, 200, 500 e 1000 litros.<br></br>
+                • Sistema isolamento de oxigênio.<br></br>
+                • Sistema automático de pressurização com nitrogênio.<br></br>
+                • Sistema de vácuo opcional.<br></br>
+                • Interface homem-máquina amigável e de fácil operação.<br></br>
+                • Possibilidade de instalação de múltiplos cabeçotes ao mesmo equipamento.<br></br>
+                • Bombas de pistão axial<br></br>
+                • Medidor de vazão<br></br><br/>
+                A Sulpol ainda disponibiliza a sua equipe para desenvolvimento de projetos especiais de PRENSAS
+                de platôs inferior simples ou duplos, para qualquer tamanho de molde, bem como outros projetos
+                de automação.
+
+                </p>
+
                 <ButtonInteresse link="#forms" onClick={handleForm}/>
             </div>
             </div>

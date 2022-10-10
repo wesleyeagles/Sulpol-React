@@ -1,6 +1,7 @@
 {
   "name": "sulpol",
   "version": "0.1.0",
+  "homepage": "https://sulpol.com.br",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.3.5",

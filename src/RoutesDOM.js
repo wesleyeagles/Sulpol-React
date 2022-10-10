@@ -127,9 +127,9 @@ function RoutesDOM() {
 
 
 
-           <Route path='/LPRefrigeracao' element={<LPRefrigeracao/>} />
-           <Route path='/LPCalcado' element={<LPCalcado/>} />
-           <Route path='/LPFiltros' element={<LPFiltros/>} />
+           <Route path='/refrigera%C3%A7%C3%A3o' element={<LPRefrigeracao/>} />
+           <Route path='/cal%C3%A7ado' element={<LPCalcado/>} />
+           <Route path='/Filtros' element={<LPFiltros/>} />
           </Routes>
           <Footer />
           <WhatsappButton />

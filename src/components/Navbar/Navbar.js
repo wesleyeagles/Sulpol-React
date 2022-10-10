@@ -88,7 +88,7 @@ function Navbar() {
         <ul className='flex flex-col items-center gap-5'>
         <HashLink onClick={closeMenu} className="nav-HashLink text-xl text-white" to={'/#header'}>Inicio</HashLink>   
         <HashLink onClick={closeMenu} className="nav-HashLink text-xl text-white" to={'/A-Sulpol#header'}>A Sulpol</HashLink>
-        <li onClick={openProdutosMobile} className="nav-HashLink text-xl flex items-center text-white">Produtos <IoMdArrowDropdown className='mt-1' /></li>
+        <li onClick={onOpen} className="nav-HashLink text-xl flex items-center text-white">Produtos <IoMdArrowDropdown className='mt-1' /></li>
         <HashLink onClick={closeMenu} to={'/#services'}><li className="nav-HashLink text-xl text-white">Serviços</li></HashLink>
         <HashLink onClick={closeMenu} to={'/#aplicacoes'}><li className="nav-HashLink text-xl text-white">Aplicação</li></HashLink>
         <HashLink onClick={closeMenu} to={'/#faq'}><li className="nav-HashLink text-xl text-white">FAQ</li></HashLink>
@@ -228,7 +228,7 @@ function Navbar() {
 
           <DrawerBody className='styled-scrollbar-menu'>
             <Stack>
-              <HashLink to='/Star300S#header' onClick={onClose}>
+              <HashLink to='/Star300S#header' onClick={() => { onClose(); openMenu(); }}>
                <Box display='flex' justifyContent='space-between' h='60px' alignItems='center'>
                   <Box>
                       <Heading fontSize='16px' textTransform='uppercase'>
@@ -243,7 +243,7 @@ function Navbar() {
                </HashLink>
                <Divider />
 
-               <HashLink to='/DosadoraElastomero#header' onClick={onClose}>
+               <HashLink to='/DosadoraElastomero#header' onClick={() => { onClose(); openMenu(); }}>
                <Box display='flex' justifyContent='space-between' h='70px' alignItems='center'>
                   <Box>
                       <Heading fontSize='16px' textTransform='uppercase'>
@@ -258,7 +258,7 @@ function Navbar() {
                </HashLink>
                <Divider />
 
-               <HashLink to='/DosadoraPortatil#header' onClick={onClose}>
+               <HashLink to='/DosadoraPortatil#header' onClick={() => { onClose(); openMenu(); }}>
                <Box display='flex' justifyContent='space-between' h='70px' alignItems='center'>
                   <Box>
                       <Heading fontSize='16px' textTransform='uppercase'>
@@ -273,7 +273,7 @@ function Navbar() {
                </HashLink>
                <Divider />
 
-               <HashLink to='/DosadoraAltapressao#header' onClick={onClose}>
+               <HashLink to='/DosadoraAltapressao#header' onClick={() => { onClose(); openMenu(); }}>
                <Box display='flex' justifyContent='space-between' h='70px' alignItems='center'>
                   <Box>
                       <Heading fontSize='16px' textTransform='uppercase'>
@@ -288,7 +288,7 @@ function Navbar() {
                </HashLink>
                <Divider />
 
-               <HashLink to='/DosadoraBaixapressao#header' onClick={onClose}>
+               <HashLink to='/DosadoraBaixapressao#header' onClick={() => { onClose(); openMenu(); }}>
                <Box display='flex' justifyContent='space-between' h='70px' alignItems='center'>
                   <Box>
                       <Heading fontSize='16px' textTransform='uppercase'>
@@ -303,7 +303,7 @@ function Navbar() {
                </HashLink>
                <Divider />
 
-               <HashLink to='/DCPD#header' onClick={onClose}>
+               <HashLink to='/DCPD#header' onClick={() => { onClose(); openMenu(); }}>
                <Box display='flex' justifyContent='space-between' h='70px' alignItems='center'>
                   <Box>
                       <Heading fontSize='16px' textTransform='uppercase'>
@@ -318,7 +318,7 @@ function Navbar() {
                </HashLink>
                <Divider />
 
-               <HashLink to='/Cabecote#header' onClick={onClose}>
+               <HashLink to='/Cabecote#header' onClick={() => { onClose(); openMenu(); }}>
                <Box display='flex' justifyContent='space-between' h='70px' alignItems='center'>
                   <Box>
                       <Heading fontSize='16px' textTransform='uppercase'>
@@ -333,7 +333,7 @@ function Navbar() {
                </HashLink>
                <Divider />
 
-               <HashLink to='/Bombas#header' onClick={onClose}>
+               <HashLink to='/Bombas#header' onClick={() => { onClose(); openMenu(); }}>
                <Box display='flex' justifyContent='space-between' h='70px' alignItems='center'>
                   <Box>
                       <Heading fontSize='16px' textTransform='uppercase'>
@@ -348,7 +348,7 @@ function Navbar() {
                </HashLink>
                <Divider />
 
-               <HashLink to='/Porta-Moldes#header' onClick={onClose}>
+               <HashLink to='/Porta-Moldes#header' onClick={() => { onClose(); openMenu(); }}>
                <Box display='flex' justifyContent='space-between' h='70px' alignItems='center'>
                   <Box>
                       <Heading fontSize='16px' textTransform='uppercase'>
@@ -363,7 +363,7 @@ function Navbar() {
                </HashLink>
                <Divider />
 
-               <HashLink to='/Paineis-e-Telhas#header' onClick={onClose}>
+               <HashLink to='/Paineis-e-Telhas#header' onClick={() => { onClose(); openMenu(); }}>
                <Box display='flex' justifyContent='space-between' h='70px' alignItems='center'>
                   <Box>
                       <Heading fontSize='16px' textTransform='uppercase'>
@@ -378,7 +378,7 @@ function Navbar() {
                </HashLink>
                <Divider />
 
-               <HashLink to='/Projetos-Especiais#header' onClick={onClose}>
+               <HashLink to='/Projetos-Especiais#header' onClick={() => { onClose(); openMenu(); }}>
                <Box display='flex' justifyContent='space-between' h='70px' alignItems='center'>
                   <Box>
                       <Heading fontSize='16px' textTransform='uppercase'>

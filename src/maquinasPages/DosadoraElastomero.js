@@ -97,12 +97,32 @@ function DosadoraElastomero()  {
                 <img alt='' className='w-[25%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/976/214/full/Interse%C3%A7%C3%A3o_59.png?1660162255' />
                 <img alt='' className='w-[25%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/976/221/full/Interse%C3%A7%C3%A3o_58.png?1660162661' />
                 </div>
+                <strong className='mt-10'>As principais características do equipamento são:</strong>
+                <ul className='p-0'>
+                    <li>•Interface amigável com o usuário;</li>
+                    <li>•Configuração flexível do equipamento;</li>
+                    <li>•Reduzida e fácil manutenção;</li>
+                    <li>•Precisão na dosagem;</li>
+                    <li>•Unidades de cor;</li>
+                    <li>•Sistema de aquecimento eficiente;</li>
+                    <li>••Sistema de vácuo;</li>
+                    <li>•Mesas aquecidas para moldes;</li>
+                    <li>•Estufas para cura de peças.</li>
+
+                </ul>
             </div>
 
             <div className='md:w-[45%] mt-16'>
                <h1 className='text-gray-800 text-4xl  2xl:text-5xl mb-5 font-normal'>ELASTOMACH</h1>
-               <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>SULPOL ELASTOMACH é uma série de máquinas de baixa pressão, com configurações flexíveis e de fácil operação, para dosagem de diferentes tipos de poliuretanos elastoméricos disponíveis no mercado.
-                A cada ano o número de aplicações com poliuretanos elastoméricos aumentam. Propriedades mecânicas, tais como: dureza, resistência a abrasão e elasticidade, fornecem resultados como poucos materiais. O rígido controle necessário para processamento dessas matérias-primas, são encontrados na série SULPOL® ELASTOMACH. O equipamento cumpre com todos requisitos técnicos necessários para prover eficiência produtiva e qualidade no produto final.</p>
+               <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>A cada ano o número de aplicações com poliuretanos elastoméricos aumentam.
+                Propriedades mecânicas, tais como: dureza, resistência a abrasão e elasticidade, são as
+                algumas características deste material.
+                Como solução para o processamento dos Elastômeros, a SULPOL apresenta a linha
+                ELASTOMACH que é uma série de máquinas de baixa pressão para sistemas de
+                elastômero multicomponentes (MDI e/ou TDI), poliéter ou poliéster, com configurações
+                flexíveis e de fácil operação, O equipamento cumpre com todos requisitos técnicos
+                necessários para prover eficiência produtiva e qualidade no produto final.
+                </p>
             <ButtonInteresse link="#forms" onClick={handleForm}/>
             </div>
             </div>

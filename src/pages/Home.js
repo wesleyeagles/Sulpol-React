@@ -28,7 +28,6 @@ import { GiSlippers, GiGloves, GiFoamyDisc, GiElectric, GiSofa, GiRunningShoe } 
 import { AiFillCar } from 'react-icons/ai'
 import { FiFilter } from 'react-icons/fi'
 import { ThermometerSimple } from 'phosphor-react'
-import { FaTeethOpen } from 'react-icons/fa'
 import { CgSmartHomeRefrigerator } from 'react-icons/cg'
 import { HashLink } from 'react-router-hash-link'
 
@@ -288,9 +287,10 @@ function Home() {
 
 
               <div className='w-[29%] lg:w-[20%] flex flex-col items-center justify-center'>
+                <HashLink to='/cal%C3%A7ado#header'>
                 <h3 className='text-center h-20 flex items-end pb-3'>Calçados</h3>
                 <GiSlippers size={40} color="#81D742"/>
-                
+                </HashLink>
               </div>
 
               <div className='w-[29%] lg:w-[20%] flex flex-col items-center justify-center'>
@@ -306,8 +306,10 @@ function Home() {
               </div>
 
               <div className='w-[29%] lg:w-[20%] flex flex-col items-center justify-center'>
+                <HashLink to='/filtros#header'>
                 <h3 className='text-center h-20 flex items-end pb-3'>Filtros</h3>
                 <FiFilter size={40} color="#81D742"/>
+                </HashLink>
                 
               </div>
 
@@ -336,8 +338,10 @@ function Home() {
               </div>
 
               <div className='w-[29%] lg:w-[20%] flex flex-col items-center justify-center'>
+                <HashLink to='/refrigera%C3%A7%C3%A3o' smooth>
                 <h3 className='text-center h-20 flex items-end pb-3'>Refrigeração</h3>
                 <CgSmartHomeRefrigerator size={40} color="#81D742" weight="duotone" />
+                </HashLink>
                 
               </div>
 

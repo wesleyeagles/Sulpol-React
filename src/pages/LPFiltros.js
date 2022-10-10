@@ -1,16 +1,6 @@
 import React, { useRef } from "react";
 import ButtonLP from "../components/LPComponents/ButtonLP";
-
-import  BrazilFlag  from '../images/flagBrazil.png';
-import  USAFlag  from '../images/flagUSA.png';
-import  SpainFlag  from '../images/flagSpain.png';
-
-
 import {motion} from "framer-motion"
-
-import {ReactComponent as PrevArrow} from '../images/prevArrow.svg'
-import {ReactComponent as NextArrow} from '../images/nextArrow.svg'
-import {ReactComponent as ExplorarArrow} from '../images/Explorar.svg'
 
 import { HashLink } from 'react-router-hash-link'
 
@@ -270,7 +260,7 @@ function LPFiltros() {
             <div className="flex flex-col lg:flex-row justify-between">
               <div>
                 <div>
-                  <img src="https://uploaddeimagens.com.br/images/004/012/827/full/sasas.png?1662492173" alt="" />
+                  <img src="https://uploaddeimagens.com.br/images/004/049/961/full/sasas.png?1664976649" alt="" />
                 </div>
                 <div className="pl-40">
                   <img src="https://uploaddeimagens.com.br/images/004/012/831/original/Grupo_870.png?1662492301" alt="" />

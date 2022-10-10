@@ -43,7 +43,15 @@ function PaineiseTelhas()  {
 
             <div className='md:w-[55%] mt-16'>
                <h1 className='text-gray-800 text-4xl  2xl:text-5xl mb-5 font-normal'>PAINÉIS E<span className='text-sulpol-green font-black'> TELHAS</span></h1>
-               <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>Produção de painéis ou telhas com isolamento em poliuretano, fabricadas a partir de 2m até 14m de comprimento. Podem ser fabricadas com um platô dentro e outro fora ou dois platôs dentro e dois fora, ou outras configurações</p>
+               <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>A espuma rígida de poliuretano tem a menor condutividade térmica de todos os materiais
+                isolantes e, portanto, é muito usada na fabricação de elementos compostos metálicos para
+                atender as demandas na construção civil e industrial, câmaras frigoríficas de caminhões e
+                supermercados.
+                A SULPOL desenvolve equipamentos para a produção de painéis ou telhas com isolamento em
+                poliuretano de diversos tamanhos. Podem ser fabricadas na configuração 1+1 ou 2+2, com a
+                movimentação dos carros e a força de fechamento de acordo com a necessidade de cada
+                aplicação.
+                </p>
 
                <ButtonInteresse link="#forms" onClick={handleForm}/>
             </div>
