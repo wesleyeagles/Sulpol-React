@@ -5,8 +5,6 @@ import '../ButtonPrimary/ButtonPrimary.css'
 
 const ButtonPrimary = ({text, link = ''}) => {
 
-  const { ptLang, enLang, esLang } = useContext(ContextProdutos)
-
 
   return (
   <HashLink className='ButtonPrimary' smooth to={link} >{text}</HashLink>  

@@ -1,13 +1,4 @@
-import React, { useState } from 'react'
-import InputRadio from '../InputRadio/InputRadio'
-
-import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
-
-import {ReactComponent as prevArrow} from '../../images/prevArrow.svg'
-
-
-
-import { Carousel } from 'react-responsive-carousel';
+import React from 'react'
 import EquipamentosCaroussel from './EquipamentosCaroussel';
 
 

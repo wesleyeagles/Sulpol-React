@@ -2,53 +2,9 @@ import React, { useState } from 'react'
 
 function FAQ({text, fontSize}) {
 
-    const [useEmpresa, setUseEmpresa] = useState(true)
-    const [useServicos, setUseServicos] = useState(false)
-    const [useEquipamentos, setUseEquipamentos] = useState(false)
-  
-    const handleEmpresaClick = () => {
-      if (useServicos == true) {
-        setUseServicos(!useServicos)
-        setUseEmpresa(!useEmpresa)
-  
-      } else if (useEquipamentos == true) {
-        setUseEquipamentos(!useEquipamentos)
-        setUseEmpresa(!useEmpresa)
-  
-  
-      } else { setUseEmpresa(!useEmpresa) }
-  
-    }
-  
-    const handleServicosClick = () => {
-      if (useEmpresa == true) {
-        setUseEmpresa(!useEmpresa)
-        setUseServicos(!useServicos)
-  
-  
-      } else if (useEquipamentos == true) {
-        setUseEquipamentos(!useEquipamentos)
-        setUseServicos(!useServicos)
-  
-      } else { setUseServicos(!useServicos) }
-    }
-  
-    const handleEquipamentosClick = () => {
-      if (useServicos == true) {
-        setUseServicos(!useServicos)
-        setUseEquipamentos(!useEquipamentos)
-  
-  
-      } else if (useEmpresa == true) {
-        setUseEmpresa(!useEmpresa)
-        setUseEquipamentos(!useEquipamentos)
-  
-  
-      } else { setUseEquipamentos(!useEquipamentos) }
-    }
-  
-  
-  
+    const [useEmpresa] = useState(true)
+    const [useServicos] = useState(false)
+    const [useEquipamentos] = useState(false)
   
     const [useFAQEmpresa1, setUseFAQEmpresa1 ] = useState(false)
     const [useFAQEmpresa2, setUseFAQEmpresa2 ] = useState(false)
