@@ -1,30 +1,17 @@
 import React, { useRef, useState } from "react";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
-
-import { ChakraProvider } from '@chakra-ui/react'
-
 import Home from "../pages/Home";
 import Contato from "../pages/Contato";
-import TopNavBar from "./TopNavBar/TopNavBar";
-import Navbar from "./Navbar/Navbar";
 import ASulpol from "../pages/ASulpol";
-import Footer from "./Footer/Footer";
-import WhatsappButton from './WhatsappButton'
 import LPRefrigeracao from "../pages/LPRefrigeracao";
 import  ContextProdutos from "../contexts/ContextProdutos";
-
 import Star300S from "../maquinasPages/Star300S";
-import Star300SMRP from "../maquinasPages/Star300SMRP";
-import Star300SPV from "../maquinasPages/Star300SPV";
-import Star300SR2436 from "../maquinasPages/Star300SR2436";
-import Star300STG from "../maquinasPages/Star300STG";
 import DosadoraElastomero from "../maquinasPages/DosadoraElastomero";
 import DosadoraPortatil from "../maquinasPages/DosadoraPortatil";
 import DosadoraAltapressao from "../maquinasPages/DosadoraAltapressao";
 import DosadoraBaixapressao from "../maquinasPages/DosadoraBaixapressao";
 import DCPD from "../maquinasPages/DCPD";
 import CABECOTE from "../maquinasPages/CABECOTE";
-
 import LPCalcado from "../pages/LPCalcado";
 import Bombas from "../maquinasPages/Bombas";
 import PortaMoldes from "../maquinasPages/PortaMoldes";
@@ -36,35 +23,6 @@ function RoutesDOM() {
     const [menuMobile, setMenuMobile] = useState(0);
     const [menuProdutos, setProdutos] = useState(0);
     const forms = useRef(null)
-
-    const [ptLang, setPtLang] = useState(true)
-    const [enLang, setEnLang] = useState(false)
-    const [esLang, setESLang] = useState(false)
-
-    const handlePtLangChange = () => {
-        setPtLang(!ptLang)
-
-        if (enLang == true) {
-            setPtLang(!ptLang)
-            setEnLang(!enLang)
-        } else if (esLang == true) {
-            setPtLang(!ptLang)
-            setESLang(!esLang)
-        }
-    }
-
-    const handleEnLangChange = () => {
-        setEnLang(!enLang)
-
-        if (ptLang == true) {
-            setPtLang(!ptLang)
-            setEnLang(!enLang)
-
-        } else if (esLang == true) {
-            setEnLang(!enLang)
-            setESLang(!esLang)
-        }
-    }
 
     const [open, setOpen] = React.useState(false);
     const [open2, setOpen2] = React.useState(false);
@@ -96,22 +54,13 @@ function RoutesDOM() {
 
    return(
        <BrowserRouter>
-       <ChakraProvider>
-       <ContextProdutos.Provider value={{menuMobile, setMenuMobile, menuProdutos, setProdutos, forms, open, open2, open3, open4, open5, open6, setOpen, setOpen2, setOpen3, setOpen4, setOpen5, setOpen6, handleClose, handleClose2, handleClose3, handleClose4, handleClose5, handleClose6, handleOpen, handleOpen2, handleOpen3, handleOpen4, handleOpen5, handleOpen6, ptLang, enLang, esLang, handlePtLangChange, handleEnLangChange }}>
-           <TopNavBar />
-           <Navbar />
+       <ContextProdutos.Provider value={{menuMobile, setMenuMobile, menuProdutos, setProdutos, forms, open, open2, open3, open4, open5, open6, setOpen, setOpen2, setOpen3, setOpen4, setOpen5, setOpen6, handleClose, handleClose2, handleClose3, handleClose4, handleClose5, handleClose6, handleOpen, handleOpen2, handleOpen3, handleOpen4, handleOpen5, handleOpen6, }}>
           <Routes>
            <Route path='/' element={<Home/>} />
            <Route path='/Contato' element={<Contato/>} />
            <Route path='/A-Sulpol' element={<ASulpol/>} />
-
            <Route path='/Refrigeracao' element={<LPRefrigeracao/>} />
-
            <Route path='/Star300S' element={<Star300S/>} />
-           <Route path='/Star300SMRP' element={<Star300SMRP/>} />
-           <Route path='/Star300SPV' element={<Star300SPV/>} />
-           <Route path='/Star300SR2436' element={<Star300SR2436/>} />
-           <Route path='/Star300STG' element={<Star300STG/>} />
            <Route path='/DosadoraElastomero' element={<DosadoraElastomero/>} />
            <Route path='/DosadoraPortatil' element={<DosadoraPortatil/>} />
            <Route path='/DosadoraAltapressao' element={<DosadoraAltapressao/>} />
@@ -122,20 +71,11 @@ function RoutesDOM() {
            <Route path='/Porta-Moldes' element={<PortaMoldes/>} />
            <Route path='/Paineis-e-Telhas' element={<PaineiseTelhas/>} />
            <Route path='/Projetos-Especiais' element={<ProjetosEspeciais/>} />
-
-
-
-
-
            <Route path='/refrigera%C3%A7%C3%A3o' element={<LPRefrigeracao/>} />
            <Route path='/cal%C3%A7ado' element={<LPCalcado/>} />
            <Route path='/Filtros' element={<LPFiltros/>} />
-          </Routes>
-          <Footer />
-          <WhatsappButton />
-          
-      </ContextProdutos.Provider>
-      </ChakraProvider>
+          </Routes> 
+       </ContextProdutos.Provider>
        </BrowserRouter>
    )
 }

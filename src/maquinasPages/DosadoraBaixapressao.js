@@ -1,12 +1,14 @@
 import React, {useContext, useState} from 'react'
-
 import ButtonInteresse from '../components/ButtonInteresse/ButtonInteresse'
-
 import { BsFillCheckCircleFill } from 'react-icons/bs'
 import { GoArrowSmallDown } from 'react-icons/go'
 import FormularioMaquinas from '../components/FormularioMaquinas/FormularioMaquinas'
 import ContextProdutos from '../contexts/ContextProdutos'
 import {motion} from "framer-motion"
+import TopNavBar from '../components/TopNavBar/TopNavBar'
+import Navbar from '../components/Navbar/Navbar'
+import Footer from '../components/Footer/Footer'
+import WhatsappButton from '../components/WhatsappButton'
 
 function DosadoraBaixapressao()  {
 
@@ -50,7 +52,6 @@ function DosadoraBaixapressao()  {
   }
 
   const [flexibility, setFlexibility] = useState(0);
-
   const [durability, setDurability] = useState(0);
 
       
@@ -61,6 +62,8 @@ function DosadoraBaixapressao()  {
     initial={{opacity: 0}}
     animate={{opacity: 1, transition: {duration: 0.8}}}
     exit={{opacity: 0, transition: {duration: 0.1} }} className={` w-full transition-all duration-1000 ${menuProdutos? 'lg:pl-[30%] 2xl:pl-[25%]' : 'lg:pl-[0%] 2xl:pl-[0%]'}`}>
+    <TopNavBar />
+    <Navbar />
         <div>
         <div className='container mx-auto'>
             <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
@@ -140,15 +143,15 @@ function DosadoraBaixapressao()  {
         </div>   
 
         <div className='py-36'>
-
-        <FormularioMaquinas />
-            
+        <FormularioMaquinas />  
         </div> 
 
 
         </div>
         </div>
-    </motion.div>
+        <Footer />
+        <WhatsappButton />
+        </motion.div>
   )
 }
 

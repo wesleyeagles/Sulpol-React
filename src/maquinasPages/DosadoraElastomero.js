@@ -8,6 +8,10 @@ import { GoArrowSmallDown } from 'react-icons/go'
 import FormularioMaquinas from '../components/FormularioMaquinas/FormularioMaquinas'
 import ContextProdutos from '../contexts/ContextProdutos'
 import ButtonPrimary from '../components/ButtonPrimary/ButtonPrimary'
+import TopNavBar from '../components/TopNavBar/TopNavBar'
+import Navbar from '../components/Navbar/Navbar'
+import Footer from '../components/Footer/Footer'
+import WhatsappButton from '../components/WhatsappButton'
 
 function DosadoraElastomero()  {
 
@@ -87,6 +91,8 @@ function DosadoraElastomero()  {
     initial={{opacity: 0}}
     animate={{opacity: 1, transition: {duration: 0.8}}}
     exit={{opacity: 0, transition: {duration: 0.1} }} className={` w-full transition-all duration-1000 ${menuProdutos? 'lg:pl-[30%] 2xl:pl-[25%]' : 'lg:pl-[0%] 2xl:pl-[0%]'}`}>
+        <TopNavBar />
+    <Navbar />
         <div>
         <div className='container mx-auto'>
             <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
@@ -214,6 +220,8 @@ function DosadoraElastomero()  {
 
         </div>
         </div>
+        <Footer />
+    <WhatsappButton />
     </motion.div>
   )
 }

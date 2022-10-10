@@ -3,6 +3,10 @@ import { HashLink } from 'react-router-hash-link'
 import {ReactComponent as Element } from '../images/Element.svg'
 import ButtonPrimary from '../components/ButtonPrimary/ButtonPrimary'
 import {motion} from "framer-motion"
+import TopNavBar from '../components/TopNavBar/TopNavBar'
+import Navbar from '../components/Navbar/Navbar'
+import Footer from '../components/Footer/Footer'
+import WhatsappButton from '../components/WhatsappButton'
 
 const ASulpol = () => {
 
@@ -49,6 +53,8 @@ const ASulpol = () => {
     animate={{opacity: 1, transition: {duration: 0.8}}}
     exit={{opacity: 0, transition: {duration: 0.1} }}
     >
+    <TopNavBar />
+    <Navbar />
     <div>
       <div className='relative w-full h-[100vh] flex items-center z-10'>
           <img className='absolute w-full h-full object-cover -z-10' alt='slide-1' src='https://uploaddeimagens.com.br/images/003/910/884/full/Grupo_141.png?1655839430' />
@@ -273,6 +279,8 @@ Ainda no ano de 2007, a Sulpol iniciou uma forte parceria com uma tradicional em
         </div>
         </div>
     </div>
+    <Footer />
+    <WhatsappButton />
     </motion.div>
   )
 }

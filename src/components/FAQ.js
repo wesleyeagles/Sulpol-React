@@ -14,11 +14,11 @@ function FAQ({text, fontSize}) {
     const handleClickFaq1 = () => {
       setUseFAQEmpresa1(!useFAQEmpresa1)
   
-      if (useFAQEmpresa2 == true) {
+      if (useFAQEmpresa2 === true) {
         setUseFAQEmpresa2(!useFAQEmpresa2)
-      } else if (useFAQEmpresa3 == true) {
+      } else if (useFAQEmpresa3 === true) {
         setUseFAQEmpresa3(!useFAQEmpresa3)
-      } else if (useFAQEmpresa4 == true) {
+      } else if (useFAQEmpresa4 === true) {
         setUseFAQEmpresa4(!useFAQEmpresa4)
       }
   
@@ -28,11 +28,11 @@ function FAQ({text, fontSize}) {
     const handleClickFaq2 = () => {
       setUseFAQEmpresa2(!useFAQEmpresa2)
   
-      if (useFAQEmpresa1 == true) {
+      if (useFAQEmpresa1 === true) {
         setUseFAQEmpresa1(!useFAQEmpresa1)
-      } else if (useFAQEmpresa3 == true) {
+      } else if (useFAQEmpresa3 === true) {
         setUseFAQEmpresa3(!useFAQEmpresa3)
-      } else if (useFAQEmpresa4 == true) {
+      } else if (useFAQEmpresa4 === true) {
         setUseFAQEmpresa4(!useFAQEmpresa4)
       }
   
@@ -41,11 +41,11 @@ function FAQ({text, fontSize}) {
     const handleClickFaq3 = () => {
       setUseFAQEmpresa3(!useFAQEmpresa3)
   
-      if (useFAQEmpresa2 == true) {
+      if (useFAQEmpresa2 === true) {
         setUseFAQEmpresa2(!useFAQEmpresa2)
-      } else if (useFAQEmpresa1 == true) {
+      } else if (useFAQEmpresa1 === true) {
         setUseFAQEmpresa1(!useFAQEmpresa1)
-      } else if (useFAQEmpresa4 == true) {
+      } else if (useFAQEmpresa4 === true) {
         setUseFAQEmpresa4(!useFAQEmpresa4)
       }
   
@@ -54,11 +54,11 @@ function FAQ({text, fontSize}) {
     const handleClickFaq4 = () => {
       setUseFAQEmpresa4(!useFAQEmpresa4)
   
-      if (useFAQEmpresa2 == true) {
+      if (useFAQEmpresa2 === true) {
         setUseFAQEmpresa2(!useFAQEmpresa2)
-      } else if (useFAQEmpresa3 == true) {
+      } else if (useFAQEmpresa3 === true) {
         setUseFAQEmpresa3(!useFAQEmpresa3)
-      } else if (useFAQEmpresa1 == true) {
+      } else if (useFAQEmpresa1 === true) {
         setUseFAQEmpresa1(!useFAQEmpresa1)
       }
     }

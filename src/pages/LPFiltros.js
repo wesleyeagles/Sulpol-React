@@ -3,6 +3,10 @@ import ButtonLP from "../components/LPComponents/ButtonLP";
 import {motion} from "framer-motion"
 
 import { HashLink } from 'react-router-hash-link'
+import TopNavBar from "../components/TopNavBar/TopNavBar";
+import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
+import WhatsappButton from "../components/WhatsappButton";
 
 const links = [
   {
@@ -98,6 +102,8 @@ function LPFiltros() {
     animate={{opacity: 1, transition: {duration: 0.8}}}
     exit={{opacity: 0, transition: {duration: 0.1} }}
     >
+      <TopNavBar />
+    <Navbar />
     <div className="relative bg-[#202124]" id="lpheader">
       <img
         className="absolute w-full lg:h-auto 2xl:h-auto object-cover"
@@ -312,6 +318,8 @@ function LPFiltros() {
         </div>
       </div>
     </div>
+    <Footer />
+    <WhatsappButton />
     </motion.div>
   );
 }

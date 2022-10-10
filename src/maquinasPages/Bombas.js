@@ -5,6 +5,10 @@ import ButtonInteresse from '../components/ButtonInteresse/ButtonInteresse'
 import FormularioMaquinas from '../components/FormularioMaquinas/FormularioMaquinas'
 import ContextProdutos from '../contexts/ContextProdutos'
 import {motion} from "framer-motion"
+import TopNavBar from '../components/TopNavBar/TopNavBar'
+import Navbar from '../components/Navbar/Navbar'
+import Footer from '../components/Footer/Footer'
+import WhatsappButton from '../components/WhatsappButton'
 
 function Bombas()  {
 
@@ -85,6 +89,8 @@ function Bombas()  {
     animate={{opacity: 1, transition: {duration: 0.8}}}
     exit={{opacity: 0, transition: {duration: 0.1} }}
     >
+    <TopNavBar />
+    <Navbar />
     <div className={` w-full transition-all duration-1000 ${menuProdutos? 'lg:pl-[30%] 2xl:pl-[20%]' : 'lg:pl-[0%] 2xl:pl-[0%]'}`}>
         <div>
         <div className='container mx-auto'>
@@ -131,6 +137,8 @@ rápida.</p>
         </div>
         </div>
     </div>
+    <Footer />
+    <WhatsappButton />
     </motion.div>
   )
 }

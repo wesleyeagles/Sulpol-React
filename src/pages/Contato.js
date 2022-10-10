@@ -1,6 +1,10 @@
 import React from "react";
 import FAQ from '../components/FAQ'
 import {motion} from "framer-motion"
+import TopNavBar from "../components/TopNavBar/TopNavBar";
+import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
+import WhatsappButton from "../components/WhatsappButton";
 
 const Contato = () => {
 
@@ -31,6 +35,8 @@ const Contato = () => {
     animate={{opacity: 1, transition: {duration: 0.8}}}
     exit={{opacity: 0, transition: {duration: 0.1} }}
     >
+    <TopNavBar />
+    <Navbar />
     <div>
       <div className="pt-64 py-36">
         <div className="container mx-auto">
@@ -174,6 +180,8 @@ const Contato = () => {
         </div>
       </div>
     </div>
+    <Footer />
+    <WhatsappButton />
     </motion.div>
 
   );

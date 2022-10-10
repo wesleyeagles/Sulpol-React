@@ -1,10 +1,5 @@
 import React, { useRef } from "react";
 import ButtonLP from "../components/LPComponents/ButtonLP";
-import Navbar from "../components/LPComponents/Navbar";
-
-import  BrazilFlag  from '../images/flagBrazil.png';
-import  USAFlag  from '../images/flagUSA.png';
-import  SpainFlag  from '../images/flagSpain.png';
 
 
 import {motion} from "framer-motion"
@@ -15,6 +10,10 @@ import {ReactComponent as ExplorarArrow} from '../images/Explorar.svg'
 
 import EcologicaAP from '../images/ecologicaAP.png'
 import { HashLink } from 'react-router-hash-link'
+import TopNavBar from "../components/TopNavBar/TopNavBar";
+import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
+import WhatsappButton from "../components/WhatsappButton";
 
 const links = [
   {
@@ -111,6 +110,8 @@ function LPRefrigeracao() {
     animate={{opacity: 1, transition: {duration: 0.8}}}
     exit={{opacity: 0, transition: {duration: 0.1} }}
     >
+      <TopNavBar />
+    <Navbar />
     <div className="relative bg-[#202124]" id="lpheader">
       <img
         className="absolute w-full lg:h-auto 2xl:h-auto object-cover"
@@ -382,6 +383,8 @@ function LPRefrigeracao() {
         </div>
       </div>
     </div>
+    <Footer />
+    <WhatsappButton />
     </motion.div>
   );
 }

@@ -30,6 +30,10 @@ import { FiFilter } from 'react-icons/fi'
 import { ThermometerSimple } from 'phosphor-react'
 import { CgSmartHomeRefrigerator } from 'react-icons/cg'
 import { HashLink } from 'react-router-hash-link'
+import TopNavBar from '../components/TopNavBar/TopNavBar'
+import Navbar from '../components/Navbar/Navbar'
+import Footer from '../components/Footer/Footer'
+import WhatsappButton from '../components/WhatsappButton'
 
 
 
@@ -57,26 +61,6 @@ function Home() {
 
     const { handleOpen, handleOpen2, handleOpen3, handleOpen4, handleOpen5, handleOpen6 } = useContext(ContextProdutos)
     
-
-   
-    setTimeout(() => {
-
-      if (mobile.matches) {
-        const navbar = document.getElementById("header");
-        navbar.style.display = "block";
-        console.log("Mobile")
-      } else {
-
-        const topnavbar = document.getElementById("topbar");
-        const navbar = document.getElementById("header");
-        topnavbar.style.display = "block";
-        navbar.style.display = "block";
-        console.log("Desktop")
-      }
-
-
-     
-    }, 100);
 
 
 
@@ -118,6 +102,8 @@ function Home() {
     animate={{opacity: 1, transition: {duration: 0.8}}}
     exit={{opacity: 0, transition: {duration: 0.1} }}
     >
+    <TopNavBar />
+    <Navbar />
     <div id='bg-hero'>
       <Slider></Slider>
 
@@ -505,6 +491,8 @@ function Home() {
             <BasicModal5 />
             <BasicModal6 />
     </div>
+    <Footer />
+    <WhatsappButton />
     </motion.div>
   );
 }

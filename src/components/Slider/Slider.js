@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import './Slidercss.css'
 
 
@@ -15,16 +15,12 @@ import ButtonPrimary from '../ButtonPrimary/ButtonPrimary';
 import Slide1 from '../../images/slide1Home.png'
 import Slide2 from '../../images/slide1Home.png'
 import Slide3 from '../../images/slide1Home.png'
-import ContextProdutos from '../../contexts/ContextProdutos';
 
 export default () => {
 
-
-  const { menuMobile, ptLang, enLang, esLang } = useContext(ContextProdutos)
-
   return (
     <div>
-    {ptLang? <Swiper className={`homeSwipe duration-1000`}
+    <Swiper className={`homeSwipe duration-1000`}
       modules={[Pagination, Autoplay]}
       autoPlay={true}
       pagination={{clickable: true}}
@@ -65,64 +61,6 @@ export default () => {
       </SwiperSlide>
 
     </Swiper>
-    
-    :
-
-    enLang? 
-
-
-    <Swiper className={`homeSwipe duration-1000`}
-      modules={[Pagination, Autoplay]}
-      autoPlay={true}
-      pagination={{clickable: true}}
-      slidesPerView={1}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
-    >
-      <SwiperSlide>
-        <div className='relative w-full h-[100vh] items-center flex z-10'>
-          <img className='absolute w-full h-full object-cover -z-10' alt='slide-1' src={Slide1} />
-          <div className='container mx-auto'>
-            <h1 className='text-white text-4xl leading-tight font-medium lg:w-[55%] 2xl:w-[40%] mb-7 pt-40'>Technological solutions for polyurethanes</h1>
-            <p className='text-base text-white mb-12 lg:w-[33%]'>For over 30 years delivering machines and equipment of high reliability and efficiency.</p>
-            <ButtonPrimary link="/Contato#header" text="Contact us" />
-          </div>
-        </div>
-
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className='relative w-full h-[100vh] items-center flex z-10'>
-          <img className='absolute w-full h-full object-cover -z-10' alt='slide-1' src={Slide2} />
-          <div className='container mx-auto'>
-            <h1 className='text-white text-4xl leading-tight font-medium lg:w-[55%] 2xl:w-[60%] mb-7 pt-40'>Market leader in the manufacture of equipment for Polyurethane</h1>
-            <p className='text-base text-white mb-12 lg:w-[33%]'>For over 30 years delivering machines and equipment of high reliability and efficiency.</p>
-            <ButtonPrimary link="/Contato#header" text="Contact us" />
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className='relative w-full h-[100vh] items-center flex z-10'>
-          <img className='absolute w-full h-full object-cover -z-10' alt='slide-1' src={Slide3} />
-          <div className='container mx-auto'>
-            <h1 className='text-white text-4xl leading-tight font-medium lg:w-[55%] 2xl:w-[60%] mb-7 pt-40'>For over 30 years delivering machines and equipment of high reliability and efficiency.</h1>
-            <ButtonPrimary link="/Contato#header" text="Contact us" />
-          </div>
-        </div>
-      </SwiperSlide>
-
-    </Swiper>
-
-    :
-
-    null
-  
-  }
-
-
-
-
-
-
     </div>
 
 

@@ -1,20 +1,11 @@
-import React, {useContext, useRef, useState} from 'react'
+import React, {useContext} from 'react'
 import ContextProdutos from '../../contexts/ContextProdutos'
 import '../FormularioMaquinas/FormularioMaquinas.css'
 
 function FormularioMaquinas() {
 
-  const [formValues, setFormValues] = useState({})
+
   const { forms } = useContext(ContextProdutos)
-
-  const handleInputChange = (e) => {
-      e.preventDefault();
-
-      const {value, name} = e.target;
-      setFormValues({...formValues, [name]:value })
-  }
-
-  console.log(formValues)
 
 
   return (

@@ -8,6 +8,10 @@ import FormularioMaquinas from '../components/FormularioMaquinas/FormularioMaqui
 import ContextProdutos from '../contexts/ContextProdutos'
 import {motion} from "framer-motion"
 import ButtonPrimary from '../components/ButtonPrimary/ButtonPrimary'
+import TopNavBar from '../components/TopNavBar/TopNavBar'
+import Navbar from '../components/Navbar/Navbar'
+import Footer from '../components/Footer/Footer'
+import WhatsappButton from '../components/WhatsappButton'
 
 function DosadoraAltapressao()  {
 
@@ -65,6 +69,8 @@ function DosadoraAltapressao()  {
     animate={{opacity: 1, transition: {duration: 0.8}}}
     exit={{opacity: 0, transition: {duration: 0.1} }}
     >
+        <TopNavBar />
+    <Navbar />
     <div className={` w-full transition-all duration-1000 ${menuProdutos? 'lg:pl-[30%] 2xl:pl-[20%]' : 'lg:pl-[0%] 2xl:pl-[0%]'}`}>
         <div>
         <div className='container mx-auto'>
@@ -155,6 +161,8 @@ function DosadoraAltapressao()  {
         </div>
         </div>
     </div>
+    <Footer />
+    <WhatsappButton />
     </motion.div>
   )
 }
