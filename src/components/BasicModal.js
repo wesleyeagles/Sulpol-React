@@ -7,6 +7,8 @@ import { FaTools } from 'react-icons/fa';
 import { BsFillGearFill } from 'react-icons/bs';
 import { CgPerformance } from 'react-icons/cg';
 import { GiGears } from 'react-icons/gi';
+import { useContext } from 'react';
+import Context from '../contexts/MainContext';
 
 const style = {
   position: 'absolute',
@@ -28,12 +30,9 @@ const style = {
 
 export default function BasicModal() {
 
-    const { open, handleClose } = React.useContext(ContextProdutos)
+    const { open, handleClose } = useContext(Context)
 
   return (
-    <div>
-
-
       <Modal
         open={open}
         onClose={handleClose}
@@ -55,8 +54,5 @@ export default function BasicModal() {
                 </div>
         </Box>
       </Modal>
-
-
-    </div>
   );
 }
