@@ -36,10 +36,14 @@ import Footer from '../components/Footer/Footer'
 import WhatsappButton from '../components/WhatsappButton'
 import Context from '../contexts/MainContext'
 
+import projetos from '../images/new-images/projetos.png'
+import garantia from '../images/new-images/garantia.png'
+import treinamentos from '../images/new-images/treinamentos.png'
+import assistencia from '../images/new-images/assistencia.png'
+import pecas from '../images/new-images/pecas.png'
+import upgrades from '../images/new-images/upgrades.webp'
 
-
-
-
+import aplicacoes from '../images/new-images/aplicacoes.png'
 
 
 function Home() {
@@ -61,9 +65,6 @@ function Home() {
 
     const { isPortuguese, isEnglish, isSpanish, handleOpen } = useContext(Context)
     
-
-
-
   const carouselx = useRef(null)
 
     const handleLeftClick = (e) => {
@@ -180,7 +181,7 @@ function Home() {
             <div ref={carouselx} className="carouselE flex overflow-x-auto gap-9 scroll-smooth">
   
               <div className='relative w-full lg:w-700 h-300 lg:h-400 flex-none'>
-                <img className='absolute -z-10 w-full h-full' src='https://uploaddeimagens.com.br/images/003/910/072/full/Grupo_111.png?1655812767' alt='' />
+                <img className='absolute -z-10 w-full h-full' src={projetos} alt='' />
                 <div className={`flex flex-col justify-end duration-1000 overflow-hidden pl-50 ${serviceMenu1? 'h-0' : 'h-full pb-50'}`}>
                   <h3 className='text-xl text-white font-medium'>Projetos especiais</h3>
                   <p className='text-sm text-white mt-[10px] mb-[15px] font-light w-[90%] lg:w-[65%]'>Com mais de 30 anos de atuação no mercado mundial do Poliuretano, a SULPOL já desenvolveu vários projetos para as diversas áreas que utilizam Poliuretano.</p>
@@ -188,7 +189,7 @@ function Home() {
               </div>
   
               <div className='relative w-full lg:w-700 h-300 lg:h-400 flex-none'>
-                <img className='absolute -z-10 w-full h-full' src='https://uploaddeimagens.com.br/images/003/917/591/full/IMG_4899_edited.png?1656332875' alt='' />
+                <img className='absolute -z-10 w-full h-full' src={garantia} alt='' />
                 <div className={`flex flex-col justify-end duration-1000 overflow-hidden pl-50 ${serviceMenu2? 'h-0' : 'h-full pb-50'}`}>
                   <h3 className='text-xl text-white font-medium'>Garantia</h3>
                   <p className='text-sm text-white mt-[10px] mb-[15px] font-light w-[90%] lg:w-[65%]'>Não se preocupe, com a SULPOL você tem garantia nos seus produtos​ e serviços</p>
@@ -196,7 +197,7 @@ function Home() {
               </div>
   
               <div className='relative w-full lg:w-700 h-300 lg:h-400 flex-none'>
-                <img className='absolute -z-10 w-full h-full' src='https://uploaddeimagens.com.br/images/003/917/594/full/IMG_4944_edited.png?1656333050' alt='' />
+                <img className='absolute -z-10 w-full h-full' src={treinamentos} alt='' />
   
                 <div className={`flex flex-col justify-end duration-1000 overflow-hidden pl-50 ${serviceMenu3? 'h-0' : 'h-full pb-50'}`}>
                   <h3 className='text-xl text-white font-medium'>Treinamentos</h3>
@@ -205,7 +206,7 @@ function Home() {
               </div>
   
               <div className='relative w-full lg:w-700 h-300 lg:h-400 flex-none'>
-                <img className='absolute -z-10 w-full h-full' src='https://uploaddeimagens.com.br/images/003/917/597/full/IMG_4862_edited.png?1656333138' alt='' />
+                <img className='absolute -z-10 w-full h-full' src={assistencia} alt='' />
   
                 <div className={`flex flex-col justify-end duration-1000 overflow-hidden pl-50 ${serviceMenu4? 'h-0' : 'h-full pb-50'}`}>
                   <h3 className='text-xl text-white font-medium'>Assistência Técnica</h3>
@@ -214,7 +215,7 @@ function Home() {
               </div>
   
               <div className='relative w-full lg:w-700 h-300 lg:h-400 flex-none'>
-                <img className='absolute -z-10 w-full h-full' src='https://uploaddeimagens.com.br/images/003/917/605/full/IMG_4913_edited.png?1656333275' alt='' />
+                <img className='absolute -z-10 w-full h-full' src={pecas} alt='' />
   
                 <div className={`flex flex-col justify-end duration-1000 overflow-hidden pl-50 ${serviceMenu5? 'h-0' : 'h-full pb-50'}`}>
                   <h3 className='text-xl text-white font-medium'>Peças de Reposição</h3>
@@ -223,7 +224,7 @@ function Home() {
               </div>
   
               <div className='relative w-full lg:w-700 h-300 lg:h-400 flex-none'>
-                <img className='absolute -z-10 w-full h-full' src='https://static.wixstatic.com/media/0c951b_9d3c432d304048a8b897d497ea5da1e5~mv2.jpg/v1/fill/w_485,h_323,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/IMG_4991%2520(1)_edited.jpg' alt='' />
+                <img className='absolute -z-10 w-full h-full' src={upgrades} alt='' />
   
                 <div className={`flex flex-col justify-end duration-1000 overflow-hidden pl-50 ${serviceMenu6? 'h-0' : 'h-full pb-50'}`}>
                   <h3 className='text-xl text-white font-medium'>Upgrades e Retrofits</h3>
@@ -249,7 +250,7 @@ function Home() {
               <div className='w-full md:w-[45%]'>
               <span className='text-base text-[#81D742] font-medium'>APLICAÇÕES</span>
               <h2 className="text-4xl leading-tight mb-[40px]">Excelência que se destaca pelo mundo</h2>
-              <img src='https://uploaddeimagens.com.br/images/003/910/159/full/Interse%C3%A7%C3%A3o_5.png?1655816485' alt='' />
+              <img src={aplicacoes} alt='' />
               </div>
   
               <div className='w-full md:w-[50%] mt-8 lg:mt-0'>
@@ -535,23 +536,23 @@ function Home() {
             <div ref={carouselx} className="carouselE flex overflow-x-auto gap-9 scroll-smooth">
   
               <div className='relative w-full lg:w-700 h-300 lg:h-400 flex-none'>
-                <img className='absolute -z-10 w-full h-full' src='https://uploaddeimagens.com.br/images/003/910/072/full/Grupo_111.png?1655812767' alt='' />
-                <div className={`flex flex-col justify-end duration-1000 overflow-hidden pl-50 ${serviceMenu1? 'h-0' : 'h-full pb-50'}`}>
+              <img className='absolute -z-10 w-full h-full' src={projetos} alt='' />
+              <div className={`flex flex-col justify-end duration-1000 overflow-hidden pl-50 ${serviceMenu1? 'h-0' : 'h-full pb-50'}`}>
                   <h3 className='text-xl text-white font-medium'>Special Projects</h3>
                   <p className='text-sm text-white mt-[10px] mb-[15px] font-light w-[90%] lg:w-[65%]'>With more than 30 years of experience in the polyurethane world market, SULPOL has already developed several projects for the different areas that use polyurethane.</p>
                 </div>
               </div>
   
               <div className='relative w-full lg:w-700 h-300 lg:h-400 flex-none'>
-                <img className='absolute -z-10 w-full h-full' src='https://uploaddeimagens.com.br/images/003/917/591/full/IMG_4899_edited.png?1656332875' alt='' />
-                <div className={`flex flex-col justify-end duration-1000 overflow-hidden pl-50 ${serviceMenu2? 'h-0' : 'h-full pb-50'}`}>
+              <img className='absolute -z-10 w-full h-full' src={garantia} alt='' />
+              <div className={`flex flex-col justify-end duration-1000 overflow-hidden pl-50 ${serviceMenu2? 'h-0' : 'h-full pb-50'}`}>
                   <h3 className='text-xl text-white font-medium'>Guarantee</h3>
                   <p className='text-sm text-white mt-[10px] mb-[15px] font-light w-[90%] lg:w-[65%]'>Don't worry, with SULPOL you have a guarantee on your products and services</p>
                 </div>
               </div>
   
               <div className='relative w-full lg:w-700 h-300 lg:h-400 flex-none'>
-                <img className='absolute -z-10 w-full h-full' src='https://uploaddeimagens.com.br/images/003/917/594/full/IMG_4944_edited.png?1656333050' alt='' />
+              <img className='absolute -z-10 w-full h-full' src={treinamentos} alt='' />
   
                 <div className={`flex flex-col justify-end duration-1000 overflow-hidden pl-50 ${serviceMenu3? 'h-0' : 'h-full pb-50'}`}>
                   <h3 className='text-xl text-white font-medium'>Trainings</h3>
@@ -560,7 +561,7 @@ function Home() {
               </div>
   
               <div className='relative w-full lg:w-700 h-300 lg:h-400 flex-none'>
-                <img className='absolute -z-10 w-full h-full' src='https://uploaddeimagens.com.br/images/003/917/597/full/IMG_4862_edited.png?1656333138' alt='' />
+              <img className='absolute -z-10 w-full h-full' src={assistencia} alt='' />
   
                 <div className={`flex flex-col justify-end duration-1000 overflow-hidden pl-50 ${serviceMenu4? 'h-0' : 'h-full pb-50'}`}>
                   <h3 className='text-xl text-white font-medium'>Technical Assistance</h3>
@@ -569,7 +570,7 @@ function Home() {
               </div>
   
               <div className='relative w-full lg:w-700 h-300 lg:h-400 flex-none'>
-                <img className='absolute -z-10 w-full h-full' src='https://uploaddeimagens.com.br/images/003/917/605/full/IMG_4913_edited.png?1656333275' alt='' />
+              <img className='absolute -z-10 w-full h-full' src={pecas} alt='' />
   
                 <div className={`flex flex-col justify-end duration-1000 overflow-hidden pl-50 ${serviceMenu5? 'h-0' : 'h-full pb-50'}`}>
                   <h3 className='text-xl text-white font-medium'>Spare Parts</h3>
@@ -578,7 +579,7 @@ function Home() {
               </div>
   
               <div className='relative w-full lg:w-700 h-300 lg:h-400 flex-none'>
-                <img className='absolute -z-10 w-full h-full' src='https://static.wixstatic.com/media/0c951b_9d3c432d304048a8b897d497ea5da1e5~mv2.jpg/v1/fill/w_485,h_323,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/IMG_4991%2520(1)_edited.jpg' alt='' />
+              <img className='absolute -z-10 w-full h-full' src={upgrades} alt='' />
   
                 <div className={`flex flex-col justify-end duration-1000 overflow-hidden pl-50 ${serviceMenu6? 'h-0' : 'h-full pb-50'}`}>
                   <h3 className='text-xl text-white font-medium'>Upgrades and Retrofits</h3>
@@ -604,7 +605,7 @@ function Home() {
               <div className='w-full md:w-[45%]'>
               <span className='text-base text-[#81D742] font-medium'>APLICATIONS</span>
               <h2 className="text-4xl leading-tight mb-[40px]">Excellence that stands out around the world</h2>
-              <img src='https://uploaddeimagens.com.br/images/003/910/159/full/Interse%C3%A7%C3%A3o_5.png?1655816485' alt='' />
+              <img src={aplicacoes} alt='' />
               </div>
   
               <div className='w-full md:w-[50%] mt-8 lg:mt-0'>
@@ -897,23 +898,23 @@ function Home() {
             <div ref={carouselx} className="carouselE flex overflow-x-auto gap-9 scroll-smooth">
   
               <div className='relative w-full lg:w-700 h-300 lg:h-400 flex-none'>
-                <img className='absolute -z-10 w-full h-full' src='https://uploaddeimagens.com.br/images/003/910/072/full/Grupo_111.png?1655812767' alt='' />
-                <div className={`flex flex-col justify-end duration-1000 overflow-hidden pl-50 ${serviceMenu1? 'h-0' : 'h-full pb-50'}`}>
+              <img className='absolute -z-10 w-full h-full' src={projetos} alt='' />
+              <div className={`flex flex-col justify-end duration-1000 overflow-hidden pl-50 ${serviceMenu1? 'h-0' : 'h-full pb-50'}`}>
                   <h3 className='text-xl text-white font-medium'>Proyectos especiales</h3>
                   <p className='text-sm text-white mt-[10px] mb-[15px] font-light w-[90%] lg:w-[65%]'>Con más de 30 años de experiencia en el mercado mundial del poliuretano, SULPOL ya ha desarrollado varios proyectos para las diferentes áreas que utilizan poliuretano.</p>
                 </div>
               </div>
   
               <div className='relative w-full lg:w-700 h-300 lg:h-400 flex-none'>
-                <img className='absolute -z-10 w-full h-full' src='https://uploaddeimagens.com.br/images/003/917/591/full/IMG_4899_edited.png?1656332875' alt='' />
-                <div className={`flex flex-col justify-end duration-1000 overflow-hidden pl-50 ${serviceMenu2? 'h-0' : 'h-full pb-50'}`}>
+              <img className='absolute -z-10 w-full h-full' src={garantia} alt='' />
+              <div className={`flex flex-col justify-end duration-1000 overflow-hidden pl-50 ${serviceMenu2? 'h-0' : 'h-full pb-50'}`}>
                   <h3 className='text-xl text-white font-medium'>Garantizar</h3>
                   <p className='text-sm text-white mt-[10px] mb-[15px] font-light w-[90%] lg:w-[65%]'>No te preocupes, con SULPOL tienes garantía en tus productos y servicios</p>
                 </div>
               </div>
   
               <div className='relative w-full lg:w-700 h-300 lg:h-400 flex-none'>
-                <img className='absolute -z-10 w-full h-full' src='https://uploaddeimagens.com.br/images/003/917/594/full/IMG_4944_edited.png?1656333050' alt='' />
+              <img className='absolute -z-10 w-full h-full' src={treinamentos} alt='' />
   
                 <div className={`flex flex-col justify-end duration-1000 overflow-hidden pl-50 ${serviceMenu3? 'h-0' : 'h-full pb-50'}`}>
                   <h3 className='text-xl text-white font-medium'>Entrenamientos</h3>
@@ -922,7 +923,7 @@ function Home() {
               </div>
   
               <div className='relative w-full lg:w-700 h-300 lg:h-400 flex-none'>
-                <img className='absolute -z-10 w-full h-full' src='https://uploaddeimagens.com.br/images/003/917/597/full/IMG_4862_edited.png?1656333138' alt='' />
+              <img className='absolute -z-10 w-full h-full' src={assistencia} alt='' />
   
                 <div className={`flex flex-col justify-end duration-1000 overflow-hidden pl-50 ${serviceMenu4? 'h-0' : 'h-full pb-50'}`}>
                   <h3 className='text-xl text-white font-medium'>Asistencia técnica</h3>
@@ -931,7 +932,7 @@ function Home() {
               </div>
   
               <div className='relative w-full lg:w-700 h-300 lg:h-400 flex-none'>
-                <img className='absolute -z-10 w-full h-full' src='https://uploaddeimagens.com.br/images/003/917/605/full/IMG_4913_edited.png?1656333275' alt='' />
+              <img className='absolute -z-10 w-full h-full' src={pecas} alt='' />
   
                 <div className={`flex flex-col justify-end duration-1000 overflow-hidden pl-50 ${serviceMenu5? 'h-0' : 'h-full pb-50'}`}>
                   <h3 className='text-xl text-white font-medium'>Piezas de repuesto</h3>
@@ -940,7 +941,7 @@ function Home() {
               </div>
   
               <div className='relative w-full lg:w-700 h-300 lg:h-400 flex-none'>
-                <img className='absolute -z-10 w-full h-full' src='https://static.wixstatic.com/media/0c951b_9d3c432d304048a8b897d497ea5da1e5~mv2.jpg/v1/fill/w_485,h_323,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/IMG_4991%2520(1)_edited.jpg' alt='' />
+              <img className='absolute -z-10 w-full h-full' src={upgrades} alt='' />
   
                 <div className={`flex flex-col justify-end duration-1000 overflow-hidden pl-50 ${serviceMenu6? 'h-0' : 'h-full pb-50'}`}>
                   <h3 className='text-xl text-white font-medium'>Actualizaciones y Modificaciones</h3>
@@ -966,7 +967,7 @@ function Home() {
               <div className='w-full md:w-[45%]'>
               <span className='text-base text-[#81D742] font-medium'>APLICACIONES</span>
               <h2 className="text-4xl leading-tight mb-[40px]">Excelencia que destaca en todo el mundo</h2>
-              <img src='https://uploaddeimagens.com.br/images/003/910/159/full/Interse%C3%A7%C3%A3o_5.png?1655816485' alt='' />
+              <img src={aplicacoes} alt='' />
               </div>
   
               <div className='w-full md:w-[50%] mt-8 lg:mt-0'>

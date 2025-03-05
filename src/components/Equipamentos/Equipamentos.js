@@ -18,13 +18,6 @@ export default function Equipamentos() {
                       <small className='text-sulpol-green text-base font-medium'>EQUIPAMENTOS</small>
                       <h2 className='text-3xl leading-tight font-medium'>Tecnología para satisfazer todas as necessidades</h2>
                   </div>
-  
-                {/*   <div className='flex gap-3'>
-                      <InputRadio labelText="Calçado" labelFor="Calçado" inputID="Calçado" />
-                      <InputRadio labelText="Refrigeração" labelFor="Refrigeração" inputID="Refrigeração" />
-                      <InputRadio labelText="Filtros automotivos" labelFor="Filtros automotivos" inputID="Filtros automotivos" />
-                      <InputRadio labelText="Ver tudo" labelFor="Ver tudo" inputID="Ver tudo" checked />
-                  </div> */}
               </div>
           </div>
   
@@ -43,13 +36,6 @@ export default function Equipamentos() {
                       <small className='text-sulpol-green text-base font-medium'>EQUIPMENTS</small>
                       <h2 className='text-3xl leading-tight font-medium'>Technology to meet every need</h2>
                   </div>
-  
-                {/*   <div className='flex gap-3'>
-                      <InputRadio labelText="Calçado" labelFor="Calçado" inputID="Calçado" />
-                      <InputRadio labelText="Refrigeração" labelFor="Refrigeração" inputID="Refrigeração" />
-                      <InputRadio labelText="Filtros automotivos" labelFor="Filtros automotivos" inputID="Filtros automotivos" />
-                      <InputRadio labelText="Ver tudo" labelFor="Ver tudo" inputID="Ver tudo" checked />
-                  </div> */}
               </div>
           </div>
   
@@ -68,13 +54,6 @@ export default function Equipamentos() {
                       <small className='text-sulpol-green text-base font-medium'>EQUIPOS</small>
                       <h2 className='text-3xl leading-tight font-medium'>Tecnología para satisfacer todas las necesidades</h2>
                   </div>
-  
-                {/*   <div className='flex gap-3'>
-                      <InputRadio labelText="Calçado" labelFor="Calçado" inputID="Calçado" />
-                      <InputRadio labelText="Refrigeração" labelFor="Refrigeração" inputID="Refrigeração" />
-                      <InputRadio labelText="Filtros automotivos" labelFor="Filtros automotivos" inputID="Filtros automotivos" />
-                      <InputRadio labelText="Ver tudo" labelFor="Ver tudo" inputID="Ver tudo" checked />
-                  </div> */}
               </div>
           </div>
   
