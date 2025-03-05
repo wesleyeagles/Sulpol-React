@@ -14,6 +14,11 @@ import Footer from '../components/Footer/Footer'
 import WhatsappButton from '../components/WhatsappButton'
 import Context from '../contexts/MainContext'
 
+import dcpd from '../images/new-images/dcpd/dcpd.png'
+import octagone1 from '../images/new-images/dcpd/octagone1.png'
+import octagone2 from '../images/new-images/dcpd/octagone2.png'
+import octagone3 from '../images/new-images/dcpd/octagone3.png'
+
 function DCPD()  {
 
   const [precision, setPrecision] = useState(0); 
@@ -79,11 +84,11 @@ function DCPD()  {
             <div className='container mx-auto'>
                 <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
                 <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                    <img className='w-[75%] md:w-[80%]' src='https://uploaddeimagens.com.br/images/003/924/542/full/Ativo_1.png?1656676377' alt=''/>
+                    <img className='w-[75%] md:w-[80%]' src={dcpd} alt=''/>
                     <div className='flex w-[100%] md:w-auto flex-row gap-5 mt-10 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] mb-16'>
-                    <img className='w-[100%] md:w-[33%]' src='https://uploaddeimagens.com.br/images/004/050/032/full/octagone1.png?1664978910' alt=''/>
-                    <img className='w-[100%] md:w-[33%]' src='https://uploaddeimagens.com.br/images/004/050/060/full/octagone2.png?1664979268' alt=''/>
-                    <img className='w-[100%] md:w-[33%]' src='https://uploaddeimagens.com.br/images/004/050/078/thumb/octagone3.png?1664979542' alt=''/>
+                    <img className='w-[100%] md:w-[33%]' src={octagone1} alt=''/>
+                    <img className='w-[100%] md:w-[33%]' src={octagone2} alt=''/>
+                    <img className='w-[100%] md:w-[33%]' src={octagone3} alt=''/>
                     </div>
     
                 </div>
@@ -210,11 +215,11 @@ function DCPD()  {
             <div className='container mx-auto'>
                 <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
                 <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                    <img className='w-[75%] md:w-[80%]' src='https://uploaddeimagens.com.br/images/003/924/542/full/Ativo_1.png?1656676377' alt=''/>
+                    <img className='w-[75%] md:w-[80%]' src={dcpd} alt=''/>
                     <div className='flex w-[100%] md:w-auto flex-row gap-5 mt-10 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] mb-16'>
-                    <img className='w-[100%] md:w-[33%]' src='https://uploaddeimagens.com.br/images/004/050/032/full/octagone1.png?1664978910' alt=''/>
-                    <img className='w-[100%] md:w-[33%]' src='https://uploaddeimagens.com.br/images/004/050/060/full/octagone2.png?1664979268' alt=''/>
-                    <img className='w-[100%] md:w-[33%]' src='https://uploaddeimagens.com.br/images/004/050/078/thumb/octagone3.png?1664979542' alt=''/>
+                    <img className='w-[100%] md:w-[33%]' src={octagone1} alt=''/>
+                    <img className='w-[100%] md:w-[33%]' src={octagone2} alt=''/>
+                    <img className='w-[100%] md:w-[33%]' src={octagone3} alt=''/>
                     </div>
     
                 </div>
@@ -341,11 +346,11 @@ function DCPD()  {
             <div className='container mx-auto'>
                 <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
                 <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                    <img className='w-[75%] md:w-[80%]' src='https://uploaddeimagens.com.br/images/003/924/542/full/Ativo_1.png?1656676377' alt=''/>
+                    <img className='w-[75%] md:w-[80%]' src={dcpd} alt=''/>
                     <div className='flex w-[100%] md:w-auto flex-row gap-5 mt-10 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] mb-16'>
-                    <img className='w-[100%] md:w-[33%]' src='https://uploaddeimagens.com.br/images/004/050/032/full/octagone1.png?1664978910' alt=''/>
-                    <img className='w-[100%] md:w-[33%]' src='https://uploaddeimagens.com.br/images/004/050/060/full/octagone2.png?1664979268' alt=''/>
-                    <img className='w-[100%] md:w-[33%]' src='https://uploaddeimagens.com.br/images/004/050/078/thumb/octagone3.png?1664979542' alt=''/>
+                    <img className='w-[100%] md:w-[33%]' src={octagone1} alt=''/>
+                    <img className='w-[100%] md:w-[33%]' src={octagone2} alt=''/>
+                    <img className='w-[100%] md:w-[33%]' src={octagone3} alt=''/>
                     </div>
     
                 </div>

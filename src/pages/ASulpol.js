@@ -10,6 +10,10 @@ import WhatsappButton from '../components/WhatsappButton'
 import { useContext } from 'react'
 import Context from '../contexts/MainContext'
 
+import banner from '../images/new-images/sulpol/banner.png'
+import jornada from '../images/new-images/sulpol/jornada.png'
+import lideres from '../images/new-images/sulpol/lideres.png'
+
 const ASulpol = () => {
 
 
@@ -60,7 +64,7 @@ const ASulpol = () => {
         <Navbar />
         <div>
           <div className='relative w-full h-[100vh] flex items-center z-10'>
-              <img className='absolute w-full h-full object-cover -z-10' alt='slide-1' src='https://uploaddeimagens.com.br/images/003/910/884/full/Grupo_141.png?1655839430' />
+              <img className='absolute w-full h-full object-cover -z-10' alt='slide-1' src={banner} />
               <div className='container mx-auto'>
                 <h1 className='text-white text-4xl leading-tight font-medium lg:w-[55%] 2xl:w-[40%] mb-7 pt-40'>Somos tecnologia em constante movimento</h1>
                 <p className='text-base text-white mb-12 lg:w-[35%]'>Fundada em 1989, hoje a SULPOL é líder no mercado brasileiro e latino americano no desenvolvimento e fabricação de dosadoras de Poliuretano.</p>
@@ -72,7 +76,7 @@ const ASulpol = () => {
             <div className='container mx-auto  border-b border-gray-300 pb-100'>
             <div className='flex flex-col lg:flex-row justify-between'>
               <div className='lg:w-[42%]'>
-                <img src='https://uploaddeimagens.com.br/images/003/910/911/full/Grupo_886.png?1655839880' alt='' />
+                <img src={jornada} alt='' />
               </div>
     
               <div className='lg:w-[48%] mt-10 lg:mt-0'>
@@ -243,7 +247,7 @@ const ASulpol = () => {
                 O QUE FAZEMOS?
                 </span>
                 <h2 className="text-4xl mb-[4rem]">Somos líderes na fabricação de equipamentos para poliuretano</h2>
-                <img src='https://uploaddeimagens.com.br/images/003/911/417/full/Grupo_883.png?1655898236' alt='' />
+                <img src={lideres} alt='' />
                 </div>
     
                 <div className='lg:w-[40%] 2xl:w-[45%] mt-10 lg:mt-0'>
@@ -257,7 +261,7 @@ const ASulpol = () => {
                 <div className='my-50'>
                 <h2 className='text-xl text-[#202124] font-medium'>Mercado de Refrigeração</h2>
                 <p className='text-base text-[#505050] font-light mt-[10px] mb-[40px]'>Nossas dosadoras de Poliuretano e injetoras de alta pressão de PU são equipamentos projetados com características específicas  para empresas do ramo de refrigeração.</p>
-                <HashLink to='/LPRefrigeracao#lpheader' className='text-sm text-[#81D742] font-semibold flex items-center gap-2' rel='noreferrer'>Ver equipamentos <img className='mt-1' src='https://gistcdn.githack.com/wesleyeagles/7966ded13d7f4bd7d4874cdd9b17798b/raw/7f6cd6b287866fc22b004a6424ab007d66c21bd8/arrowrightx.svg' alt=''></img></HashLink>
+                <HashLink to='/refrigera%C3%A7%C3%A3o' className='text-sm text-[#81D742] font-semibold flex items-center gap-2' rel='noreferrer'>Ver equipamentos <img className='mt-1' src='https://gistcdn.githack.com/wesleyeagles/7966ded13d7f4bd7d4874cdd9b17798b/raw/7f6cd6b287866fc22b004a6424ab007d66c21bd8/arrowrightx.svg' alt=''></img></HashLink>
                 </div>
     
                 <div>
@@ -297,7 +301,7 @@ const ASulpol = () => {
         <Navbar />
         <div>
           <div className='relative w-full h-[100vh] flex items-center z-10'>
-              <img className='absolute w-full h-full object-cover -z-10' alt='slide-1' src='https://uploaddeimagens.com.br/images/003/910/884/full/Grupo_141.png?1655839430' />
+              <img className='absolute w-full h-full object-cover -z-10' alt='slide-1' src={banner} />
               <div className='container mx-auto'>
                 <h1 className='text-white text-4xl leading-tight font-medium lg:w-[55%] 2xl:w-[40%] mb-7 pt-40'>We are technology in constant motion</h1>
                 <p className='text-base text-white mb-12 lg:w-[35%]'>Founded in 1989, today SULPOL is the leader in the Brazilian and Latin American market in the development and manufacture of Polyurethane dosing machines.</p>
@@ -309,7 +313,7 @@ const ASulpol = () => {
             <div className='container mx-auto  border-b border-gray-300 pb-100'>
             <div className='flex flex-col lg:flex-row justify-between'>
               <div className='lg:w-[42%]'>
-                <img src='https://uploaddeimagens.com.br/images/003/910/911/full/Grupo_886.png?1655839880' alt='' />
+                <img src={jornada} alt='' />
               </div>
     
               <div className='lg:w-[48%] mt-10 lg:mt-0'>
@@ -478,7 +482,7 @@ const ASulpol = () => {
                 WHAT WE DO?
                 </span>
                 <h2 className="text-4xl mb-[4rem]">We are leaders in the manufacture of equipment for polyurethane</h2>
-                <img src='https://uploaddeimagens.com.br/images/003/911/417/full/Grupo_883.png?1655898236' alt='' />
+                <img src={lideres} alt='' />
                 </div>
     
                 <div className='lg:w-[40%] 2xl:w-[45%] mt-10 lg:mt-0'>
@@ -492,7 +496,7 @@ const ASulpol = () => {
                 <div className='my-50'>
                 <h2 className='text-xl text-[#202124] font-medium'>Refrigeration Market</h2>
                 <p className='text-base text-[#505050] font-light mt-[10px] mb-[40px]'>Our Polyurethane dosers and high pressure PU injectors are equipment designed with specific characteristics for companies in the refrigeration industry.</p>
-                <HashLink to='/LPRefrigeracao#lpheader' className='text-sm text-[#81D742] font-semibold flex items-center gap-2' rel='noreferrer'>See equipment <img className='mt-1' src='https://gistcdn.githack.com/wesleyeagles/7966ded13d7f4bd7d4874cdd9b17798b/raw/7f6cd6b287866fc22b004a6424ab007d66c21bd8/arrowrightx.svg' alt=''></img></HashLink>
+                <HashLink to='/refrigera%C3%A7%C3%A3o' className='text-sm text-[#81D742] font-semibold flex items-center gap-2' rel='noreferrer'>See equipment <img className='mt-1' src='https://gistcdn.githack.com/wesleyeagles/7966ded13d7f4bd7d4874cdd9b17798b/raw/7f6cd6b287866fc22b004a6424ab007d66c21bd8/arrowrightx.svg' alt=''></img></HashLink>
                 </div>
     
                 <div>
@@ -532,7 +536,7 @@ const ASulpol = () => {
         <Navbar />
         <div>
           <div className='relative w-full h-[100vh] flex items-center z-10'>
-              <img className='absolute w-full h-full object-cover -z-10' alt='slide-1' src='https://uploaddeimagens.com.br/images/003/910/884/full/Grupo_141.png?1655839430' />
+              <img className='absolute w-full h-full object-cover -z-10' alt='slide-1' src={banner} />
               <div className='container mx-auto'>
                 <h1 className='text-white text-4xl leading-tight font-medium lg:w-[55%] 2xl:w-[40%] mb-7 pt-40'>Somos tecnología en constante movimiento</h1>
                 <p className='text-base text-white mb-12 lg:w-[35%]'>Fundada en 1989, hoy SULPOL es líder en el mercado brasileño y latinoamericano en el desarrollo y fabricación de dosificadores de Poliuretano.</p>
@@ -544,7 +548,7 @@ const ASulpol = () => {
             <div className='container mx-auto  border-b border-gray-300 pb-100'>
             <div className='flex flex-col lg:flex-row justify-between'>
               <div className='lg:w-[42%]'>
-                <img src='https://uploaddeimagens.com.br/images/003/910/911/full/Grupo_886.png?1655839880' alt='' />
+                <img src={jornada} alt='' />
               </div>
     
               <div className='lg:w-[48%] mt-10 lg:mt-0'>
@@ -715,7 +719,7 @@ const ASulpol = () => {
                 QUE HACEMOS?
                 </span>
                 <h2 className="text-4xl mb-[4rem]">Somos líderes en la fabricación de equipos para poliuretano</h2>
-                <img src='https://uploaddeimagens.com.br/images/003/911/417/full/Grupo_883.png?1655898236' alt='' />
+                <img src={lideres} alt='' />
                 </div>
     
                 <div className='lg:w-[40%] 2xl:w-[45%] mt-10 lg:mt-0'>
@@ -729,7 +733,7 @@ const ASulpol = () => {
                 <div className='my-50'>
                 <h2 className='text-xl text-[#202124] font-medium'>Mercado de Refrigeración</h2>
                 <p className='text-base text-[#505050] font-light mt-[10px] mb-[40px]'>Nuestros dosificadores de Poliuretano e inyectores de PU de alta presión son equipos diseñados con características específicas para empresas de la industria frigorífica.</p>
-                <HashLink to='/LPRefrigeracao#lpheader' className='text-sm text-[#81D742] font-semibold flex items-center gap-2' rel='noreferrer'>Ver equipo <img className='mt-1' src='https://gistcdn.githack.com/wesleyeagles/7966ded13d7f4bd7d4874cdd9b17798b/raw/7f6cd6b287866fc22b004a6424ab007d66c21bd8/arrowrightx.svg' alt=''></img></HashLink>
+                <HashLink to='/refrigera%C3%A7%C3%A3o' className='text-sm text-[#81D742] font-semibold flex items-center gap-2' rel='noreferrer'>Ver equipo <img className='mt-1' src='https://gistcdn.githack.com/wesleyeagles/7966ded13d7f4bd7d4874cdd9b17798b/raw/7f6cd6b287866fc22b004a6424ab007d66c21bd8/arrowrightx.svg' alt=''></img></HashLink>
                 </div>
     
                 <div>

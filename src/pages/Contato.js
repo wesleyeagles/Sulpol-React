@@ -8,6 +8,10 @@ import WhatsappButton from "../components/WhatsappButton";
 import { useContext } from "react";
 import Context from "../contexts/MainContext";
 
+import contato from '../images/new-images/contato/contato.png'
+import contato2 from '../images/new-images/contato/contato2.png'
+
+
 const Contato = () => {
 
   const { isPortuguese, isEnglish, isSpanish } = useContext(Context)
@@ -69,7 +73,7 @@ const Contato = () => {
                 <div className="flex justify-between">
                   <div className="hidden lg:block">
                     <img
-                      src="https://uploaddeimagens.com.br/images/003/911/484/full/Grupo_884.png?1655901616"
+                      src={contato}
                       alt=""
                     />
                   </div>
@@ -157,7 +161,7 @@ const Contato = () => {
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row justify-between">
             <div className="lg:w-[45%]">
-              <img className="w-full h-full max-h-700 flex-none" src='https://uploaddeimagens.com.br/images/003/911/936/full/Grupo_887.png?1655917516' alt='' />
+              <img className="w-full h-full max-h-700 flex-none" src={contato2} alt='' />
             </div>
   
             <div className="lg:w-[50%] mt-10 lg:mt-0">
@@ -225,7 +229,7 @@ const Contato = () => {
                 <div className="flex justify-between">
                   <div className="hidden lg:block">
                     <img
-                      src="https://uploaddeimagens.com.br/images/003/911/484/full/Grupo_884.png?1655901616"
+                      src={contato}
                       alt=""
                     />
                   </div>
@@ -313,7 +317,7 @@ const Contato = () => {
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row justify-between">
             <div className="lg:w-[45%]">
-              <img className="w-full h-full max-h-700 flex-none" src='https://uploaddeimagens.com.br/images/003/911/936/full/Grupo_887.png?1655917516' alt='' />
+              <img className="w-full h-full max-h-700 flex-none" src={contato2} alt='' />
             </div>
   
             <div className="lg:w-[50%] mt-10 lg:mt-0">
@@ -382,7 +386,7 @@ const Contato = () => {
                 <div className="flex justify-between">
                   <div className="hidden lg:block">
                     <img
-                      src="https://uploaddeimagens.com.br/images/003/911/484/full/Grupo_884.png?1655901616"
+                      src={contato}
                       alt=""
                     />
                   </div>
@@ -470,7 +474,7 @@ const Contato = () => {
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row justify-between">
             <div className="lg:w-[45%]">
-              <img className="w-full h-full max-h-700 flex-none" src='https://uploaddeimagens.com.br/images/003/911/936/full/Grupo_887.png?1655917516' alt='' />
+              <img className="w-full h-full max-h-700 flex-none" src={contato2} alt='' />
             </div>
   
             <div className="lg:w-[50%] mt-10 lg:mt-0">
