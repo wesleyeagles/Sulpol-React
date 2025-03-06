@@ -17,6 +17,12 @@ import Footer from '../components/Footer/Footer'
 import WhatsappButton from '../components/WhatsappButton'
 import Context from '../contexts/MainContext'
 
+import Star300SImage from '../images/new-images/star_300S_2.png'
+import Star300SMRPImage from '../images/new-images/STAR_300S-MRP.png'
+import Star300SPVImage from '../images/new-images/star300s-pv.png'
+import Star300SSR24Image from '../images/new-images/star_300r24.png'
+import Star300STGImage from '../images/new-images/star_300-tg.png'
+
 function Star300S()  {
 
   const [precision, setPrecision] = useState(0); 
@@ -104,7 +110,7 @@ function Star300S()  {
             <div className='container mx-auto'>
                 <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
                 <div className='w-[100%] md:w-[40%] lg:mt-[40px] flex flex-col justify-between md:items-center'>
-                    <img className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/725/full/star_300S_2.png?1656005199' alt=''/>
+                    <img className='w-[100%] md:w-[100%]' src={Star300SImage} alt=''/>
                     <div className='flex flex-wrap lg:flex-nowrap w-[100%] md:w-auto flex-row gap-5 mt-10 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
                     <img className='w-[28%] md:w-[25%]' src={star300sThumb3} alt=''/>
                     <img className='w-[28%] md:w-[25%]' src={star300sThumb1} alt=''/>
@@ -121,11 +127,11 @@ function Star300S()  {
     
                 <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
                 <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex flex-col justify-between md:items-center'>
-                    <img className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/756/full/STAR_300S-MRP.png?1656006258' alt=''/>
+                    <img className='w-[100%] md:w-[100%]' src={Star300SMRPImage} alt=''/>
                     <div className='flex  flex-wrap lg:flex-nowrap w-[100%] md:w-auto flex-row gap-5 md:mt-[20px] mt-10  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
-                    <img className='w-[28%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/913/888/full/Interse%C3%A7%C3%A3o_51.png?1656009020' alt=''/>
-                    <img className='w-[28%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/913/890/full/Interse%C3%A7%C3%A3o_52.png?1656009037' alt=''/>
-                    <img className='w-[28%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/913/892/full/Interse%C3%A7%C3%A3o_53.png?1656009056' alt=''/>
+                    <img className='w-[28%] md:w-[25%]' src={star300sThumb3} alt=''/>
+                    <img className='w-[28%] md:w-[25%]' src={star300sThumb1} alt=''/>
+                    <img className='w-[28%] md:w-[25%]' src={star300sThumb2} alt=''/>
                     </div>
                 </div>
     
@@ -138,11 +144,11 @@ function Star300S()  {
     
                 <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
                 <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex flex-col justify-between md:items-center'>
-                    <img className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/769/full/star300s-pv.png?1656006655' alt=''/>
+                    <img className='w-[100%] md:w-[100%]' src={Star300SPVImage} alt=''/>
                     <div className='flex  flex-wrap lg:flex-nowrap w-[100%] md:w-auto flex-row gap-5 md:mt-[20px] mt-10  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
-                    <img className='w-[28%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/914/007/full/Interse%C3%A7%C3%A3o_54.png?1656010953' alt=''/>
-                    <img className='w-[28%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/914/008/full/Interse%C3%A7%C3%A3o_55.png?1656010971' alt=''/>
-                    <img className='w-[28%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/914/009/full/Interse%C3%A7%C3%A3o_56.png?1656010991' alt=''/>
+                    <img className='w-[28%] md:w-[25%]' src={star300sThumb3} alt=''/>
+                    <img className='w-[28%] md:w-[25%]' src={star300sThumb1} alt=''/>
+                    <img className='w-[28%] md:w-[25%]' src={star300sThumb2} alt=''/>
                     </div>
                 </div>
     
@@ -155,7 +161,7 @@ function Star300S()  {
     
                 <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
                 <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex flex-col justify-between md:items-center'>
-                    <img className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/796/full/1123dfd.png?1656007347' alt=''/>
+                    <img className='w-[100%] md:w-[100%]' src={Star300SSR24Image} alt=''/>
                     <div className='flex  flex-wrap lg:flex-nowrap w-[100%] md:w-auto flex-row gap-5 md:mt-[20px] mt-10  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
                     <img className='w-[28%] md:w-[25%]' src={star300sThumb3} alt=''/>
                     <img className='w-[28%] md:w-[25%]' src={star300sThumb1} alt=''/>
@@ -172,7 +178,7 @@ function Star300S()  {
     
                 <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
                 <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex flex-col justify-between md:items-center'>
-                    <img className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/802/full/star_300-tg.png?1656007443' alt=''/>
+                    <img className='w-[100%] md:w-[100%]' src={Star300STGImage} alt=''/>
                     <div className='flex  flex-wrap lg:flex-nowrap w-[100%] md:w-auto flex-row gap-5 md:mt-[20px] mt-10  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
                     <img className='w-[28%] md:w-[25%]' src={star300sThumb3} alt=''/>
                     <img className='w-[28%] md:w-[25%]' src={star300sThumb1} alt=''/>
@@ -282,7 +288,7 @@ function Star300S()  {
             <div className='container mx-auto'>
                 <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
                 <div className='w-[100%] md:w-[40%] lg:mt-[40px] flex flex-col justify-between md:items-center'>
-                    <img className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/725/full/star_300S_2.png?1656005199' alt=''/>
+                    <img className='w-[100%] md:w-[100%]' src={Star300SImage} alt=''/>
                     <div className='flex flex-wrap lg:flex-nowrap w-[100%] md:w-auto flex-row gap-5 mt-10 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
                     <img className='w-[28%] md:w-[25%]' src={star300sThumb3} alt=''/>
                     <img className='w-[28%] md:w-[25%]' src={star300sThumb1} alt=''/>
@@ -299,11 +305,11 @@ function Star300S()  {
     
                 <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
                 <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex flex-col justify-between md:items-center'>
-                    <img className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/756/full/STAR_300S-MRP.png?1656006258' alt=''/>
+                    <img className='w-[100%] md:w-[100%]' src={Star300SMRPImage} alt=''/>
                     <div className='flex  flex-wrap lg:flex-nowrap w-[100%] md:w-auto flex-row gap-5 md:mt-[20px] mt-10  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
-                    <img className='w-[28%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/913/888/full/Interse%C3%A7%C3%A3o_51.png?1656009020' alt=''/>
-                    <img className='w-[28%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/913/890/full/Interse%C3%A7%C3%A3o_52.png?1656009037' alt=''/>
-                    <img className='w-[28%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/913/892/full/Interse%C3%A7%C3%A3o_53.png?1656009056' alt=''/>
+                    <img className='w-[28%] md:w-[25%]' src={star300sThumb3} alt=''/>
+                    <img className='w-[28%] md:w-[25%]' src={star300sThumb1} alt=''/>
+                    <img className='w-[28%] md:w-[25%]' src={star300sThumb2} alt=''/>
                     </div>
                 </div>
     
@@ -316,11 +322,11 @@ function Star300S()  {
     
                 <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
                 <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex flex-col justify-between md:items-center'>
-                    <img className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/769/full/star300s-pv.png?1656006655' alt=''/>
+                    <img className='w-[100%] md:w-[100%]' src={Star300SPVImage} alt=''/>
                     <div className='flex  flex-wrap lg:flex-nowrap w-[100%] md:w-auto flex-row gap-5 md:mt-[20px] mt-10  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
-                    <img className='w-[28%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/914/007/full/Interse%C3%A7%C3%A3o_54.png?1656010953' alt=''/>
-                    <img className='w-[28%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/914/008/full/Interse%C3%A7%C3%A3o_55.png?1656010971' alt=''/>
-                    <img className='w-[28%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/914/009/full/Interse%C3%A7%C3%A3o_56.png?1656010991' alt=''/>
+                    <img className='w-[28%] md:w-[25%]' src={star300sThumb3} alt=''/>
+                    <img className='w-[28%] md:w-[25%]' src={star300sThumb1} alt=''/>
+                    <img className='w-[28%] md:w-[25%]' src={star300sThumb2} alt=''/>
                     </div>
                 </div>
     
@@ -333,7 +339,7 @@ function Star300S()  {
     
                 <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
                 <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex flex-col justify-between md:items-center'>
-                    <img className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/796/full/1123dfd.png?1656007347' alt=''/>
+                    <img className='w-[100%] md:w-[100%]' src={Star300SSR24Image} alt=''/>
                     <div className='flex  flex-wrap lg:flex-nowrap w-[100%] md:w-auto flex-row gap-5 md:mt-[20px] mt-10  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
                     <img className='w-[28%] md:w-[25%]' src={star300sThumb3} alt=''/>
                     <img className='w-[28%] md:w-[25%]' src={star300sThumb1} alt=''/>
@@ -350,7 +356,7 @@ function Star300S()  {
     
                 <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
                 <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex flex-col justify-between md:items-center'>
-                    <img className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/802/full/star_300-tg.png?1656007443' alt=''/>
+                    <img className='w-[100%] md:w-[100%]' src={Star300STGImage} alt=''/>
                     <div className='flex  flex-wrap lg:flex-nowrap w-[100%] md:w-auto flex-row gap-5 md:mt-[20px] mt-10  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
                     <img className='w-[28%] md:w-[25%]' src={star300sThumb3} alt=''/>
                     <img className='w-[28%] md:w-[25%]' src={star300sThumb1} alt=''/>
@@ -460,7 +466,7 @@ function Star300S()  {
             <div className='container mx-auto'>
                 <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
                 <div className='w-[100%] md:w-[40%] lg:mt-[40px] flex flex-col justify-between md:items-center'>
-                    <img className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/725/full/star_300S_2.png?1656005199' alt=''/>
+                    <img className='w-[100%] md:w-[100%]' src={Star300SImage} alt=''/>
                     <div className='flex flex-wrap lg:flex-nowrap w-[100%] md:w-auto flex-row gap-5 mt-10 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
                     <img className='w-[28%] md:w-[25%]' src={star300sThumb3} alt=''/>
                     <img className='w-[28%] md:w-[25%]' src={star300sThumb1} alt=''/>
@@ -477,7 +483,7 @@ function Star300S()  {
     
                 <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
                 <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex flex-col justify-between md:items-center'>
-                    <img className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/756/full/STAR_300S-MRP.png?1656006258' alt=''/>
+                    <img className='w-[100%] md:w-[100%]' src={Star300SMRPImage} alt=''/>
                     <div className='flex  flex-wrap lg:flex-nowrap w-[100%] md:w-auto flex-row gap-5 md:mt-[20px] mt-10  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
                     <img className='w-[28%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/913/888/full/Interse%C3%A7%C3%A3o_51.png?1656009020' alt=''/>
                     <img className='w-[28%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/913/890/full/Interse%C3%A7%C3%A3o_52.png?1656009037' alt=''/>
@@ -494,7 +500,7 @@ function Star300S()  {
     
                 <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
                 <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex flex-col justify-between md:items-center'>
-                    <img className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/769/full/star300s-pv.png?1656006655' alt=''/>
+                    <img className='w-[100%] md:w-[100%]' src={Star300SPVImage} alt=''/>
                     <div className='flex  flex-wrap lg:flex-nowrap w-[100%] md:w-auto flex-row gap-5 md:mt-[20px] mt-10  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
                     <img className='w-[28%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/914/007/full/Interse%C3%A7%C3%A3o_54.png?1656010953' alt=''/>
                     <img className='w-[28%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/914/008/full/Interse%C3%A7%C3%A3o_55.png?1656010971' alt=''/>
@@ -511,7 +517,7 @@ function Star300S()  {
     
                 <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
                 <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex flex-col justify-between md:items-center'>
-                    <img className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/796/full/1123dfd.png?1656007347' alt=''/>
+                    <img className='w-[100%] md:w-[100%]' src={Star300SSR24Image} alt=''/>
                     <div className='flex  flex-wrap lg:flex-nowrap w-[100%] md:w-auto flex-row gap-5 md:mt-[20px] mt-10  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
                     <img className='w-[28%] md:w-[25%]' src={star300sThumb3} alt=''/>
                     <img className='w-[28%] md:w-[25%]' src={star300sThumb1} alt=''/>
@@ -528,7 +534,7 @@ function Star300S()  {
     
                 <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
                 <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex flex-col justify-between md:items-center'>
-                    <img className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/802/full/star_300-tg.png?1656007443' alt=''/>
+                    <img className='w-[100%] md:w-[100%]' src={Star300STGImage} alt=''/>
                     <div className='flex  flex-wrap lg:flex-nowrap w-[100%] md:w-auto flex-row gap-5 md:mt-[20px] mt-10  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
                     <img className='w-[28%] md:w-[25%]' src={star300sThumb3} alt=''/>
                     <img className='w-[28%] md:w-[25%]' src={star300sThumb1} alt=''/>

@@ -11,6 +11,10 @@ import Footer from '../components/Footer/Footer'
 import WhatsappButton from '../components/WhatsappButton'
 import Context from '../contexts/MainContext'
 
+import especiais from '../images/new-images/especiais/especiais.png'
+import especiais2 from '../images/new-images/especiais/especiais2.png'
+
+
 function ProjetosEspeciais()  {
 
 
@@ -41,7 +45,7 @@ function ProjetosEspeciais()  {
           <div className='container mx-auto'>
               <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36'>
               <div className='w-[100%] md:w-[40%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                  <img alt='' className='w-[75%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/924/593/full/Ativo_3-removebg-preview.png?1656680249' />
+                  <img alt='' className='w-[75%] md:w-[100%]' src={especiais} />
                   <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
   
                   </div>
@@ -61,7 +65,7 @@ function ProjetosEspeciais()  {
   
               <div className='flex flex-col md:flex-row-reverse md:justify-between md:items-center mt-10 border-b border-gray-400 pb-36'>
               <div className='w-[100%] md:w-[50%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                  <img alt='' className='w-[75%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/924/617/full/Ativo_4-removebg-preview%281%29.png?1656680836' />
+                  <img alt='' className='w-[75%] md:w-[100%]' src={especiais2} />
                   <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
   
                   </div>
@@ -112,7 +116,7 @@ function ProjetosEspeciais()  {
           <div className='container mx-auto'>
               <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36'>
               <div className='w-[100%] md:w-[40%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                  <img alt='' className='w-[75%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/924/593/full/Ativo_3-removebg-preview.png?1656680249' />
+                  <img alt='' className='w-[75%] md:w-[100%]' src={especiais} />
                   <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
   
                   </div>
@@ -132,7 +136,7 @@ function ProjetosEspeciais()  {
   
               <div className='flex flex-col md:flex-row-reverse md:justify-between md:items-center mt-10 border-b border-gray-400 pb-36'>
               <div className='w-[100%] md:w-[50%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                  <img alt='' className='w-[75%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/924/617/full/Ativo_4-removebg-preview%281%29.png?1656680836' />
+                  <img alt='' className='w-[75%] md:w-[100%]' src={especiais2} />
                   <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px] lg:mt-[20%] 2xl:mt-[10% ] justify-center'>
   
                   </div>
@@ -183,7 +187,7 @@ function ProjetosEspeciais()  {
           <div className='container mx-auto'>
               <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36'>
               <div className='w-[100%] md:w-[40%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                  <img alt='' className='w-[75%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/924/593/full/Ativo_3-removebg-preview.png?1656680249' />
+                  <img alt='' className='w-[75%] md:w-[100%]' src={especiais} />
                   <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
   
                   </div>
@@ -203,7 +207,7 @@ function ProjetosEspeciais()  {
   
               <div className='flex flex-col md:flex-row-reverse md:justify-between md:items-center mt-10 border-b border-gray-400 pb-36'>
               <div className='w-[100%] md:w-[50%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                  <img alt='' className='w-[75%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/924/617/full/Ativo_4-removebg-preview%281%29.png?1656680836' />
+                  <img alt='' className='w-[75%] md:w-[100%]' src={especiais2} />
                   <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
   
                   </div>

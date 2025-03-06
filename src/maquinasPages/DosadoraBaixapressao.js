@@ -11,6 +11,11 @@ import Footer from '../components/Footer/Footer'
 import WhatsappButton from '../components/WhatsappButton'
 import Context from '../contexts/MainContext'
 
+import dosadorabaixa from '../images/new-images/dosadorabaixa/dosadorabaixa.png'
+import octagone1 from '../images/new-images/dosadorabaixa/octagone1.png'
+import octagone2 from '../images/new-images/dosadorabaixa/octagone2.png'
+import octagone3 from '../images/new-images/dosadorabaixa/octagone3.png'
+
 function DosadoraBaixapressao()  {
 
   const [precision, setPrecision] = useState(0); 
@@ -71,7 +76,7 @@ function DosadoraBaixapressao()  {
             <div className='container mx-auto'>
                 <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
                 <div className='w-[100%] md:w-[40%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                    <img className='w-[75%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/817/full/ST-C4A-scaled.png?1656007852' alt=''/>
+                    <img className='w-[75%] md:w-[100%]' src={dosadorabaixa} alt=''/>
                     <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
     
                     </div>
@@ -81,9 +86,9 @@ function DosadoraBaixapressao()  {
                    <h1 className='text-gray-800 text-4xl  2xl:text-5xl mb-5 font-normal'>ST-C</h1>
                    <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>Equipamento de baixa pressão, com misturador dinâmico, desenvolvido para trabalhar com Poliuretano, Poliéter ou Poliéster, para a produção de espuma flexível, pele integral, rígida ou semirrígida. Atende as necessidades de diversos setores das indústrias: automobilísticas, refrigeração, moveleira, construção civil, ortopédica, esportiva entre outros.</p>
                    <div className='flex w-[100%] md:w-autoflex-row gap-5 mt-10 md:mt-[20px] lg:mt-[20%] 2xl:mt-[10%] mb-16'>
-                    <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/095/full/Interse%C3%A7%C3%A3o_64.png?1656013300' alt=''/>
-                    <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/096/full/Interse%C3%A7%C3%A3o_60.png?1656013339' alt=''/>
-                    <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/097/full/Interse%C3%A7%C3%A3o_63.png?1656013375' alt=''/>
+                    <img className='w-[100%] md:w-[15%]' src={octagone1} alt=''/>
+                    <img className='w-[100%] md:w-[15%]' src={octagone2} alt=''/>
+                    <img className='w-[100%] md:w-[15%]' src={octagone3} alt=''/>
                     </div>
                     <ButtonInteresse link="#forms" onClick={handleForm}/>
                 </div>
@@ -168,7 +173,7 @@ function DosadoraBaixapressao()  {
             <div className='container mx-auto'>
                 <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
                 <div className='w-[100%] md:w-[40%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                    <img className='w-[75%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/817/full/ST-C4A-scaled.png?1656007852' alt=''/>
+                    <img className='w-[75%] md:w-[100%]' src={dosadorabaixa} alt=''/>
                     <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
     
                     </div>
@@ -178,9 +183,9 @@ function DosadoraBaixapressao()  {
                    <h1 className='text-gray-800 text-4xl  2xl:text-5xl mb-5 font-normal'>ST-C</h1>
                    <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>Low pressure equipment, with dynamic mixer, developed to work with Polyurethane, Polyether or Polyester, for the production of flexible foam, integral skin, rigid or semi-rigid. It meets the needs of various industrial sectors: automotive, refrigeration, furniture, civil construction, orthopedic, sports, among others.</p>
                    <div className='flex w-[100%] md:w-autoflex-row gap-5 mt-10 md:mt-[20px] lg:mt-[20%] 2xl:mt-[10%] mb-16'>
-                    <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/095/full/Interse%C3%A7%C3%A3o_64.png?1656013300' alt=''/>
-                    <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/096/full/Interse%C3%A7%C3%A3o_60.png?1656013339' alt=''/>
-                    <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/097/full/Interse%C3%A7%C3%A3o_63.png?1656013375' alt=''/>
+                    <img className='w-[100%] md:w-[15%]' src={octagone1} alt=''/>
+                    <img className='w-[100%] md:w-[15%]' src={octagone2} alt=''/>
+                    <img className='w-[100%] md:w-[15%]' src={octagone3} alt=''/>
                     </div>
                     <ButtonInteresse link="#forms" onClick={handleForm}/>
                 </div>
@@ -265,7 +270,7 @@ function DosadoraBaixapressao()  {
             <div className='container mx-auto'>
                 <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
                 <div className='w-[100%] md:w-[40%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                    <img className='w-[75%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/817/full/ST-C4A-scaled.png?1656007852' alt=''/>
+                    <img className='w-[75%] md:w-[100%]' src={dosadorabaixa} alt=''/>
                     <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
     
                     </div>
@@ -275,9 +280,9 @@ function DosadoraBaixapressao()  {
                    <h1 className='text-gray-800 text-4xl  2xl:text-5xl mb-5 font-normal'>ST-C</h1>
                    <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>Equipo de baja presión, con mezclador dinámico, desarrollado para trabajar con Poliuretano, Poliéter o Poliéster, para la producción de espuma flexible, piel integral, rígida o semirrígida. Responde a las necesidades de diferentes sectores industriales: automoción, refrigeración, mueble, construcción civil, ortopedia, deportivo, entre otros.</p>
                    <div className='flex w-[100%] md:w-autoflex-row gap-5 mt-10 md:mt-[20px] lg:mt-[20%] 2xl:mt-[10%] mb-16'>
-                    <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/095/full/Interse%C3%A7%C3%A3o_64.png?1656013300' alt=''/>
-                    <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/096/full/Interse%C3%A7%C3%A3o_60.png?1656013339' alt=''/>
-                    <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/097/full/Interse%C3%A7%C3%A3o_63.png?1656013375' alt=''/>
+                    <img className='w-[100%] md:w-[15%]' src={octagone1} alt=''/>
+                    <img className='w-[100%] md:w-[15%]' src={octagone2} alt=''/>
+                    <img className='w-[100%] md:w-[15%]' src={octagone3} alt=''/>
                     </div>
                     <ButtonInteresse link="#forms" onClick={handleForm}/>
                 </div>

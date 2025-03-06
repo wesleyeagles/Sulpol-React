@@ -14,6 +14,11 @@ import Footer from '../components/Footer/Footer'
 import WhatsappButton from '../components/WhatsappButton'
 import Context from '../contexts/MainContext'
 
+import dosadoraportatil from '../images/new-images/dosadoraportatil/dosadoraportatil.png'
+import octagone1 from '../images/new-images/dosadoraportatil/octagone1.png'
+import octagone2 from '../images/new-images/dosadoraportatil/octagone2.png'
+import octagone3 from '../images/new-images/dosadoraportatil/octagone3.png'
+
 function DosadoraPortatil()  {
 
   const [precision, setPrecision] = useState(0); 
@@ -74,7 +79,7 @@ function DosadoraPortatil()  {
             <div className='container mx-auto'>
                 <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
                 <div className='w-[100%] md:w-[30%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                    <img alt='' className='w-[75%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/809/full/ST-P15A-768x1024.png?1656007646' />
+                    <img alt='' className='w-[75%] md:w-[100%]' src={dosadoraportatil} />
                     <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
     
                     </div>
@@ -84,9 +89,9 @@ function DosadoraPortatil()  {
                    <h1 className='text-gray-800 text-4xl  2xl:text-5xl mb-5 font-normal'>ST-<span className='text-sulpol-green font-black'>P15A</span></h1>
                    <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>Equipamento de baixa pressão, com Pistola Dosadora, Misturador estático e de fácil movimentação, montado sobre rodízios. Foi desenvolvido exclusivamente para poliuretano Poliéter, para a espuma rígida ou semirrígida. Atende as necessidades de diversos setores da indústria, tais como: refrigeração, moveleira, construção civil entre outros. </p>
                    <div className='flex w-[100%] md:w-auto flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] mb-16'>
-                    <img alt='' className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/086/full/Interse%C3%A7%C3%A3o_60.png?1656013055' />
-                    <img alt='' className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/087/full/Interse%C3%A7%C3%A3o_61.png?1656013071' />
-                    <img alt='' className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/088/full/Interse%C3%A7%C3%A3o_62.png?1656013087' />
+                    <img alt='' className='w-[100%] md:w-[15%]' src={octagone1} />
+                    <img alt='' className='w-[100%] md:w-[15%]' src={octagone2} />
+                    <img alt='' className='w-[100%] md:w-[15%]' src={octagone3} />
                     </div>
                     <ButtonInteresse link="#forms" onClick={handleForm}/>
                 </div>
@@ -164,7 +169,7 @@ function DosadoraPortatil()  {
             <div className='container mx-auto'>
                 <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
                 <div className='w-[100%] md:w-[30%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                    <img alt='' className='w-[75%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/809/full/ST-P15A-768x1024.png?1656007646' />
+                    <img alt='' className='w-[75%] md:w-[100%]' src={dosadoraportatil} />
                     <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
     
                     </div>
@@ -174,9 +179,9 @@ function DosadoraPortatil()  {
                    <h1 className='text-gray-800 text-4xl  2xl:text-5xl mb-5 font-normal'>ST-<span className='text-sulpol-green font-black'>P15A</span></h1>
                    <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>Low pressure equipment, with Dosing Pistol, Static and easy-to-handle mixer, mounted on casters. It was developed exclusively for Polyether polyurethane, for rigid or semi-rigid foam. It meets the needs of various sectors of industry, such as: refrigeration, furniture, civil construction, among others. </p>
                    <div className='flex w-[100%] md:w-auto flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] mb-16'>
-                    <img alt='' className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/086/full/Interse%C3%A7%C3%A3o_60.png?1656013055' />
-                    <img alt='' className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/087/full/Interse%C3%A7%C3%A3o_61.png?1656013071' />
-                    <img alt='' className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/088/full/Interse%C3%A7%C3%A3o_62.png?1656013087' />
+                    <img alt='' className='w-[100%] md:w-[15%]' src={octagone1} />
+                    <img alt='' className='w-[100%] md:w-[15%]' src={octagone2} />
+                    <img alt='' className='w-[100%] md:w-[15%]' src={octagone3} />
                     </div>
                     <ButtonInteresse link="#forms" onClick={handleForm}/>
                 </div>
@@ -254,7 +259,7 @@ function DosadoraPortatil()  {
             <div className='container mx-auto'>
                 <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
                 <div className='w-[100%] md:w-[30%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                    <img alt='' className='w-[75%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/809/full/ST-P15A-768x1024.png?1656007646' />
+                    <img alt='' className='w-[75%] md:w-[100%]' src={dosadoraportatil} />
                     <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
     
                     </div>
@@ -263,9 +268,9 @@ function DosadoraPortatil()  {
                 <div className='md:w-[60%] mt-16'>
                    <h1 className='text-gray-800 text-4xl  2xl:text-5xl mb-5 font-normal'>ST-<span className='text-sulpol-green font-black'>P15A</span></h1>
                    <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>Equipo de baja presión, con Pistola Dosificadora, Mezclador Estático y fácil de mover, montado sobre ruedas Fue desarrollado exclusivamente para poliuretano Poliéter, para espuma rígida o semirrígida. Atiende las necesidades de diversos sectores de la industria, tales como: refrigeración, muebles, construcción civil, entre otros. </p>                   <div className='flex w-[100%] md:w-auto flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] mb-16'>
-                    <img alt='' className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/086/full/Interse%C3%A7%C3%A3o_60.png?1656013055' />
-                    <img alt='' className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/087/full/Interse%C3%A7%C3%A3o_61.png?1656013071' />
-                    <img alt='' className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/088/full/Interse%C3%A7%C3%A3o_62.png?1656013087' />
+                    <img alt='' className='w-[100%] md:w-[15%]' src={octagone1} />
+                    <img alt='' className='w-[100%] md:w-[15%]' src={octagone2} />
+                    <img alt='' className='w-[100%] md:w-[15%]' src={octagone3} />
                     </div>
                     <ButtonInteresse link="#forms" onClick={handleForm}/>
                 </div>

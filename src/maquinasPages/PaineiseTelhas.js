@@ -11,6 +11,8 @@ import Footer from '../components/Footer/Footer'
 import WhatsappButton from '../components/WhatsappButton'
 import Context from '../contexts/MainContext'
 
+import telhas from '../images/new-images/telhas.png'
+
 function PaineiseTelhas()  {
 
 
@@ -42,7 +44,7 @@ function PaineiseTelhas()  {
           <div className='container mx-auto'>
               <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
               <div className='w-[100%] md:w-[40%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                  <img className='w-[75%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/924/578/full/termoacusticas-removebg-preview.png?1656679360' alt=''/>
+                  <img className='w-[75%] md:w-[100%]' src={telhas} alt=''/>
                   <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
   
                   </div>
@@ -100,7 +102,7 @@ function PaineiseTelhas()  {
           <div className='container mx-auto'>
               <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
               <div className='w-[100%] md:w-[40%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                  <img className='w-[75%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/924/578/full/termoacusticas-removebg-preview.png?1656679360' alt=''/>
+                  <img className='w-[75%] md:w-[100%]' src={telhas} alt=''/>
                   <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
   
                   </div>
@@ -158,7 +160,7 @@ function PaineiseTelhas()  {
           <div className='container mx-auto'>
               <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
               <div className='w-[100%] md:w-[40%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                  <img className='w-[75%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/924/578/full/termoacusticas-removebg-preview.png?1656679360' alt=''/>
+                  <img className='w-[75%] md:w-[100%]' src={telhas} alt=''/>
                   <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
   
                   </div>

@@ -14,6 +14,11 @@ import Footer from '../components/Footer/Footer'
 import WhatsappButton from '../components/WhatsappButton'
 import Context from '../contexts/MainContext'
 
+import dosadoraalta from '../images/new-images/dosadoraalta/dosadoraalta.png'
+import octagone1 from '../images/new-images/dosadoraalta/octagone1.png'
+import octagone2 from '../images/new-images/dosadoraalta/octagone2.png'
+import octagone3 from '../images/new-images/dosadoraalta/octagone3.png'
+
 function DosadoraAltapressao()  {
 
   const [precision, setPrecision] = useState(0); 
@@ -79,7 +84,7 @@ function DosadoraAltapressao()  {
             <div className='container mx-auto'>
                 <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
                 <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                    <img className='w-[75%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/816/full/ECOLOGICA-AP-100-A_sem_piso.png?1656007765' alt=''/>
+                    <img className='w-[75%] md:w-[100%]' src={dosadoraalta} alt=''/>
                     <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
     
                     </div>
@@ -89,9 +94,9 @@ function DosadoraAltapressao()  {
                    <h1 className='text-gray-800 text-4xl  2xl:text-5xl mb-5 font-normal'>ECOLÓGICA <span className='text-sulpol-green font-black'>AP</span></h1>
                    <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>A Série Ecológica AP configura uma linha de equipamentos para mistura de poliuretano em alta pressão. São equipadas com cabeçote auto-limpante, livre do uso de solventes. Precisas, confiáveis e de fácil operação, descrevem bem as principais características técnicas deste produto. Possui diversas configurações, se adaptando aos requisitos técnicos e econômicos de cada cliente.</p>
                    <div className='flex w-[100%] md:w-auto flex-row gap-5 mt-10 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] mb-16'>
-                    <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/095/full/Interse%C3%A7%C3%A3o_64.png?1656013300' alt=''/>
-                    <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/096/full/Interse%C3%A7%C3%A3o_60.png?1656013339' alt=''/>
-                    <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/097/full/Interse%C3%A7%C3%A3o_63.png?1656013375' alt=''/>
+                    <img className='w-[100%] md:w-[15%]' src={octagone1} alt=''/>
+                    <img className='w-[100%] md:w-[15%]' src={octagone2} alt=''/>
+                    <img className='w-[100%] md:w-[15%]' src={octagone3} alt=''/>
                     </div>
                     <ButtonInteresse link="#forms" onClick={handleForm}/>
                 </div>
@@ -182,7 +187,7 @@ function DosadoraAltapressao()  {
             <div className='container mx-auto'>
                 <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
                 <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                    <img className='w-[75%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/816/full/ECOLOGICA-AP-100-A_sem_piso.png?1656007765' alt=''/>
+                    <img className='w-[75%] md:w-[100%]' src={dosadoraalta} alt=''/>
                     <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
     
                     </div>
@@ -285,7 +290,7 @@ function DosadoraAltapressao()  {
             <div className='container mx-auto'>
                 <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
                 <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                    <img className='w-[75%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/816/full/ECOLOGICA-AP-100-A_sem_piso.png?1656007765' alt=''/>
+                    <img className='w-[75%] md:w-[100%]' src={dosadoraalta} alt=''/>
                     <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
     
                     </div>
@@ -295,9 +300,9 @@ function DosadoraAltapressao()  {
                    <h1 className='text-gray-800 text-4xl  2xl:text-5xl mb-5 font-normal'>ECOLÓGICA <span className='text-sulpol-green font-black'>AP</span></h1>
                    <p className='text-sm 2xl:text-base font-light md:w-[97%] mb-[50px] '>La Serie Ecológica AP configura una línea de equipos para mezcla de poliuretano a alta presión. Están equipados con un cabezal autolimpiante, libre del uso de solventes. Precisos, confiables y fáciles de operar, describen bien las principales características técnicas de este producto. Dispone de varias configuraciones, adaptándose a los requerimientos técnicos y económicos de cada cliente.</p>
                    <div className='flex w-[100%] md:w-auto flex-row gap-5 mt-10 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] mb-16'>
-                    <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/095/full/Interse%C3%A7%C3%A3o_64.png?1656013300' alt=''/>
-                    <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/096/full/Interse%C3%A7%C3%A3o_60.png?1656013339' alt=''/>
-                    <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/097/full/Interse%C3%A7%C3%A3o_63.png?1656013375' alt=''/>
+                    <img className='w-[100%] md:w-[15%]' src={octagone1} alt=''/>
+                    <img className='w-[100%] md:w-[15%]' src={octagone2} alt=''/>
+                    <img className='w-[100%] md:w-[15%]' src={octagone3} alt=''/>
                     </div>
                     <ButtonInteresse link="#forms" onClick={handleForm}/>
                 </div>

@@ -14,6 +14,11 @@ import Footer from '../components/Footer/Footer'
 import WhatsappButton from '../components/WhatsappButton'
 import Context from '../contexts/MainContext'
 
+import dosadoraelastomero from '../images/new-images/dosadoraelastomero/dosadoraelastomero.png'
+import octagone1 from '../images/new-images/dosadoraelastomero/octagone1.png'
+import octagone2 from '../images/new-images/dosadoraelastomero/octagone2.png'
+import octagone3 from '../images/new-images/dosadoraelastomero/octagone3.png'
+
 function DosadoraElastomero()  {
 
   const [precision, setPrecision] = useState(0); 
@@ -100,11 +105,11 @@ function DosadoraElastomero()  {
             <div className='container mx-auto'>
                 <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
                 <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex flex-col justify-between md:items-center'>
-                    <img alt='' className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/806/full/ST-ce9.png?1656007569' />
+                    <img alt='' className='w-[100%] md:w-[100%]' src={dosadoraelastomero} />
                     <div className='flex w-[100%] md:w-auto flex-row gap-5 md:mt-[20px] mt-10  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
-                    <img alt='' className='w-[25%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/976/237/full/Interse%C3%A7%C3%A3o_58.png?1660163096' />
-                    <img alt='' className='w-[25%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/976/214/full/Interse%C3%A7%C3%A3o_59.png?1660162255' />
-                    <img alt='' className='w-[25%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/976/221/full/Interse%C3%A7%C3%A3o_58.png?1660162661' />
+                    <img alt='' className='w-[25%] md:w-[25%]' src={octagone1} />
+                    <img alt='' className='w-[25%] md:w-[25%]' src={octagone2} />
+                    <img alt='' className='w-[25%] md:w-[25%]' src={octagone3} />
                     </div>
                     <strong className='mt-10'>As principais características do equipamento são:</strong>
                     <ul className='p-0'>
@@ -239,11 +244,11 @@ function DosadoraElastomero()  {
             <div className='container mx-auto'>
                 <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
                 <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex flex-col justify-between md:items-center'>
-                    <img alt='' className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/806/full/ST-ce9.png?1656007569' />
+                    <img alt='' className='w-[100%] md:w-[100%]' src={dosadoraelastomero} />
                     <div className='flex w-[100%] md:w-auto flex-row gap-5 md:mt-[20px] mt-10  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
-                    <img alt='' className='w-[25%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/976/237/full/Interse%C3%A7%C3%A3o_58.png?1660163096' />
-                    <img alt='' className='w-[25%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/976/214/full/Interse%C3%A7%C3%A3o_59.png?1660162255' />
-                    <img alt='' className='w-[25%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/976/221/full/Interse%C3%A7%C3%A3o_58.png?1660162661' />
+                    <img alt='' className='w-[25%] md:w-[25%]' src={octagone1} />
+                    <img alt='' className='w-[25%] md:w-[25%]' src={octagone2} />
+                    <img alt='' className='w-[25%] md:w-[25%]' src={octagone3} />
                     </div>
                     <strong className='mt-10'>The main features of the equipment are:</strong>
                     <ul className='p-0'>
@@ -372,11 +377,11 @@ function DosadoraElastomero()  {
             <div className='container mx-auto'>
                 <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
                 <div className='w-[100%] md:w-[45%] lg:mt-[40px] flex flex-col justify-between md:items-center'>
-                    <img alt='' className='w-[100%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/913/806/full/ST-ce9.png?1656007569' />
+                    <img alt='' className='w-[100%] md:w-[100%]' src={dosadoraelastomero} />
                     <div className='flex w-[100%] md:w-auto flex-row gap-5 md:mt-[20px] mt-10  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
-                    <img alt='' className='w-[25%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/976/237/full/Interse%C3%A7%C3%A3o_58.png?1660163096' />
-                    <img alt='' className='w-[25%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/976/214/full/Interse%C3%A7%C3%A3o_59.png?1660162255' />
-                    <img alt='' className='w-[25%] md:w-[25%]' src='https://uploaddeimagens.com.br/images/003/976/221/full/Interse%C3%A7%C3%A3o_58.png?1660162661' />
+                    <img alt='' className='w-[25%] md:w-[25%]' src={octagone1} />
+                    <img alt='' className='w-[25%] md:w-[25%]' src={octagone2} />
+                    <img alt='' className='w-[25%] md:w-[25%]' src={octagone3} />
                     </div>
                     <strong className='mt-10'>Las principales características del equipo son:</strong>
                     <ul className='p-0'>

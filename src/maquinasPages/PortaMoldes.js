@@ -11,6 +11,11 @@ import Footer from '../components/Footer/Footer'
 import WhatsappButton from '../components/WhatsappButton'
 import Context from '../contexts/MainContext'
 
+import moldes from '../images/new-images/moldes.png'
+import octagone1 from '../images/new-images/dosadoraportatil/octagone1.png'
+import octagone2 from '../images/new-images/dosadoraportatil/octagone2.png'
+import octagone3 from '../images/new-images/dosadoraportatil/octagone3.png'
+
 function PortaMoldes()  {
 
 
@@ -43,7 +48,7 @@ function PortaMoldes()  {
           <div className='container mx-auto'>
               <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
               <div className='w-[100%] md:w-[40%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                  <img className='w-[75%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/924/570/full/Ativo_2.png?1656678952' alt=''/>
+                  <img className='w-[75%] md:w-[100%]' src={moldes} alt=''/>
                   <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
   
                   </div>
@@ -61,9 +66,9 @@ function PortaMoldes()  {
                   atender mais de um porta molde, gerando assim uma maior produtividade.
                   </p>
                  <div className='flex w-[100%] md:w-auto flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] mb-16'>
-                  <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/086/full/Interse%C3%A7%C3%A3o_60.png?1656013055' alt=''/>
-                  <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/087/full/Interse%C3%A7%C3%A3o_61.png?1656013071' alt=''/>
-                  <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/088/full/Interse%C3%A7%C3%A3o_62.png?1656013087' alt=''/>
+                  <img className='w-[100%] md:w-[15%]' src={octagone1} alt=''/>
+                  <img className='w-[100%] md:w-[15%]' src={octagone2} alt=''/>
+                  <img className='w-[100%] md:w-[15%]' src={octagone3} alt=''/>
                   </div>
                   <ButtonInteresse link="#forms" onClick={handleForm}/>
               </div>
@@ -105,7 +110,7 @@ function PortaMoldes()  {
           <div className='container mx-auto'>
               <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
               <div className='w-[100%] md:w-[40%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                  <img className='w-[75%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/924/570/full/Ativo_2.png?1656678952' alt=''/>
+                  <img className='w-[75%] md:w-[100%]' src={moldes} alt=''/>
                   <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
   
                   </div>
@@ -123,9 +128,9 @@ function PortaMoldes()  {
                   serve more than one mold holder, thus generating greater productivity.
                   </p>
                  <div className='flex w-[100%] md:w-auto flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] mb-16'>
-                  <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/086/full/Interse%C3%A7%C3%A3o_60.png?1656013055' alt=''/>
-                  <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/087/full/Interse%C3%A7%C3%A3o_61.png?1656013071' alt=''/>
-                  <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/088/full/Interse%C3%A7%C3%A3o_62.png?1656013087' alt=''/>
+                  <img className='w-[100%] md:w-[15%]' src={octagone1} alt=''/>
+                  <img className='w-[100%] md:w-[15%]' src={octagone2} alt=''/>
+                  <img className='w-[100%] md:w-[15%]' src={octagone3} alt=''/>
                   </div>
                   <ButtonInteresse link="#forms" onClick={handleForm}/>
               </div>
@@ -167,7 +172,7 @@ function PortaMoldes()  {
           <div className='container mx-auto'>
               <div className='flex flex-col md:flex-row md:justify-between md:items-center pt-36 border-b border-gray-400 pb-36'>
               <div className='w-[100%] md:w-[40%] lg:mt-[40px] flex md:flex-col justify-between md:items-center'>
-                  <img className='w-[75%] md:w-[100%]' src='https://uploaddeimagens.com.br/images/003/924/570/full/Ativo_2.png?1656678952' alt=''/>
+                  <img className='w-[75%] md:w-[100%]' src={moldes} alt=''/>
                   <div className='flex w-[18%] md:w-auto flex-col md:flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] justify-center'>
   
                   </div>
@@ -185,9 +190,9 @@ function PortaMoldes()  {
                   atender a más de un portamoldes, generando así una mayor productividad.
                   </p>
                  <div className='flex w-[100%] md:w-auto flex-row gap-5 md:mt-[20px]  lg:mt-[20%] 2xl:mt-[10%] mb-16'>
-                  <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/086/full/Interse%C3%A7%C3%A3o_60.png?1656013055' alt=''/>
-                  <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/087/full/Interse%C3%A7%C3%A3o_61.png?1656013071' alt=''/>
-                  <img className='w-[100%] md:w-[15%]' src='https://uploaddeimagens.com.br/images/003/914/088/full/Interse%C3%A7%C3%A3o_62.png?1656013087' alt=''/>
+                  <img className='w-[100%] md:w-[15%]' src={octagone1} alt=''/>
+                  <img className='w-[100%] md:w-[15%]' src={octagone2} alt=''/>
+                  <img className='w-[100%] md:w-[15%]' src={octagone3} alt=''/>
                   </div>
                   <ButtonInteresse link="#forms" onClick={handleForm}/>
               </div>
